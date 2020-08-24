@@ -1,0 +1,9 @@
+% trap.m
+% Displaying fitting rea
+
+e0
+lc
+vi
+edpr;
+edp;
+plot(x,ye,'r',x,ym,'b');

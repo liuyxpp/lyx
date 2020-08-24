@@ -1,0 +1,27 @@
+% plotStacking.m
+% plot f(x,y) when vector x and y are not same in dimension
+n=1:1:11;
+p=7:1:256;
+a=2150*4.18;
+b=1380*4.18;
+alpha=0.0129;
+t0=61.2+273.15;
+t8=68.9+273.15;
+R=8.314;
+H=2070*4.18;
+rl=zeros(11,250);
+tm=zeros(11,250);
+for i=1:11
+    sigma=a+(i-1)*b
+    for j=1:250
+        rl(i,j)=i/((j+6)*0.2783);
+        tm(i,j)=t8*(1-sigma*(1+alpha*t0)/(j+6)/H)/(1+
+    end
+end
+hold on;
+for i=1:11
+    plot(p,rl(i,:));
+end
+grid on;
+%hold off;
+% This is the end of this file

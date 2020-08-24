@@ -1,0 +1,49 @@
+// Action Bar description file :NanoScope IIIa
+run("Action Bar","/plugins/ActionBar/NanoScope_IIIa.txt");
+exit();
+
+<line>
+<button> 1 line 1
+label=multi Open NIIIa
+icon=NanoScope IIIa/image1_1.png
+action=run_macro_string
+arg=run("multi Open NIIIa");
+<button> 2 line 1
+label=Specify line
+icon=NanoScope IIIa/image2_1.png
+action=run_macro_string
+arg=run("Specify...");
+<button> 3 line 1
+label=Plot profile
+icon=NanoScope IIIa/image3_1.png
+action=run_macro_string
+arg=run("Plot Profile");
+<button> 4 line 1
+label=HLinesInRegion
+icon=NanoScope IIIa/image4_1.png
+action=run_macro_string
+arg=run("HLinesInRegion ");
+</line>
+<line>
+<button> 1 line 2
+label=Crop AFM
+icon=NanoScope IIIa/image1_2.png
+action=run_macro_string
+arg=run("Crop AFM")
+<button> 2 line 2
+label=Close All Windows
+icon=NanoScope IIIa/image2_2.gif
+action=run_macro_string
+arg=run("Close All Windows");
+<button> 3 line 2
+label=LUT-6_shades
+icon=NanoScope IIIa/rainbow.png
+action=run_macro_string
+arg=run("6_shades");
+<button> 4 line 2
+label=LUT-thallium
+icon=NanoScope IIIa/fire.png
+action=run_macro_string
+arg=run("thallium");
+</line>
+// end of file

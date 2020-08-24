@@ -1,0 +1,11 @@
+Some program, like Nanoscope IIIa(z.exe), the main start excutable is
+not the exe files we run but another one.
+
+For example:
+we run "D:\v443r8\Z.EXE" to excute the nanoscope software 
+but actually "C:\WINNT\system32\ntvdm.exe" is monitored!
+
+so the monitor path must be "C:\WINNT\system32\ntvdm.exe"!!
+
+Use FindEXEPath.exe in this folder to identify the window is created by which
+exe file.

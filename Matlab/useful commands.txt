@@ -1,0 +1,13 @@
+cat   // constructing higher dimensional arrays
+
+imagesc // plot indexed color image from matrix
+image // plot rgb color image from 3D array
+imshow // plot rgb color image, border configuration support.
+// imshow, in the image, data cursor retrieved (X,Y) corresponds to data(Y,X) 
+
+contourf
+
+close all // close all figure window
+
+disp // Set display format for output
+format // disp(X) displays an array, without printing the array name.

@@ -1,0 +1,61 @@
+
+//macro name: HLinesInRegion
+//full name: Horizontal line profiles in a specified rectangle region
+//function: 这个macro用来从AFM图中，用长放形选择一个PEO片晶的增厚点，然后分别从上到下
+//          每个一个象素做line selection，得到每一条line的profile，最后保存到以图片名称命名的文本文件中。
+//          以提供VB程序的使用，来选择有最高点的那一条line。
+/////////////////////////
+//In parameters:
+//              (1)AFM图像：lyx070403.### (执行macro前预先载入）或由多个此种文件组成的stack
+//              (2)Rectangle region ROI （执行macro前预先选定）
+//Out parameters:
+//              (1)结果文本文件：###.txt
+//History
+//2007.04.03 generated
+//2007.06.05
+//           增加函数getFilename(),用以判断当前选中的图像是image或是stack中的slice，
+//           再分别按不同方式获得输出文件的文件名。
+//
+/////////////////////////////////////////////////////////////////////////////////////////
+
+path = getDirectory("Select a Directory");//指定保存路径
+getPixelSize(unit, pw, ph, pd);
+
+getBoundingRect(x, y, w, h);
+run("Clear Results"); //如果存在，清空当前Results窗口
+for(i=0; i<h; i++)
+{
+	makeLine(x, y+i, x+w, y+i);
+	profile=getProfile();
+	row=0;                //设定开始的行
+	for (j=0; j<profile.length; j++)
+	{
+   	setResult("X"+(i+1), row, j*pw);
+   	setResult("Y"+(i+1), row, profile[j]);
+   	row++;
+	}
+	updateResults();       //更新Results窗口显示
+} 
+selectWindow("Results");
+title=getFilename();
+saveAs("Text",path+title); // File>Save As>Text
+run("Close");
+open(path+title+".txt");
+
+function getFilename()
+{
+	info=getImageInfo();
+	index1 = indexOf(info, "Path:"); //image type
+	if (index1!=-1)
+		index1+=6;
+	else
+		{
+			index1 = indexOf(info, "Slice:"); //stack type
+			if(index1==-1) exit("Not an image or stack slice!");
+			index1+=7;
+		}
+	index2=indexOf(info, "\n", index1);
+	data = substring(info, index1,index2);			
+  index=lastIndexOf(data, ".");
+  return substring(data, index+1, index+4);
+}

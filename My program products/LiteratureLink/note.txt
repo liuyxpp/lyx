@@ -1,0 +1,2 @@
+rgb color pink_like #fff5eb
+JavaScript 区分大小写

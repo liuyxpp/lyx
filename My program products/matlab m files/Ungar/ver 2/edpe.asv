@@ -1,0 +1,18 @@
+function err = edpe()
+%EDPE Construct the Electrical Density Profile(EDP) from exp. diff. data.
+% Calling sequence:
+%    err=ungar
+%
+% OUT variables:
+%   X_EDP       -- x values of EDP
+%   Y_EXP       -- y values of EDP
+%
+% Record of revisions:
+%     Date             Programmer          Description of change
+%     ====             ==========          =====================
+%   7/3/2006           Yi Xin Liu          Original code
+global X_EDP,Y_EXP,N,L,V,I_EXP;
+for k=1:N
+    Y_EXP=Y_EX+sqrt(Ie(k))*cos(2*pi*k*x/L+vi(k));
+end
+err=0;

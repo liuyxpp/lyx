@@ -1,0 +1,6 @@
+% edp.m
+% Constructing the Electrical Density Profile(EDP) from experimental diff. 
+ye=0;
+for k=1:N
+    ye=ye+sqrt(Ae(k))*cos(2*pi*k*x/L+vi(k));
+end

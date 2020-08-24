@@ -1,0 +1,11 @@
+http://scitation.aip.org/getabs/servlet/GetabsServlet?prog=normal&id=APPLAB000001000001000001000001&idtype=cvips&gifs=yes
+
+http://scitation.aip.org/getabs/servlet/GetabsServlet?prog=normal&id=APPLAB000002000001000001000001&idtype=cvips&gifs=yes
+
+http://scitation.aip.org/getabs/servlet/GetabsServlet?prog=normal&id=APPLAB000002000001000003000001&idtype=cvips&gifs=yes
+
+http://scitation.aip.org/getabs/servlet/GetabsServlet?prog=normal&id=JCPSA6000001000001000001000001&idtype=cvips&gifs=yes
+
+http://scitation.aip.org/getabs/servlet/GetabsServlet?prog=normal&id=JCPSA6000001000001000003000001&idtype=cvips&gifs=yes
+
+http://scitation.aip.org/getabs/servlet/GetabsServlet?prog=normal&id=JCPSA6000001000001000013000001&idtype=cvips&gifs=yes

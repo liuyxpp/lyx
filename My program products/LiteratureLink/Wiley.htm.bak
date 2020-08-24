@@ -1,0 +1,44 @@
+<html>
+<head>
+<link rel="STYLESHEET" type="text/css" href="styles/srcACS.css">
+
+</head>
+<body>
+<script language="JavaScript">
+<!--
+function MergeInfo()
+{
+var frm=document.formElsevier
+alert("!!");
+frm.issue.value="v"+frm.volEL.value+"i00"+frm.issueEL.value;
+frm.article.value=frm.pageEL.value+"_sacospi";
+return(true);
+}
+//-->
+</script>
+<form name="formElsevier" onSubmit="JavaScript: return(MergeInfo())" action="http://elsevier.lib.tsinghua.edu.cn/cgi-bin/sciserv.pl" method="get">
+<img src="images/redtri.gif"><span class="textbold">&nbsp;Elsevier</span>
+<table border="0" bgcolor="#f0f0f0" cellspacing="0" cellpadding="12" class="text" width="100%">
+<tbody>
+<tr valign="middle"><td>
+<select name="journal" class="text">
+<option value="">Select a Journal</option>
+<option value="00323861">Polymer</option>
+<option value="1521-4095">Adv. Mater.</option>
+<option value="1099-0518">J. Polym. Sci. Part A</option>
+<option value="1099-0488">J. Polym. Sci. Part B</option>
+</select>
+<input type="hidden" name="collection" value="journals" />
+Vol<input size="3" name="volEL" class="text">
+Issue<input size="3" name="issueEL" class="text">
+First Page<input size="6" name="pageEL" class="text">
+<input type="hidden" name="issue">
+<input type="hidden" name="article">
+<input type="hidden" name="form" value="pdf">
+<input type="hidden" name="file" value="file.pdf">
+<input name="submitEL" type="submit" value="Find Citation" class="textbold">
+</td></tr></tbody>
+</table>
+</form>
+</body>
+</html>

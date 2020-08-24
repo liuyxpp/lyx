@@ -1,0 +1,1 @@
+g++ -L/Users/lyx/SynologyDrive/Develop/lib -lmatio -I/Users/lyx/SynologyDrive/Develop/include test_CMatFile.cc -o test

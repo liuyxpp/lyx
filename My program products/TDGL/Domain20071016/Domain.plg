@@ -1,0 +1,32 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Domain - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\SIMULA~1\LOCALS~1\Temp\RSP1DE.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /entry:"WinMainCRTStartup" /subsystem:windows /incremental:no /pdb:"Debug/Domain.pdb" /debug /machine:I386 /nodefaultlib:"dfconsol.lib" /out:"Debug/Domain.exe" /pdbtype:sept 
+.\Debug\Domain.obj
+.\Debug\main.obj
+.\Debug\modTK.obj
+.\Debug\XGraphics.obj
+.\Debug\XLut.obj
+.\Debug\XTools.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\SIMULA~1\LOCALS~1\Temp\RSP1DE.tmp"
+<h3>Output Window</h3>
+Linking...
+Creating command line "bscmake.exe /nologo /o"Debug/Domain.bsc"  .\Debug\Domain.sbr .\Debug\main.sbr .\Debug\modTK.sbr .\Debug\XGraphics.sbr .\Debug\XLut.sbr .\Debug\XTools.sbr"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+Domain.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

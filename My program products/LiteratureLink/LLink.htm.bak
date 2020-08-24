@@ -1,0 +1,255 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="STYLESHEET" type="text/css" href="styles/srcACS.css">
+</head>
+
+<body>
+<center><h1>Enjoy Reseach</h1></center>
+<!--ACS-->
+<form name="formACS" method="get" action="http://pubs.acs.org/wls/journals/query/citationFindResults.html">
+<input type="hidden" name="op" value="findCitation">
+<img src="images/redtri.gif"><span class="textbold">&nbsp;American Chemical Society</span>
+<!--CITATION FIND TABLE -->
+<table border="0" bgcolor="#fff9df" cellspacing="0" cellpadding="12" class="text" width="100%">
+<tbody>
+<tr valign="middle"><td>
+<select name="cit_qjrn" class="text">
+<option value="">Select a Journal</option>
+<option value="achre4">Acc. Chem. Res.</option>
+<option value="ancham">Anal. Chem.</option>
+<!--<option value="anchama">&nbsp;&nbsp;&nbsp;Anal. Chem. A-Pages</option>
+<option value="iecac0">&nbsp;&nbsp;&nbsp;Ind. Eng. Chem.  Anal. Ed.</option>
+<option value="bichaw">Biochemistry</option>
+<option value="bcches">Bioconjugate Chem.</option>-->
+<option value="bomaf6">Biomacromolecules</option>
+<!--<option value="bipret">Biotechnol. Prog.</option>-->
+<option value="cmatex">Chem. Mater.</option>
+<!--<option value="crtoec">Chem. Res. Toxicol.</option>-->
+<option value="chreay">Chem. Rev.</option>
+<!--<option value="cgdefu">Cryst. Growth Des.</option>
+<option value="enfuem">Energy & Fuels</option>
+<option value="esthag">Environ. Sci. Technol.</option>
+<option value="esthaga">&nbsp;&nbsp;&nbsp;Environ. Sci. Technol. A-Pages</option>
+<option value="iecred">Ind. Eng. Chem. Res.</option>
+<option value="iechad">&nbsp;&nbsp;&nbsp;Ind. Eng. Chem.</option>
+<option value="iecfa7">&nbsp;&nbsp;&nbsp;Ind. Eng. Chem. Fundam.</option>
+<option value="iepdaw">&nbsp;&nbsp;&nbsp;Ind. Eng. Chem. Proc. Des. Dev.</option>
+<option value="iepra6">&nbsp;&nbsp;&nbsp;Ind. Eng. Chem. Prod. Res. Dev.</option>-->
+<option value="inocaj">Inorg. Chem.</option>
+<!--<option value="jafcau">J. Agric. Food Chem.</option>-->
+<option value="jacsat">J. Am. Chem. Soc.</option>
+<!--<option value="jceaax">J. Chem. Eng. Data</option>
+<option value="iecjc0">&nbsp;&nbsp;&nbsp;Ind. Eng. Chem. Eng. Data Ser.</option>
+<option value="jcisd8">J. Chem. Inf. Model.</option>
+<option value="jci001">&nbsp;&nbsp;&nbsp;J. Chem. Doc.</option>
+<option value="jcisd8">&nbsp;&nbsp;&nbsp;J. Chem. Inf. Comput. Sci.</option>
+<option value="jctcce">J. Chem. Theory and Comput.</option>
+<option value="jcchff">J. Comb. Chem.</option>
+<option value="jmcmar">J. Med. Chem.</option>
+<option value="jnprdf">J. Nat. Prod.</option>-->
+<option value="joceah">J. Org. Chem.</option>
+<option value="jpchax">J. Phys. Chem.</option>
+<option value="jpcafh">&nbsp;&nbsp;&nbsp;J. Phys. Chem. A.</option>
+<option value="jpcbfk">&nbsp;&nbsp;&nbsp;J. Phys. Chem. B.</option>
+<!--<option value="jprobs">J. Proteome Res.</option>-->
+<option value="langd5">Langmuir</option>
+<option value="mamobx">Macromolecules</option>
+<!--<option value="mpohbp">Molecular Pharmaceutics</option>-->
+<option value="nalefd">Nano Lett.</option>
+<option value="orlef7">Org. Lett.</option>
+<!--<option value="oprdfk">Org. Process Res. Dev.</option>
+<option value="orgnd7">Organometallics</option>-->
+</select>
+	Vol<input type="text" name="vol" size="3" value="" class="text">
+	First Page<input type="text" name="spn" size="6" value="" class="text">
+<input name="submitACS" type="submit" value="Find Citation" class="textbold">
+</td></tr></tbody>
+</table>
+</form>
+<!--END OF ACS-->
+
+<!--Nature-->
+<!--Nauture action="http://nature.calis.edu.cn/download.asp?i=nature&v=438&s=7071&p=4381068a"-->
+<script language="JavaScript">
+<!--
+function NatureInfo()
+{
+var frm=document.formNature;
+frm.p.value=frm.v.value+frm.p.value+"a";
+frm.action="http://nature.calis.edu.cn/download.asp"
+frm.submit();
+}
+//-->
+</script>
+<form name="formNature" method="get">
+<img src="images/redtri.gif"><span class="textbold">&nbsp;Nature</span>
+<table border="0" bgcolor="#dedef7" cellspacing="0" cellpadding="12" class="text" width="100%">
+<tbody>
+<tr valign="middle"><td>
+<select name="i" class="text">
+<option value="">Select a Journal</option>
+<option selected value="nature">Nature</option>
+</select>
+	Vol<input size="3" name="v" class="text">
+	Issue<input size="4" name="s" class="text">
+	First Page<input size="6" name="p" class="text">
+<input name="submitNature" type="button" onClick="JavaScript: NatureInfo()" value="Find Citation" class="textbold">
+</td></tr></tbody>
+</table>
+</form>
+<!--End of Nature-->
+
+<!--Science & PNAS-->
+<!--Science action="http://www.sciencemag.org/cgi/search?volume=300&firstpage=21&andorexactfulltext=and&andorexacttitleabs=and"-->
+<!--PNAS action="http://www.pnas.org/cgi/search?sendit=Search&volume=102&firstpage=8698"-->
+<script language="JavaScript">
+<!--
+function SciInfo()
+{
+var frm=document.formSci;
+frm.action=frm.actSci.value;
+frm.submit();
+}
+//-->
+</script>
+<form name="formSci" method="get">
+<img src="images/redtri.gif"><span class="textbold">&nbsp;Science & PNAS</span>
+<table border="0" bgcolor="#b9c28d" cellspacing="0" cellpadding="12" class="text" width="100%">
+<tbody>
+<tr valign="middle"><td>
+<select name="actSci" class="text">
+<option value="">Select a Journal</option>
+<option value="http://www.sciencemag.org/cgi/search">Science</option>
+<option value="http://www.pnas.org/cgi/search">PNAS</option>
+</select>
+<input type="hidden" name="andorexactfulltext" value="and">
+<input type="hidden" name="andorexacttitleabs" value="and">
+<input type="hidden" name="sendit" value="Search">
+	Vol<input size="3" name="volume" class="text">
+	First Page<input size="6" name="firstpage" class="text">
+<input name="submitSci" type="button" onClick="JavaScript: SciInfo()" value="Find Citation" class="textbold">
+</td></tr></tbody>
+</table>
+</form>
+<!--End of Science & PNAS-->
+
+<!--John Wiley-->
+<form name="formWiley" action="http://www3.interscience.wiley.com/search/allsearch" method="get">
+<img src="images/redtri.gif"><span class="textbold">&nbsp;John Wiley</span>
+<table border="0" bgcolor="#ebf5ff" cellspacing="0" cellpadding="12" class="text" width="100%">
+<tbody>
+<tr valign="middle"><td>
+<select name="issn" class="text">
+<option value="">Select a Journal</option>
+<option value="1521-3773">Angew. Chem. Int. Ed.</option>
+<option value="1521-4095">Adv. Mater.</option>
+<option value="1099-0518">J. Polym. Sci. Part A</option>
+<option value="1099-0488">J. Polym. Sci. Part B</option>
+<option value="1521-3927">Macro. Rapid Comm.</option>
+</select>
+<input type="hidden" name="mode" value="citation" />
+<input type="hidden" name="contextLink" value="<a href=&quot;/index.html&quot; target=&quot;_top&quot;>Home</a> / <a href=&quot;/cgi-bin/browsebysubject?code=POLY&quot; target=&quot;_top&quot;>Polymers and Materials Science</a> / <a href=&quot;/cgi-bin/browsebycategory?code=POL0&quot; target=&quot;_top&quot;>Polymers and Materials Science  (general)</a>" />
+<input type="hidden" size="2" name=issue>
+	Vol<input size="3" name=volume class="text">
+	First Page<input size="6" name=pages class="text">
+<input name="submitWiley" type="submit" value="Find Citation" class="textbold">
+</td></tr></tbody>
+</table>
+</form>
+<!--End of John Wiley-->
+
+<!--American Physics Society-->
+<FORM  name="formAPS" ACTION="http://link.aps.org/ejnls/volpage" METHOD="GET">
+<img src="images/redtri.gif"><span class="textbold">&nbsp;American Physical Society</span>
+<table border="0" bgcolor="#9cce9c" cellspacing="0" cellpadding="12" class="text" width="100%">
+<tbody>
+<tr valign="middle"><td>
+<SELECT NAME="journal_code" class="text">
+ <option value="">Select a Journal</option>
+ <OPTION VALUE="PRA">Phys. Rev. A</OPTION>
+ <OPTION VALUE="PRB">Phys. Rev. B</OPTION>
+ <OPTION VALUE="PRC">Phys. Rev. C</OPTION>
+ <OPTION VALUE="PRD">Phys. Rev. D</OPTION>
+ <OPTION VALUE="PRE">Phys. Rev. E</OPTION>
+ <!--<OPTION VALUE="PRSTAB">Phys. Rev. ST AB</OPTION>
+ <option value="PRSTPER">Phys. Rev. ST PER</option>-->
+ <OPTION VALUE="PRL">Phys. Rev. Lett.</OPTION>
+ <!--<OPTION VALUE="PRI">Phys. Rev. (Series I)</option>-->
+ <OPTION VALUE="PR">Phys. Rev.</option>
+ <OPTION VALUE="RMP">Rev. Mod. Phys.</OPTION>
+</SELECT> 
+	Vol<INPUT TYPE="text" NAME="volume" SIZE="3" class="text">
+	First page<INPUT TYPE="text" NAME="pageno" SIZE="6" class="text">
+<INPUT name="submitAPS" type="submit" VALUE="Find Citation" class="textbold">
+</td></tr></tbody>
+</table>
+</form>
+<!--End of American Physics Society-->
+
+<!--American Insistute of Physics-->
+<script language="JavaScript">
+<!--
+function MergeInfo()
+{
+var frm=document.formAIP;
+frm.action=frm.actAIP.value;
+frm.submit();
+}
+//-->
+</script>
+
+<form name="formAIP" method="get">
+<img src="images/redtri.gif"><span class="textbold">&nbsp;American Insistute of Physics</span>
+<table border="0" bgcolor="#dae1cd" cellspacing="0" cellpadding="12" class="text" width="100%">
+<tbody>
+<tr valign="middle"><td>
+<select name="actAIP" class="text">
+<option value="">Select a Journal</option>
+<option value="http://apl.aip.org/apl/top.jsp">App. Phys. Lett.</option>
+<option value="http://jcp.aip.org/jcp/top.jsp">J. Chem. Phys.</option>
+</select>
+	Vol<input size="3" name="vol" class="text">
+	First Page<input size="6" name="pg" class="text">
+<input name="submitAIP" type="button" onClick="JavaScript: MergeInfo()" value="Find Citation" class="textbold">
+</td></tr></tbody>
+</table>
+</form>
+<!--End of American Insistute of Physics-->
+
+<!--Elsevier-->
+<!--http://elsevier.lib.tsinghua.edu.cn/cgi-bin/sciserv.pl?collection=journals&issn=00145793&
+volume=414&issue=2&firstpage=177-->
+<form name="formElsevier" action="http://elsevier.lib.tsinghua.edu.cn/cgi-bin/sciserv.pl" method="get">
+<img src="images/redtri.gif"><span class="textbold">&nbsp;Elsevier</span>
+<table border="0" bgcolor="#f0f0f0" cellspacing="0" cellpadding="12" class="text" width="100%">
+<tbody>
+<tr valign="middle"><td>
+<select name="issn" class="text" >
+<option value="">Select a Journal</option>
+<option value="00018686">Adv. in Colloid and Inter. Sci.</option> 
+<option value="00323861">Polymer</option>
+<option value="00796700">Prog. in Polym. Sci.</option>
+</select>
+<!--Old fashioned sciserv.pl in Elsevier--> 
+<input type="hidden" name="collection" value="journals" />
+	Vol<input size="3" name="volume" class="text">
+	Issue<input size="3" name="issue" class="text">
+	First Page<input size="6" name="firstpage" class="text">
+<!--New version sciserv.pl in Elsevier-->
+<!--<input type="hidden" name="issue">
+<input type="hidden" name="article">
+<input type="hidden" name="form" value="pdf">
+<input type="hidden" name="file" value="file.pdf">-->
+<input name="submitEL" type="submit" value="Find Citation" class="textbold">
+</td></tr></tbody>
+</table>
+</form>
+<!--End of Elsevier-->
+
+<center>Powered by lyxin@ccme.pku
+<br>
+<a href="mailto:yixinliu@pku.edu.cn" target=_top>yixinliu@pku.edu.cn</a>
+</center>
+</body>
+</html>

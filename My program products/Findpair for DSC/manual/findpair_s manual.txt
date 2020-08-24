@@ -1,0 +1,41 @@
+*** THIS PROGRAM IS POWERED BY lyxin ***
+POLYMER SCI, CHEM DEPART, PKU
+
+project name findpair_s
+program name findpair_s.exe
+building at 2005-7-6
+
+function:
+DSC实验用坩锅配对
+
+using:
+1）打开excel，以如下格式输入数据
+   n
+   a1 b1
+   a2 b2
+   a3 b3
+   .....
+
+*** IMPORTANT NOTICE ***
+  输入的值均写成整数
+  例如：若称量所得为9.022mg，应输入9022
+************************
+
+2)把excel中数据copy到文件preDSC.txt文件中（可以使用桌面
+find DSC pair文件夹中的快捷方式）
+
+3)start findpair_s.exe
+
+4)从outDSC.txt查看结果
+
+5)输出格式:
+#index (ai,bj) sum
+（ai，bj）表示将i号盖和j号底组成一个坩锅，同样地，
+#0号坩锅定为标准空坩锅
+并且所有其他坩锅满足配对要求(0.005mg)
+sum值坩锅质量，用于验证。
+
+Contacting me at:
+lyxin@bbs.pku.edu.cn
+or,
+yixinliu@pku.edu.cn

@@ -1,0 +1,46 @@
+function err = edpini()
+%EDPINI Reconstruct EDP from Lc 
+% Calling sequence:
+%    err=edpr
+%
+% define variables:
+-- position holder for indicating of fitted lc reconstruction 
+%   err        -- error message 
+%
+% Record of revisions:
+%     Date             Programmer          Description of change
+%     ====             ==========          =====================
+%   3/8/2006           Yi Xin Liu          Original code
+global N
+global L
+global E0
+global V
+global Lc
+global X_EDP
+global I_INI
+global I_FIT
+global Y_INI
+global Y_FIT
+V=zeros(1,N);
+Am=zeros(1,N);
+for k=1:N
+    Am(k)=2*E0*sin(k*pi*Lc/L)/k/pi;
+    if Am(k)<0
+        V(k)=pi;
+    else
+        V(k)=0;
+    end
+end
+if argin<1
+    I_INI=Am.*Am;
+    for k=1:N
+        Y_INI=Y_INI+Am(k)*cos(2*pi*k*X_EDP/L);
+    end
+    err=1;
+else
+    I_FIT=Am.*Am;
+    for k=1:N
+        Y_FIT=Y_FIT+Am(k)*cos(2*pi*k*X_EDP/L);
+    end
+    err=2;
+end

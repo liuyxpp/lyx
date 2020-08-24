@@ -1,0 +1,19 @@
+project name: findpair
+program name: findpair
+building at 2005-7-6
+
+function:
+DSC实验用坩锅配对
+
+using:
+start findpair.exe
+enter 坩锅数 n
+输入每一个坩锅盖和底的质量，注意去掉小数点
+a表示坩锅盖
+b表示坩锅底
+脚标表示坩锅编号
+输出格式
+#index (ai,bj) (ak,bl)
+（ai，bj）表示将i号盖和j号底组成一个坩锅，同样地，
+（ak，bl）表示将k号盖和l号底组成一个坩锅
+并且这两个坩锅满足配对要求(<0.005mg)

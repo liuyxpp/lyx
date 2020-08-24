@@ -1,0 +1,105 @@
+###  下述过程创建了对象变量 myRange，然后将活动工作簿中工作表“Sheet1”上的单元格区域“A1:D5”赋予该变量。随后的语句用该变量代替该区域对象，以修改该区域的属性。
+
+Sub Random()
+    Dim myRange As Range
+    Set myRange = Worksheets("Sheet1").Range("A1:D5")
+    myRange.Formula = "=RAND()"
+    myRange.Font.Bold = True
+End Sub
+
+###   Insert 方法示例
+
+本示例在“Sheet1”的第四行之前插入一个新行。
+
+Worksheets("Sheet1").Rows(4).Insert
+本示例向“Sheet1”的“A1:C5”区域插入一个新单元格，并将其他单元格下移。
+
+Worksheets("Sheet1").Range("A1:C5").Insert Shift:=xlShiftDown
+本示例在活动单元格处插入一个新行。本示例必须在工作表中运行。
+
+ActiveCell.EntireRow.Insert
+
+### FillUp 方法
+                
+
+从指定区域的底部单元格开始向上填充，直至该区域的顶部。区域中尾行单元格的内容和格式将复制到区域中其它行内。
+
+语法
+
+### NumberFormat 属性示例
+
+以下这些示例分别对 Sheet1 中的 A17 单元格、第一行和 C 列的数字格式进行设置。
+
+Worksheets("Sheet1").Range("A17").NumberFormat = "General"
+Worksheets("Sheet1").Rows(1).NumberFormat = "hh:mm:ss"
+Worksheets("Sheet1").Columns("C"). _
+    NumberFormat = "$#,##0.00_);[Red]($#,##0.00)"
+
+### FormatNumber函数
+      
+
+描述
+
+返回一个数字格式的表达式。
+
+语法
+
+FormatNumber(Expression[,NumDigitsAfterDecimal [,IncludeLeadingDigit [,UseParensForNegativeNumbers [,GroupDigits]]]])
+
+FormatNumber函数语法有如下几部分：
+
+部分 描述 
+Expression 必需的。要被格式化的表达式。 
+NumDigitsAfterDecimal 可选的。数字值，表示小数点右边的显示位数。缺省值为–1，表示使用计算机的区域设置值。 
+IncludeLeadingDigit 可选的。三态常数，表示小数点前是否显示零。关于其值，请参阅“设置值”部分。 
+UseParensForNegativeNumbers 可选的。三态常数，表示是否把负数值放在圆括号内。关于其值，请参阅“设置值”部分。 
+GroupDigits 可选的。的三态常数，表示是否用组分隔符对数字分组，组分隔符在计算机的区域设置值中指定。关于其值，请参阅“设置值”部分。 
+
+
+expression.FillUp
+
+expression   必选。该表达式返回 Range 对象。
+
+### Selection 属性
+                
+
+Application 对象：返回当前窗口中的选定对象。
+
+Window 对象：返回指定窗口中的选定对象。
+
+说明
+
+返回对象的类型取决于当前的选定对象（例如，如果选定对象是单元格，本属性返回的将是 Range 对象）。如果没有选定任何对象，Selection 属性将返回 Nothing。
+
+在不使用对象识别符的情况下使用本属性等价于使用 Application.Selection。
+
+### Offset 属性 （Range 对象）
+                
+
+返回一个 Range 对象，用以代表某个指定区域以外的区域。只读。
+
+语法
+
+expression.Offset(RowOffset, ColumnOffset)
+
+expression   必选。一个返回 Range 对象的表达式。
+
+RowOffset   可选。Variant 类型。该区域将偏移的行数（正值、负值或 0（零)）。正值表示向下偏移，负值表示向上偏移，默认值为 0。
+
+ColumnOffset   可选。Variant 类型。该区域将偏移的列数（正值、负值或 0（零)）。正值表示向右偏移，负值表示向左，默认值为 0。
+
+### Column 属性
+                
+
+返回指定区域中第一块中的第一列的列号。Long 类型，只读。
+
+说明
+
+“A”列返回 1，“B”列返回 2，依次类推。
+
+可用下列语句返回区域中最后一列的列号。
+
+myRange.Columns(myRange.Columns.Count).Column
+
+
+

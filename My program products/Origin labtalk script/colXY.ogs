@@ -1,0 +1,13 @@
+// Filename:	colXY.OGS
+// Creation:	by lyxin, 6/11/2007
+// Purpose:	Set two neighbour columns as (X,Y> pairs 
+//             and named Y columns with sequence numbers
+//**********************************************
+// Modification Log:
+//		lyxin 6/11/2007 Generated
+//		
+//**********************************************
+
+[setXY]
+	getnumber (X Minimum)  MyVar;;
+	type -v -b "My file is stored in C:\TEMP\FILE1.OPJ.";;

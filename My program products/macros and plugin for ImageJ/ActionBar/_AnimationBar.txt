@@ -1,0 +1,74 @@
+//  stack animation bar
+run("Action Bar","/plugins/ActionBar/_AnimationBar.txt");
+exit();
+
+<line>
+
+<button>
+label=Start Animation
+icon=_AnimationBar/player_play.png
+action=run_macro_string
+arg=run("Start Animation");
+
+<button>
+label=Stop Animation
+icon=_AnimationBar/player_stop.png
+action=run_macro_string
+arg=run("Stop Animation");
+
+<button>
+label=Animation Options
+icon=_AnimationBar/konqsidebar_mediaplayer.png
+action=run_macro_string
+arg=run("Animation Options...");
+
+<button>
+label=Go to First Slice
+icon=_AnimationBar/player_start.png
+action=run_macro_string
+arg=run("Set Slice...", "slice=1");
+
+<button>
+label=Previous Slice
+icon=_AnimationBar/previous.png
+action=run_macro_string
+arg=run("Previous Slice [<]");
+
+<button>
+label=Next Slice
+icon=_AnimationBar/next.png
+action=run_macro_string
+arg=run("Next Slice [>]");
+
+<button>
+label=Go to Last Slice
+icon=_AnimationBar/player_end.png
+action=run_macro_string
+arg=run("Set Slice...", "slice="+nSlices);
+
+<button>
+label=Delete Slice
+icon=_AnimationBar/cut.png
+action=run_macro_string
+arg=run("Delete Slice");
+
+<button>
+label=Add Slice
+icon=_AnimationBar/filenew.png
+action=run_macro_string
+arg=run("Add Slice");
+
+<button>
+label=Duplicate Slice
+icon=_AnimationBar/kpager.jpg
+action=run_macro_string
+arg=run("Select All");run("Copy");run("Add Slice");run("Paste");
+
+<button>
+label=About this Bar
+icon=_AnimationBar/help.png
+action=run_macro_string
+arg=showMessage("Animation Bar", "An Action Bar \nto animate stacks \nwith icons from NUVOLA ICON THEME");
+
+
+</line>

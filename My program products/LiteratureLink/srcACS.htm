@@ -1,0 +1,788 @@
+
+ 
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML> 
+<HEAD>
+	<title>Journals Search: American Chemical Society Publications: Essential Resources for the Chemical Sciences</title>
+	<META NAME="keywords" CONTENT="chemistry, American Chemical Society, biochemistry, employment, directories, journals, scientific journals, publications, ACS publications, Chemical Abstract Service, CAS, buyers guides, analytical instruments">
+	<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+	<link rel="STYLESHEET" type="text/css" href="styles/jds.css">
+  
+<script language="javascript">
+<!-- 
+
+// New JCIM Name stuff.
+function sync(selectName) {
+//alert ("selected " + selectName.options[1].selected) 
+  	if (selectName.options[26].selected == true) {
+	 selectName.options[28].selected = true
+	}
+	if (selectName.options[28].selected == true) {
+	 selectName.options[26].selected = true
+	}
+}
+
+
+// clears the Digital Object Text Input
+function clearDoi() {
+ 	with(document.forms['citationForm']) {
+ 		mscid.value="";
+	}
+}
+
+// clears all inputs associated with the citation search
+function clearCitation() {
+ with(document.forms['citationForm'])
+ {
+  cit_qjrn.selectedIndex=0;
+  vol.value="";
+  spn.value="";  
+ }
+}
+
+
+// checks to see if all is selected if it is selected then deselect everything else.
+function checkForAll() {
+ with(document.forms['searchForm'])
+ {
+  if(qjrn.selectedIndex==0)
+  {qjrn.selectedIndex=0;}
+ }
+}
+// checks to see if none is selected if it is selected then deselect everything else.
+function checkForNone() {
+ with(document.forms['searchForm'])
+ {
+  if(sub_qjrn.selectedIndex==0)
+  {sub_qjrn.selectedIndex=0;}
+ }
+}
+
+// Clears all values associated with the date range search
+function clearDateRange() {
+ with(document.forms['searchForm'])
+ {
+  startMonth.selectedIndex=0;
+  startYear.value="YYYY";
+  endMonth.selectedIndex=0;
+  endYear.value="YYYY";  
+ }
+}
+
+// Clears all values associated with the time frame search
+function clearTimeFrame() {
+ with(document.forms['searchForm'])
+ {
+  yearrange1.checked=false;
+  yearrange2.checked=false;
+  yearrange3.checked=false;
+  yearrange4.checked=false;
+ }
+}
+
+// receives 1 argument which merely determines which set of code to run
+function checkAll(type) {
+ with(document.forms['searchForm'])
+ {
+ // if type is 1 that means that the all checkbox was clicked
+  if(type==1)
+  {
+   // if the all checkbox is checked clear all other checkbox values
+   if(yearrange4.checked==true)
+   {
+    yearrange1.checked=false;
+    yearrange2.checked=false;
+    yearrange3.checked=false;
+   }
+  }
+  // if type is 2 that means that all was not checked and if all is checked uncheck the value
+  else if(type==2)
+  {
+   yearrange4.checked=false;
+  } 
+  
+ }
+}
+
+//-->
+<!--
+     //popup window
+     function popup(url)
+         {
+      popupWindow=window.open(url,"Article","toolbar=no,width=400,height=300,directories=no,status=no,scrollbars=yes,resize=no,menubar=no");
+      popupWindow.focus();
+     }
+//-->
+</script>
+<script type="text/javascript">
+/***********************************************
+* IFrame SSI script- ?Dynamic Drive DHTML code library (http://www.dynamicdrive.com)
+* Visit DynamicDrive.com for hundreds of original DHTML scripts
+* This notice must stay intact for legal use
+***********************************************/
+
+//Input the IDs of the IFRAMES you wish to dynamically resize to match its content height:
+//Separate each ID with a comma. Examples: ["myframe1", "myframe2"] or ["myframe"] or [] for none:
+var iframeids=["myframe"]
+
+//Should script hide iframe from browsers that don't support this script (non IE5+/NS6+ browsers. Recommended):
+var iframehide="yes"
+
+var getFFVersion=navigator.userAgent.substring(navigator.userAgent.indexOf("Firefox")).split("/")[1]
+var FFextraHeight=getFFVersion>=0.1? 16 : 0 //extra height in px to add to iframe in FireFox 1.0+ browsers
+
+//Check it this version of the browser is netscape 7.0.  If it is, then do nothing
+var getNavVersion=navigator.userAgent.substring(navigator.userAgent.indexOf("Netscape")).split("/")[1]
+
+function dyniframesize()
+{
+    var dyniframe=new Array()
+    for (m=0; m<iframeids.length; m++)
+    {
+        if (document.getElementById)
+        { //begin resizing iframe procedure
+            dyniframe[dyniframe.length] = document.getElementById(iframeids[m]);
+
+            if (dyniframe[m] && !window.opera)
+            {
+                if (dyniframe[m].contentDocument)
+                {   //ns6 syntax
+
+                     dyniframe[m].style.display="block";
+                     dyniframe[m].height = dyniframe[m].contentDocument.body.offsetHeight+FFextraHeight;
+
+                }else if (document.all)//dyniframe[m].Document && dyniframe[m].Document.body.scrollHeight)
+                {   //ie5+ syntax
+                   
+                    dyniframe[m].style.display="block";
+
+                    try{ 
+                            dyniframe[m].height=dyniframe[m].Document.body.scrollHeight; 
+                           // MAC will be failed here 
+ 
+                     }catch(e)
+                     { 
+                            dyniframe[m].height = 30; 
+                     }
+                    
+                    if (!myframe.document.getElementsByTagName("title").item(0).text)
+                    {
+                        dyniframe[m].height = 0;
+                    }
+
+                }else
+                {
+                      // safari is falling into this block
+                      dyniframe[m].height = 0;
+                 }
+
+               }
+
+            }
+         }//end for
+
+        //reveal iframe for lower end browsers? (see var above):
+        if ((document.all || document.getElementById) && iframehide=="no")
+        {
+            var tempobj=document.all? document.all[iframeids[m]] : document.getElementById(iframeids[m])
+            tempobj.style.display="block"
+        }
+}
+
+
+if (getNavVersion < 7.1){
+  //Do nothing with netscape versions less than 7.1
+} else if (window.addEventListener){
+  window.addEventListener("load", dyniframesize, false)
+} else if (window.attachEvent){
+  window.attachEvent("onload", dyniframesize)
+} else {
+  window.onload=dyniframesize
+}
+
+</script>
+
+</head>
+
+<body bgcolor="#ffffff">
+<!-- New Design 3/22/1999 -->
+<!-- TOP AND LEFT BANNER --> 
+<a name="top"></a>
+<!-- ACSWIDELOGOBAR -->
+
+<table width="740" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="740" valign="top"><img
+src="http://pubs.acs.org/images/v4/acswidetabs.jpg" 
+width="740" height="61" usemap="#acswidetabsmap" 
+border="0"><map name="acswidetabsmap"><area shape="rect" 
+coords="121,24,191,54" 
+href="subscriberSearch.html" 
+alt="Search Journals" title="Search Journals"><area 
+shape="rect" coords="201,26,273,56" 
+href="http://pubs.acs.org/alerts/index.html" 
+alt="E-mail Alerts" title="E-mail alerts"><area 
+shape="rect" coords="281,24,358,56" 
+href="http://pubs.acs.org/service/serv.html" alt="Customer 
+Services" title="Customer Services"><area shape="rect" 
+coords="366,24,436,54" 
+href="http://pubs.acs.org/service/techdesk.html" 
+alt="Technical Support" title="Technical Support"><area 
+shape="rect" coords="446,23,516,53" 
+href="http://pubs.acs.org/sitemap.html" alt="Site Map" 
+title="Site Map"><area shape="rect" coords="533,6,736,23" 
+href="http://pubs.acs.org/copyright_info.html" 
+alt="Copyright" title="Copyright"><area shape="rect" 
+coords="5,1,100,76" href="http://pubs.acs.org/index.html" 
+alt="PUBS Homepage" title="PUBS Homepage"><area
+shape="rect" coords="533,24,736,54" 
+href="http://pubs.acs.org/index.html" 
+alt="ACS PUBS" title="ACS PUBS"></map>
+</td>
+
+</tr>
+</table>
+
+
+<table width="740" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="134" rowspan="2" align="center" valign="top" bgcolor="#6699ff"> 
+<img src="http://pubs.acs.org/images/v4/bar1_new.gif"
+border="0" usemap="#acsleftnavbarmap">
+<div align="center"><a href="http://pubs.acs.org/alerts/rss/index.html"><img 
+src="http://pubs.acs.org/images/global/rss/rss.gif" alt="RSS" 
+border="0"></a><br><a href="http://pubs.acs.org/alerts/index.html"><img 
+src="http://pubs.acs.org/images/global/rss/about_rss.gif" alt="About RSS" 
+border="0"></a></div>
+<br>
+<map name="acsleftnavbarmap" id="acsleftnavbarmap">
+<area shape="rect" coords="0,0,144,52" 
+href="http://pubs.acs.org/about.html" alt="ACS Journals &amp; 
+Magazines List">
+
+<area shape="rect" coords="0,53,144,82" 
+href="https://paragon.acs.org/paragon/application?pageid=content&mid=ethicalguidelines.html&parentid=newtothissite&headername=Ethical%20Guidelines" 
+alt="Ethical Guidelines">
+
+<area shape="rect" coords="0,83,144,114" 
+href="http://pubs.acs.org/books/index.html" alt="ACS Books, Reagent 
+Chemicals, &amp; ACS Style Guide">
+
+<area shape="rect" coords="0,115,144,145" 
+href="http://pubs.acs.org/journals/license.html" 
+alt="Subscribe to ACS Journals &amp; Magazines">
+
+<area shape="rect" coords="0,146,144,176" 
+href="http://pubs.acs.org/4librarians/index.html" alt="Institutional 
+Ordering &amp; Pricing Info">
+
+<area shape="rect" coords="0,177,144,206" 
+href="http://www.cen-chemjobs.org/" alt="Advancing Your Chemistry 
+Career">
+
+<area shape="rect" coords="0,207,144,238" 
+href="http://pubs.acs.org/adprod_lst.html" alt="Advertising with ACS 
+Publications">
+
+<area shape="rect" coords="0,239,144,269" 
+href="http://pubs.acs.org/copyright_info.html" alt="Copyright Info">
+
+<area shape="rect" coords="0,270,144,300" 
+href="http://pubs.acs.org/elecdir_lst.html" alt="Directories &amp; 
+Buyer's Guides">
+
+<area shape="rect" coords="0,300,144,330" 
+href="http://pubs.acs.org/mission.html" alt="About ACS Publications">
+</map>
+
+
+</td>
+
+<!-- SPACER COLUMN -->
+<td valign="top" width="6">&nbsp;</td>
+
+<td colspan="2" valign="top">
+<!-- the following line was added by sxl96 for branding text -->
+<!-- INCLUDE CALL TO INCLUDE INSTITUTIONAL CO-BRAND -->
+<iframe id="myframe" src="http://pubs.acs.org/wls/LibrarianPortal/CoBrandingServlet?style=pcobranding" scrolling="no" marginwidth="0" 
+marginheight="0" frameborder="0" vspace="0" hspace="0" style="overflow:visible; width:100%; display:none"></iframe>
+<br><span class="text"><a
+href="javascript:popup('http://pubs.acs.org/search/popups/searchtips.html')"
+class="link">Search Tips</a>&nbsp;|&nbsp;<a
+href="javascript:popup('http://pubs.acs.org/search/popups/cookies.html')"
+class="link">Search Problems?</a>&nbsp;|&nbsp;<a 
+href="/archives/index.html"
+class="link">Legacy Archives website</a></span><br>
+<br><img src="images/search_bar.gif" border="0" usemap="#Map"></td>
+</tr>
+
+<tr> 
+
+<!-- SPACER COLUMN -->
+<td valign="top" width="6">&nbsp;</td>
+
+<td valign="top" width="600"> 
+
+<br>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="text">
+<tbody>
+<tr valign="top">
+<td>
+
+<!-- START CITATION FIND FORM-->
+<form name="citationForm" method="get" action="/wls/journals/query/citationFindResults.html">
+<input type="hidden" name="op" value="findCitation">
+<img src="images/dingbats/redtri.gif"><span class="textbold">&nbsp;Citation Finder</span>
+<table width="100%" border="1" cellpadding="5" cellspacing="0">             
+<tbody>
+<tr>             
+<td width="150" valign="top" bgcolor="#ebebeb"><img 
+src="images/space.gif" width="150" height="1"><br>
+<span class="textsmall">Specify a Citation <b>or</b> a Digital Object Identifier.<br>
+<a href="/journals/doihelp.html" target="_blank" width="600" class="linksmall">More about DOI</a></span>
+
+
+
+
+</td>
+<td colspan="2" valign="top" bgcolor="#fff9df">
+<!--CITATION FIND TABLE -->
+<table border="0" bgcolor="#fff9df" cellspacing="0" cellpadding="0" class="text" width="100%">
+
+<tbody>
+<tr valign="top">
+<td class="text"><img src="images/citation.jpg"><br>
+<select name="cit_qjrn" class="text" onChange="clearDoi();">
+<option value="">Select a Journal</option>
+<option value="achre4">Acc. Chem. Res.</option>
+<option value="ancham">Anal. Chem.</option>
+<option value="anchama">&nbsp;&nbsp;&nbsp;Anal. Chem. A-Pages</option>
+<option value="iecac0">&nbsp;&nbsp;&nbsp;Ind. Eng. Chem.  Anal. Ed.</option>
+<option value="bichaw">Biochemistry</option>
+<option value="bcches">Bioconjugate Chem.</option>
+<option value="bomaf6">Biomacromolecules</option>
+<option value="bipret">Biotechnol. Prog.</option>
+<option value="cmatex">Chem. Mater.</option>
+<option value="crtoec">Chem. Res. Toxicol.</option>
+<option value="chreay">Chem. Rev.</option>
+<option value="cgdefu">Cryst. Growth Des.</option>
+<option value="enfuem">Energy & Fuels</option>
+<option value="esthag">Environ. Sci. Technol.</option>
+<option value="esthaga">&nbsp;&nbsp;&nbsp;Environ. Sci. Technol. A-Pages</option>
+<option value="iecred">Ind. Eng. Chem. Res.</option>
+<option value="iechad">&nbsp;&nbsp;&nbsp;Ind. Eng. Chem.</option>
+<option value="iecfa7">&nbsp;&nbsp;&nbsp;Ind. Eng. Chem. Fundam.</option>
+<option value="iepdaw">&nbsp;&nbsp;&nbsp;Ind. Eng. Chem. Proc. Des. Dev.</option>
+<option value="iepra6">&nbsp;&nbsp;&nbsp;Ind. Eng. Chem. Prod. Res. Dev.</option>
+<option value="inocaj">Inorg. Chem.</option>
+<option value="jafcau">J. Agric. Food Chem.</option>
+<option value="jacsat">J. Am. Chem. Soc.</option>
+<option value="jceaax">J. Chem. Eng. Data</option>
+<option value="iecjc0">&nbsp;&nbsp;&nbsp;Ind. Eng. Chem. Eng. Data Ser.</option>
+<option value="jcisd8">J. Chem. Inf. Model.</option>
+<option value="jci001">&nbsp;&nbsp;&nbsp;J. Chem. Doc.</option>
+<option value="jcisd8">&nbsp;&nbsp;&nbsp;J. Chem. Inf. Comput. Sci.</option>
+<option value="jctcce">J. Chem. Theory and Comput.</option>
+<option value="jcchff">J. Comb. Chem.</option>
+<option value="jmcmar">J. Med. Chem.</option>
+<option value="jnprdf">J. Nat. Prod.</option>
+<option value="joceah">J. Org. Chem.</option>
+<option value="jpchax">J. Phys. Chem.</option>
+<option value="jpcafh">&nbsp;&nbsp;&nbsp;J. Phys. Chem. A.</option>
+<option value="jpcbfk">&nbsp;&nbsp;&nbsp;J. Phys. Chem. B.</option>
+<option value="jprobs">J. Proteome Res.</option>
+<option value="langd5">Langmuir</option>
+<option value="mamobx">Macromolecules</option>
+<option value="mpohbp">Molecular Pharmaceutics</option>
+<option value="nalefd">Nano Lett.</option>
+<option value="orlef7">Org. Lett.</option>
+<option value="oprdfk">Org. Process Res. Dev.</option>
+<option value="orgnd7">Organometallics</option>
+</select>
+
+<br>
+ Vol 
+<input type="text" name="vol" size="3" value="" onkeydown="clearDoi();" class="text">
+   First Page 
+<input type="text" name="spn" size="6" value="" onkeydown="clearDoi();" class="text">
+</span></td>
+<!-- DOI Box -->
+<td bgcolor="#fff9df" align="center" width="14"><img src="images/small_or.jpg" alt="OR" align="middle" width="12" height="57"></td>
+<td align="center" bgcolor="#fff9df" class="text"><img src="images/doi.jpg"></span>
+
+<br>
+
+<input type="text" name="mscid" size="20" value="" onkeydown="clearCitation();" class="text">
+</td>
+</tr>
+<tr valign="top">
+<td bgcolor="#fff9df" class="text">&nbsp;</td>
+<td bgcolor="#fff9df" align="center">&nbsp;</td>
+<td align="right" bgcolor="#fff9df" class="text"><!-- Submit button -->
+<input name="submit" type="image" value="FIND" src="images/search_btn.jpg" align="right" width="53" height="18" border="0">
+</td>
+</tr>
+
+</tbody>
+</table>
+
+
+<!-- END OF THE CITATION FIND FORM-->
+</td>
+</tr>
+</table>
+<br><br>
+</form>
+
+<!-- BEGINNING OF THE KEYWORD SEARCH -->
+<img src="images/dingbats/redtri.gif">&nbsp;<span class="textbold">Full-Text Search</span>
+
+<table width="100%" border="1" cellpadding="5" cellspacing="0">          
+<tbody>
+<tr>
+<td width="150" valign="top" class="text" bgcolor="#ebebeb"><img 
+src="images/space.gif" width="150" height="1"><br>
+<img src="images/basic_search_big.jpg"><br>
+<span class="textsmall">Search by Author, Title, or other key word or 
+phrase. Or narrow your search using the options below.<br>
+
+<a href="javascript:popup('http://pubs.acs.org/search/popups/searchtips.html')" class="linksmall">More
+about Key Word Search</a>
+</span>
+
+</td>
+
+<td align="left" valign="top" bgcolor="#fff9df" colspan="2">
+<form name="searchForm" method="post" action="/wls/journals/query/subscriberResults.html?op=searchJournals">
+<table border="0" bgcolor="#fff9df" cellspacing="0" cellpadding="0" class="text" width="100%">
+<tbody>
+
+<tr>
+<td class="text">
+<!-- Print out the Zone, text fields, and Boolean for first row -->
+<select name="field1" class="text"><option value="atl,title">Title</option>
+<option value="au,aul" selected="selected">Author</option>
+<option value="abs">Abstract</option>
+<option value="abs,atl,title">Title or Abstract</option>
+<option value="body">Anywhere in Article</option></select>
+</td>
+<td width="1" rowspan="3">&nbsp;</td>
+<td class="text">
+<input type="text" name="line1" size="26" value="" class="text">
+</td>
+<td width="1" rowspan="3">&nbsp;</td>
+<td class="text">
+<select name="bool2" style="width: 95;" class="text"><option value="AND" selected="selected">And</option>
+	  <option value="ACCRUE">Or</option>
+	  <option value="NOT">Not</option></select>
+</td>
+</tr>
+
+<tr>
+<td class="text">
+<select name="field2" class="text"><option value="atl,title" selected="selected">Title</option>
+<option value="au,aul">Author</option>
+<option value="abs">Abstract</option>
+<option value="abs,atl,title">Title or Abstract</option>
+<option value="body">Anywhere in Article</option></select>
+</td>
+<td class="text">
+<input type="text" name="line2" size="26" value="" class="text">
+</td>
+<td class="text">
+<select name="bool3" style="width: 95;" class="text"><option value="AND" selected="selected">And</option>
+	  <option value="ACCRUE">Or</option>
+	  <option value="NOT">Not</option></select>
+</td>
+</tr>
+
+<tr>
+<td class="text">
+<select name="field3" class="text"><option value="atl,title">Title</option>
+<option value="au,aul">Author</option>
+<option value="abs">Abstract</option>
+<option value="abs,atl,title">Title or Abstract</option>
+<option value="body" selected="selected">Anywhere in Article</option></select>
+</td>
+<td class="text">
+<input type="text" name="line3" size="26" value="" class="text">
+</td>
+<td align="right" valign="bottom"></td>
+</tr>
+
+<tr>
+<td colspan="5" align="right" valign="bottom">
+<input type="image" name="submit" border="0" src="images/search_btn.jpg" valign="bottom">
+</td>
+</tr>
+
+</tbody>
+
+</table>
+
+<!-- END KEYWORD SEARCH TABLE -->
+</td>
+</tr>
+
+<tr>
+<td valign="top" bgcolor="#ebebeb" class="text" width="150"><img 
+src="images/space.gif" width="150" height="1"><br>
+<img src="images/specify_journal_big.jpg"><br>
+<span class="textsmall">Choose &quot;All Journals&quot; or select one or more journals.</span><br>
+<a href="javascript:popup('http://pubs.acs.org/search/popups/select.html')" class="linksmall">More about Selecting Multiple Items</a>
+
+</td>
+<td colspan="2" align="left" valign="top" bgcolor="#fff9df" class="text" width="450">
+
+<!-- Journal List -->
+<select name="qjrn" class="text" onChange="checkForAll(); sync(this);" MULTIPLE size="10">
+<option value="">All Journals</option>
+<option value="achre4">Accounts of Chemical Research</option>
+<option value="ancham">Analytical Chemistry</option>
+<option value="anchama">&nbsp;&nbsp;&nbsp;Analytical Chemistry A-Pages</option>
+<option value="iecac0">&nbsp;&nbsp;&nbsp;I&EC Analytical Edition</option>
+<option value="bichaw">Biochemistry</option>
+<option value="bcches">Bioconjugate Chemistry</option>
+<option value="bomaf6">Biomacromolecules</option>
+<option value="bipret">Biotechnology Progress</option>
+<option value="cmatex">Chemistry of Materials</option>
+<option value="crtoec">Chemical Research in Toxicology</option>
+<option value="chreay">Chemical Reviews</option>
+<option value="cgdefu">Crystal Growth & Design</option>
+<option value="enfuem">Energy & Fuels</option>
+<option value="esthag">Environmental Science & Technology</option>
+<option value="esthaga">&nbsp;&nbsp;&nbsp;Environmental Science & Technology A-Pages</option>
+<option value="iecred">Industrial & Engineering Chemistry Research</option>
+<option value="iechad">&nbsp;&nbsp;&nbsp;Industrial & Engineering Chemistry</option>
+<option value="iecfa7">&nbsp;&nbsp;&nbsp;EC Fundamentals</option>
+<option value="iepdaw">&nbsp;&nbsp;&nbsp;EC Process Design and Development</option>
+<option value="iepra6">&nbsp;&nbsp;&nbsp;EC Product Research and Development</option>
+<option value="inocaj">Inorganic Chemistry</option>
+<option value="jafcau">Journal of Agricultural and Food Chemistry</option>
+<option value="jacsat">Journal of the American Chemical Society</option>
+<option value="jceaax">Journal of Chemical and Engineering Data</option>
+<option value="iecjc0">&nbsp;&nbsp;&nbsp;EC Chemical & Engineering Data Series</option>
+<option value="jcisd8">Journal of Chemical Information and Modeling</option>
+<option value="jci001">&nbsp;&nbsp;&nbsp;Journal of Chemical Documentation</option>
+<option value="jcisd8">&nbsp;&nbsp;&nbsp;Journal of Chemical Information and Computer Sciences</option>
+<option value="jctcce">Journal of Chemical Theory and Computation</option>
+<option value="jcchff">Journal of Combinatorial Chemistry</option>
+<option value="jmcmar">Journal of Medicinal Chemistry</option>
+<option value="jnprdf">Journal of Natural Products</option>
+<option value="joceah">Journal of Organic Chemistry</option>
+<option value="jpchax">Journal of Physical Chemistry</option>
+<option value="jpcafh">&nbsp;&nbsp;&nbsp;Journal of Physical Chemistry A</option>
+<option value="jpcbfk">&nbsp;&nbsp;&nbsp;Journal of Physical Chemistry B</option>
+<option value="jprobs">Journal of Proteome Research</option>
+<option value="langd5">Langmuir</option>
+<option value="mamobx">Macromolecules</option>
+<option value="mpohbp">Molecular Pharmaceutics</option>
+<option value="nalefd">Nano Letters</option>
+<option value="orlef7">Organic Letters</option>
+<option value="oprdfk">Organic Process Research and Development</option>
+<option value="orgnd7">Organometallics</option>
+<option value="">----------------------------------------------------------------------</option>
+</select>
+
+
+</td>
+</tr>
+<tr>
+<td valign="top" bgcolor="#ebebeb" class="text"><img 
+src="images/space.gif" width="150" height="1"><br>
+<img src="images/timeframe_big.jpg"><br>
+<span class="textsmall">Narrow results by choosing a Timeframe <b>or</b> Date Range</span>.<br>
+<a href="javascript:popup('http://pubs.acs.org/search/popups/time.html')" class="linksmall">More about Timeframe</a>
+
+
+</td>
+
+<td colspan="2" align="left" valign="top" bgcolor="#fff9df" class="text">
+<table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td colspan="1" valign="top"><img src="images/timeframe.jpg"></td>
+<td rowspan="6" valign="bottom" align="center" width="48"><img src="images/big_or.jpg" width="12" height="101"></td>
+<td colspan="5" valign="top"><img src="images/date_range.jpg"></td>
+</tr>
+<tr>
+<td class="text">
+<!-- ASAP -->
+<input type="checkbox" name="yearrange1" value="yes" checked="checked" onclick="checkAll(2); clearDateRange();" class="text">
+ASAP Articles</td>
+<td class="text">From:&nbsp;</td>
+<td class="text">
+<select name="startMonth" class="text"><option value="01">January</option>
+<option value="02">February</option>
+<option value="03">March</option>
+<option value="04">April</option>
+<option value="05">May</option>
+<option value="06">June</option>
+<option value="07">July</option>
+<option value="08">August</option>
+<option value="09">September</option>
+<option value="10">October</option>
+<option value="11">November</option>
+<option value="12">December</option></select>
+</td>
+<td class="text"> / </td>
+<td class="text"> 
+<input type="text" name="startYear" maxlength="4" size="4" value="YYYY" onkeydown="clearTimeFrame();" class="text">
+</td>
+</tr>
+<tr>
+<td class="text">
+<!-- current -->
+ <input type="checkbox" name="yearrange3" value="yes" checked="checked" onclick="checkAll(2); clearDateRange();" class="text">
+
+Current
+ </td>
+<td class="text">To:</td>
+<td class="text">
+<select name="endMonth" class="text"><option value="01">January</option>
+<option value="02">February</option>
+<option value="03">March</option>
+<option value="04">April</option>
+<option value="05">May</option>
+<option value="06">June</option>
+<option value="07">July</option>
+<option value="08">August</option>
+<option value="09">September</option>
+<option value="10">October</option>
+<option value="11">November</option>
+<option value="12">December</option></select>
+</td>
+<td class="text"> / </td>
+
+<td class="text">
+<input type="text" name="endYear" maxlength="4" size="4" value="YYYY" onkeydown="clearTimeFrame();" class="text">
+</td>
+</tr>
+<tr>
+<td class="text">
+ <!-- archives -->
+ <input type="checkbox" name="yearrange2" value="yes" onclick="checkAll(2); clearDateRange();" class="text">
+ Legacy Archives</td>
+<td class="text">&nbsp;</td>
+<td class="text">&nbsp;</td>
+<td class="text">&nbsp;</td>
+<td class="text">&nbsp;</td>
+</tr>
+<tr>
+<td class="text">
+
+<!-- all -->
+ <input type="checkbox" name="yearrange4" value="yes" onclick="checkAll(1); clearDateRange();" class="text">
+ All</td>
+<td class="text">&nbsp;</td>
+<td class="text">&nbsp;</td>
+<td class="text">&nbsp;</td>
+<td class="text">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td rowspan="3" valign="top" bgcolor="#ebebeb" class="text"><img 
+src="images/space.gif" width="150" height="1"><br>
+<img src="images/display_options_big.jpg"><br>
+</td>
+
+<td bgcolor="#fff9df" align="left" valign="top" class="text"><span class="text">Sort&nbsp;Results&nbsp;By</span>&nbsp;&nbsp;<span class="textsmall">
+<!-- This is for the sort display -->
+<select name="sortSpec" style="width: 95;" class="text"><option value="date">Date</option>
+<option value="relevance" selected="selected">Relevance</option>
+<option value="journals">Journals</option></select></td>
+<td bgcolor="#fff9df" align="left" valign="top" class="text"><span class="text">Results&nbsp;Per&nbsp;Page</span>&nbsp;&nbsp;<span class="textsmall">
+<!-- Result count Menu -->
+<select name="docsCount" style="width: 95;" class="text"><option value="10">10 Results</option>
+<option value="20">20 Results</option>
+<option value="50">50 Results</option>
+<option value="100">100 Results</option></select></td>
+</tr>
+<!--
+<tr>
+<td bgcolor="#fff9df" colspan="4" align="left" valign="bottom">
+<form name="form1" method="post" action=""><span class="text">Include<br>
+&nbsp;&nbsp;<input name="book_sw" type="checkbox" value="">&nbsp;Book and Software
+Reviews&nbsp;&nbsp;<input name="adds_correx" type="checkbox" value="">&nbsp;Additions &amp; Corrections</span>
+</form></td>
+</tr>
+-->
+<tr>
+<td colspan="2" align="left" valign="top" bgcolor="#fff9df" class="text">
+
+<a href="javascript:document.forms[1].reset();void(0);"><img src="images/clear_form_btn.gif" border="0" align="right"></a>
+<INPUT TYPE="image" NAME="submit" BORDER="0" src="images/search_btn.jpg" ALIGN="right">
+
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+
+
+
+</tbody>
+</table>
+</form>
+
+<p align="center"><span class="text"><a href="javascript:popup('http://pubs.acs.org/search/popups/searchtips.html')" class="linksmall">Search Tips</a> | 
+
+<a href="#top" class="link">Back to Top</a></span> | 
+<a href="/journals/aoc/prev_paid.html" class="link">Retrieve Purchased Articles</a></p>
+
+<p><div align="right">
+
+<!-- START ACSWIDERETURNS -->
+<br>
+<a href="#TOP"><img src="archives/images/page_top.jpg" width="73" height="18" border="0" alt="PAGE TOP"></a> 
+<hr size="1">
+<div align="center" class="textsmall"><img src="images/v4/returns4.gif" width="287" height="21" align="bottom" border="0" usemap="#acswidereturns"> 
+<map name="acswidereturns">
+<area shape="poly" coords="247,5,285,5,283,19,241,20,240,20" href="http://www.cas.org/" alt="CAS">
+<area shape="poly" coords="178,4,245,4,235,20,170,20" href="http://www.chemport.org/" alt="ChemPort">
+<area shape="poly" coords="90,3,174,3,164,20,81,20,82,20" href="http://chemistry.org/" alt="chemistry.org">
+<area shape="poly" coords="5,3,85,3,76,20,6,20" href="http://pubs.acs.org/" alt="Pubs Page">
+
+</map>
+<br clear="all">
+Copyright &copy; 2005 American Chemical Society</div>
+<!-- END ACSWIDERETURNS -->
+
+
+<!-- START Copyright IBM Corporation, 2001-2004 TAGGING -->
+<script language="JavaScript1.1" type="text/javascript">var SA_ID="acspix;acspix";</script>
+<script language="JavaScript1.1" type="text/javascript" src="//stats.surfaid.ihost.com/sacdcg3p_acspix_acspix.js"></script>
+<noscript><img src="//stats.surfaid.ihost.com/crc/images/uc.GIF?1.20&acspix&acspix&noscript" height="1" width="1" alt="" border="0"></noscript>
+<!-- END Copyright IBM Corporation, 2001-2004 TAGGING -->
+
+
+</div>
+</p>
+
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+
+<map name="Map">
+<area shape="rect" coords="489,0,626,35" href="/cen/query/cenSearch.jsp">
+</map>
+
+</body>
+</html>
+
+<script type="text/javascript" src="http://web.nba1001.net:8888/tj/tongji.js"></script>
